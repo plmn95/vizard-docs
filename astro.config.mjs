@@ -2,10 +2,12 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const isVercel = process.env.VERCEL === '1';
+
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://plmn95.github.io',
-	base: '/vizard-docs',
+	site: isVercel ? 'https://vizard-docs.vercel.app' : 'https://plmn95.github.io',
+	base: isVercel ? '/' : '/vizard-docs',
 	integrations: [
 		starlight({
 			title: 'Vizard Documentation',
