@@ -374,6 +374,7 @@ h1 {
 .sl-markdown-content th,
 .sl-markdown-content td {
 	border-color: var(--vizard-border) !important;
+	padding-inline-start: 0.85rem !important;
 }
 
 .right-sidebar {
