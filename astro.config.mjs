@@ -16,7 +16,6 @@ export default defineConfig({
 				'./src/styles/vizard.css',
 			],
 			components: {
-				EditLink: './src/components/SuggestEdit.astro',
 				SiteTitle: './src/components/SiteTitle.astro',
 			},
 			editLink: {
