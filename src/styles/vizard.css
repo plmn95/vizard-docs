@@ -358,6 +358,9 @@ h1 {
 }
 
 .sl-markdown-content table {
+	/* Starlight makes tables block scrollers; shrink-wrap short grids without breaking wide ones. */
+	inline-size: fit-content;
+	max-inline-size: 100%;
 	border: 1px solid var(--vizard-border);
 	box-shadow: var(--sl-shadow-sm);
 }
