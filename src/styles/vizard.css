@@ -1,9 +1,9 @@
 /*
- * Vizard documentation
+ * Vizard documentation theme
  *
- * The documentation borrows Vizard's graphite and orange, but stays an
- * editorial reading surface. Product chrome belongs in the app; here the
- * identity comes from typography, proportion, real terminology, and restraint.
+ * BRAND.md is the visual law: one graphite material system, one mono family,
+ * and accents that report meaning. The documentation uses those rules with
+ * restrained depth so it remains a reading surface rather than a fake panel.
  */
 
 :root,
@@ -12,62 +12,66 @@
 [data-theme='light'] ::backdrop {
 	color-scheme: dark;
 
-	--vizard-bg: #0d0f12;
-	--vizard-nav: #111318;
-	--vizard-panel: #15181d;
-	--vizard-field: #101216;
-	--vizard-border: #292d33;
-	--vizard-border-strong: #3a3f47;
-	--vizard-text: #f0efec;
-	--vizard-text-soft: #c5c4c1;
-	--vizard-muted: #92949a;
-	--vizard-accent: #e88732;
-	--vizard-accent-high: #ffb262;
-	--vizard-accent-low: #2b1b0e;
+	--vizard-chassis: #0f0f10;
+	--vizard-plate-top: #17171a;
+	--vizard-plate-bottom: #131315;
+	--vizard-recess: #121214;
+	--vizard-well: #0b0b0d;
+	--vizard-border: #26262a;
+	--vizard-border-bright: #36363b;
+	--vizard-text: #e8e8ea;
+	--vizard-reading: #c7c7cc;
+	--vizard-muted: #8a8a90;
+	--vizard-orange: #e8912a;
+	--vizard-orange-low: #332312;
+	--vizard-green: #86c96b;
+	--vizard-green-high: #b1dfa0;
+	--vizard-green-low: #182617;
+	--vizard-red: #e5544a;
 
 	--sl-color-white: var(--vizard-text);
-	--sl-color-gray-1: #d8d7d4;
-	--sl-color-gray-2: var(--vizard-text-soft);
+	--sl-color-gray-1: #d8d8dc;
+	--sl-color-gray-2: var(--vizard-reading);
 	--sl-color-gray-3: var(--vizard-muted);
-	--sl-color-gray-4: #686b72;
-	--sl-color-gray-5: var(--vizard-border-strong);
-	--sl-color-gray-6: var(--vizard-panel);
-	--sl-color-gray-7: var(--vizard-nav);
-	--sl-color-black: var(--vizard-bg);
-	--sl-color-accent-low: var(--vizard-accent-low);
-	--sl-color-accent: var(--vizard-accent);
-	--sl-color-accent-high: var(--vizard-accent-high);
-	--sl-color-text: var(--vizard-text-soft);
-	--sl-color-text-accent: var(--vizard-accent-high);
-	--sl-color-text-invert: #17100a;
-	--sl-color-bg: var(--vizard-bg);
-	--sl-color-bg-nav: var(--vizard-bg);
-	--sl-color-bg-sidebar: var(--vizard-nav);
-	--sl-color-bg-inline-code: var(--vizard-field);
-	--sl-color-bg-accent: var(--vizard-accent);
-	--sl-color-hairline-light: var(--vizard-border);
+	--sl-color-gray-4: #5d5d64;
+	--sl-color-gray-5: var(--vizard-border-bright);
+	--sl-color-gray-6: var(--vizard-plate-top);
+	--sl-color-gray-7: var(--vizard-recess);
+	--sl-color-black: var(--vizard-chassis);
+	--sl-color-accent-low: var(--vizard-orange-low);
+	--sl-color-accent: var(--vizard-orange);
+	--sl-color-accent-high: #f0b86e;
+	--sl-color-text: var(--vizard-reading);
+	--sl-color-text-accent: var(--vizard-green);
+	--sl-color-text-invert: var(--vizard-well);
+	--sl-color-bg: var(--vizard-chassis);
+	--sl-color-bg-nav: var(--vizard-plate-bottom);
+	--sl-color-bg-sidebar: var(--vizard-recess);
+	--sl-color-bg-inline-code: var(--vizard-well);
+	--sl-color-bg-accent: var(--vizard-orange);
+	--sl-color-hairline-light: var(--vizard-border-bright);
 	--sl-color-hairline: var(--vizard-border);
-	--sl-color-hairline-shade: var(--vizard-border);
-	--sl-color-backdrop-overlay: rgb(5 6 7 / 76%);
+	--sl-color-hairline-shade: #080809;
+	--sl-color-backdrop-overlay: rgb(5 5 6 / 82%);
 
-	--sl-font: 'IBM Plex Sans Variable';
+	--sl-font: 'JetBrains Mono Variable';
 	--sl-font-mono: 'JetBrains Mono Variable';
 	--sl-line-height: 1.72;
-	--sl-line-height-headings: 1.12;
-	--sl-content-width: 47rem;
+	--sl-line-height-headings: 1.22;
+	--sl-content-width: 60rem;
 	--sl-sidebar-width: 18.75rem;
-	--sl-nav-height: 4.4rem;
-	--sl-shadow-sm: none;
-	--sl-shadow-md: none;
-	--sl-shadow-lg: 0 1.5rem 4rem rgb(0 0 0 / 36%);
+	--sl-nav-height: 4rem;
+	--sl-shadow-sm: 0 1px 0 rgb(255 255 255 / 4%), 0 2px 5px rgb(0 0 0 / 28%);
+	--sl-shadow-md: 0 1px 0 rgb(255 255 255 / 5%), 0 6px 16px rgb(0 0 0 / 38%);
+	--sl-shadow-lg: 0 1px 0 rgb(255 255 255 / 6%), 0 18px 42px rgb(0 0 0 / 58%);
 }
 
-html {
-	background: var(--vizard-bg);
+html,
+body {
+	background: var(--vizard-chassis);
 }
 
 body {
-	background: var(--vizard-bg);
 	font-feature-settings: 'kern' 1, 'liga' 1;
 }
 
@@ -76,54 +80,68 @@ starlight-theme-select {
 }
 
 .header {
-	background: var(--vizard-bg) !important;
-	border-bottom-color: var(--vizard-border) !important;
-}
-
-.social-icons {
-	color: var(--vizard-muted);
+	background: linear-gradient(180deg, var(--vizard-plate-top), var(--vizard-plate-bottom)) !important;
+	border-bottom: 1px solid #080809 !important;
+	box-shadow:
+		inset 0 1px 0 rgb(255 255 255 / 6%),
+		inset 0 -1px 0 var(--vizard-border),
+		0 3px 10px rgb(0 0 0 / 32%);
 }
 
 .social-icons::after {
 	display: none;
 }
 
+.header > .sl-flex.print\:hidden:not(.right-group) {
+	justify-content: flex-end;
+}
+
+/* Search is a compact value well, not the header's main visual event. */
+site-search {
+	justify-self: end;
+}
+
 site-search > button {
-	min-width: min(22rem, 31vw);
-	background: transparent !important;
-	border: 1px solid var(--vizard-border-strong) !important;
-	border-radius: 3px !important;
-	box-shadow: none !important;
+	width: auto;
+	min-width: 0;
+	min-height: 2.45rem;
+	background: var(--vizard-well) !important;
+	border: 1px solid var(--vizard-border-bright) !important;
+	border-radius: 4px !important;
+	box-shadow:
+		inset 0 2px 4px rgb(0 0 0 / 68%),
+		0 1px 0 rgb(255 255 255 / 4%) !important;
 	color: var(--vizard-muted) !important;
-	font-size: 0.86rem !important;
-	transition: border-color 140ms ease, color 140ms ease;
+	font-size: 0.82rem !important;
+	transition: border-color 140ms ease, color 140ms ease, filter 140ms ease;
 }
 
 site-search > button:hover {
-	border-color: var(--vizard-muted) !important;
+	border-color: #4a4a50 !important;
 	color: var(--vizard-text) !important;
+	filter: brightness(1.08);
 }
 
 site-search kbd {
-	background: var(--vizard-panel) !important;
+	background: var(--vizard-plate-top) !important;
 	border: 1px solid var(--vizard-border) !important;
 	border-radius: 3px !important;
-	box-shadow: none !important;
+	box-shadow: inset 0 1px 0 rgb(255 255 255 / 5%) !important;
 	color: var(--vizard-muted) !important;
 	font-family: 'JetBrains Mono Variable', var(--sl-font-system-mono);
 }
 
 site-search dialog {
 	--sl-color-white: var(--vizard-text);
-	--sl-color-gray-2: var(--vizard-text-soft);
+	--sl-color-gray-2: var(--vizard-reading);
 	--sl-color-gray-3: var(--vizard-muted);
-	--sl-color-gray-4: #686b72;
-	--sl-color-gray-5: var(--vizard-border-strong);
-	--sl-color-black: var(--vizard-field);
-	--sl-color-accent-low: var(--vizard-accent-low);
-	--sl-color-accent: var(--vizard-accent);
-	--sl-color-accent-high: var(--vizard-accent-high);
-	--sl-color-text-accent: var(--vizard-accent);
+	--sl-color-gray-4: #5d5d64;
+	--sl-color-gray-5: var(--vizard-border-bright);
+	--sl-color-black: var(--vizard-well);
+	--sl-color-accent-low: var(--vizard-orange-low);
+	--sl-color-accent: var(--vizard-orange);
+	--sl-color-accent-high: #f0b86e;
+	--sl-color-text-accent: var(--vizard-orange);
 
 	position: fixed;
 	inset: 0;
@@ -132,61 +150,65 @@ site-search dialog {
 	max-width: 100%;
 	height: 100dvh;
 	max-height: 100dvh;
-	background: var(--vizard-panel) !important;
-	border-color: var(--vizard-border-strong) !important;
+	background: linear-gradient(180deg, var(--vizard-plate-top), var(--vizard-recess)) !important;
+	border-color: var(--vizard-border-bright) !important;
 	border-radius: 0;
 	box-shadow: var(--sl-shadow-lg);
 	color: var(--vizard-text);
 }
 
 site-search dialog::backdrop {
-	background-color: rgb(5 6 7 / 78%);
-	backdrop-filter: blur(0.18rem);
+	background-color: rgb(5 5 6 / 82%);
+	backdrop-filter: blur(0.2rem);
 }
 
 site-search #starlight__search {
-	--pagefind-ui-primary: var(--vizard-accent);
-	--pagefind-ui-text: var(--vizard-muted);
-	--pagefind-ui-background: var(--vizard-field);
-	--pagefind-ui-border: var(--vizard-border-strong);
+	--pagefind-ui-primary: var(--vizard-orange);
+	--pagefind-ui-text: var(--vizard-reading);
+	--pagefind-ui-background: var(--vizard-well);
+	--pagefind-ui-border: var(--vizard-border-bright);
 	--pagefind-ui-tag: var(--vizard-border);
 }
 
 #starlight__sidebar {
-	background: var(--vizard-nav) !important;
+	background: var(--vizard-recess) !important;
 	border-inline-end-color: var(--vizard-border) !important;
-	box-shadow: none !important;
+	box-shadow:
+		inset -1px 0 0 rgb(0 0 0 / 58%),
+		inset 0 1px 0 rgb(255 255 255 / 2%) !important;
 }
 
 #starlight__sidebar .large,
 .right-sidebar-panel h2 {
 	color: var(--vizard-muted) !important;
-	font-family: 'JetBrains Mono Variable', var(--sl-font-system-mono);
 	font-size: 0.69rem !important;
-	font-weight: 540 !important;
-	letter-spacing: 0.09em;
+	font-weight: 600 !important;
+	letter-spacing: 0.11em;
 	text-transform: uppercase;
 }
 
 #starlight__sidebar a {
 	position: relative;
-	border-radius: 0 !important;
-	color: var(--vizard-text-soft);
-	font-size: 0.91rem;
-	transition: color 120ms ease, background-color 120ms ease;
+	border-radius: 2px !important;
+	color: #b4b4b9;
+	font-size: 0.86rem;
+	transition: background-color 140ms ease, color 140ms ease, filter 140ms ease;
 }
 
 #starlight__sidebar a:hover,
 #starlight__sidebar a:focus {
-	background: rgb(255 255 255 / 2.5%);
+	background: #18181b;
 	color: var(--vizard-text) !important;
 }
 
 #starlight__sidebar a[aria-current='page'] {
-	background: transparent !important;
-	box-shadow: inset 2px 0 0 var(--vizard-accent) !important;
-	color: var(--vizard-accent-high) !important;
-	font-weight: 520;
+	background: linear-gradient(180deg, #1b1b1e, #151517) !important;
+	box-shadow:
+		inset 2px 0 0 var(--vizard-orange),
+		inset 0 1px 0 rgb(255 255 255 / 5%),
+		0 2px 3px rgb(0 0 0 / 24%) !important;
+	color: var(--vizard-orange) !important;
+	font-weight: 650;
 }
 
 #starlight__sidebar ul ul li {
@@ -194,7 +216,13 @@ site-search #starlight__search {
 }
 
 .main-frame {
-	background: var(--vizard-bg);
+	background: var(--vizard-chassis);
+}
+
+.main-pane {
+	min-height: calc(100dvh - var(--sl-nav-height));
+	background: linear-gradient(180deg, var(--vizard-plate-top), var(--vizard-plate-bottom) 18rem);
+	box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
 }
 
 .content-panel {
@@ -206,8 +234,9 @@ site-search #starlight__search {
 	border-top-color: var(--vizard-border) !important;
 }
 
+/* Keep the article identity compact; the page is for reading, not a hero. */
 .main-pane > .content-panel:first-child {
-	padding-top: clamp(2.5rem, 5vw, 4.5rem);
+	padding-block: 2rem 1.35rem;
 }
 
 h1,
@@ -217,90 +246,101 @@ h4,
 h5,
 h6 {
 	color: var(--vizard-text) !important;
-	font-family: 'IBM Plex Sans Variable', var(--sl-font-system);
-	font-weight: 540 !important;
-	letter-spacing: -0.025em;
-	text-shadow: none !important;
+	font-family: 'JetBrains Mono Variable', var(--sl-font-system-mono);
+	font-weight: 650 !important;
+	letter-spacing: 0;
+	text-shadow: 0 1px 0 #000;
 }
 
 h1 {
-	font-size: clamp(2.55rem, 5vw, 3.8rem) !important;
-	letter-spacing: -0.045em;
+	font-size: clamp(1.9rem, 3vw, 2.35rem) !important;
 }
 
 .sl-markdown-content {
-	color: var(--vizard-text-soft);
-	font-size: 1.04rem;
+	color: var(--vizard-reading);
+	font-size: 0.98rem;
+	line-height: 1.78;
 }
 
 .sl-markdown-content > p:first-child {
-	color: var(--vizard-muted);
-	font-size: 1.15rem;
-	line-height: 1.6;
+	color: var(--vizard-reading);
+	font-size: inherit;
+	line-height: inherit;
 }
 
 .sl-markdown-content h2 {
 	margin-top: 2.6rem;
-	padding-bottom: 0.65rem;
+	padding-bottom: 0.55rem;
 	border-bottom: 1px solid var(--vizard-border);
-	font-size: clamp(1.55rem, 3vw, 2rem) !important;
+	font-size: clamp(1.35rem, 2.4vw, 1.65rem) !important;
 }
 
-.sl-markdown-content h3,
-.sl-markdown-content h4 {
-	letter-spacing: -0.015em;
+.sl-markdown-content h3 {
+	font-size: 1.15rem !important;
 }
 
+/* Links are navigation/affirmative actions, so BRAND.md assigns them green. */
 .sl-markdown-content a:not(:where(.not-content *)) {
-	color: var(--vizard-accent-high);
-	text-decoration-color: rgb(232 135 50 / 48%);
-	text-underline-offset: 0.2em;
+	color: var(--vizard-green);
+	text-decoration-color: rgb(134 201 107 / 45%);
+	text-underline-offset: 0.22em;
 }
 
 .sl-markdown-content a:hover {
-	color: #ffd0a3;
+	color: var(--vizard-green-high);
 	text-decoration-color: currentColor;
 }
 
 .sl-markdown-content strong {
 	color: var(--vizard-text);
-	font-weight: 590;
+	font-weight: 700;
 }
 
+/* Inline code reads as a value field: a bright value inside a true well. */
 .sl-markdown-content :not(pre) > code {
-	background: var(--vizard-field);
-	border: 1px solid var(--vizard-border);
+	display: inline-block;
+	margin-inline: 0.04em;
+	padding: 0.1em 0.42em;
+	background: var(--vizard-well) !important;
+	border: 1px solid var(--vizard-border-bright);
 	border-radius: 3px;
-	box-shadow: none;
-	color: #ddd9d2;
+	box-shadow:
+		inset 0 2px 3px rgb(0 0 0 / 78%),
+		0 1px 0 rgb(255 255 255 / 4%);
+	color: var(--vizard-text) !important;
+	font-size: 0.9em;
+	font-weight: 650;
+	line-height: 1.45;
+	vertical-align: 0.04em;
 }
 
 .sl-markdown-content pre,
 .expressive-code .frame {
 	border: 1px solid var(--vizard-border) !important;
-	border-radius: 3px !important;
-	box-shadow: none !important;
+	border-radius: 4px !important;
+	box-shadow:
+		inset 0 2px 5px rgb(0 0 0 / 68%),
+		0 1px 0 rgb(255 255 255 / 3%) !important;
 }
 
 .sl-markdown-content blockquote {
-	background: transparent;
-	border-inline-start-color: var(--vizard-accent);
-	box-shadow: none;
+	background: var(--vizard-recess);
+	border-inline-start-color: var(--vizard-border-bright);
+	box-shadow: inset 0 1px 3px rgb(0 0 0 / 42%);
 	color: var(--vizard-muted);
 }
 
 .sl-markdown-content table {
 	border: 1px solid var(--vizard-border);
-	box-shadow: none;
+	box-shadow: var(--sl-shadow-sm);
 }
 
 .sl-markdown-content th {
-	background: var(--vizard-nav);
+	background: linear-gradient(180deg, var(--vizard-plate-top), var(--vizard-plate-bottom));
 	color: var(--vizard-text);
-	font-family: 'JetBrains Mono Variable', var(--sl-font-system-mono);
-	font-size: 0.74rem;
-	font-weight: 540;
-	letter-spacing: 0.05em;
+	font-size: 0.73rem;
+	font-weight: 650;
+	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
 
@@ -310,107 +350,151 @@ h1 {
 }
 
 .right-sidebar {
-	background: var(--vizard-bg) !important;
+	background: var(--vizard-recess) !important;
 	border-inline-start-color: var(--vizard-border) !important;
+	box-shadow: inset 1px 0 0 rgb(0 0 0 / 48%);
 }
 
 .right-sidebar-panel a {
 	color: var(--vizard-muted) !important;
-	font-size: 0.86rem;
+	font-size: 0.81rem;
 }
 
 .right-sidebar-panel a:hover,
 .right-sidebar-panel a[aria-current='true'] {
-	color: var(--vizard-accent-high) !important;
+	color: var(--vizard-orange) !important;
+}
+
+/* A one-item Overview is not navigation; do not reserve a whole rail for it. */
+mobile-starlight-toc:has(li:only-child > a[href='#_top']) {
+	display: none !important;
 }
 
 .pagination-links {
-	gap: 0 !important;
+	gap: 1rem !important;
+	padding-top: 1rem;
 	border-top: 1px solid var(--vizard-border);
 }
 
 .pagination-links a {
-	background: transparent !important;
-	border: 0 !important;
-	border-radius: 0 !important;
-	box-shadow: none !important;
-	transition: background-color 120ms ease;
+	background: linear-gradient(180deg, var(--vizard-plate-top), var(--vizard-plate-bottom)) !important;
+	border: 1px solid var(--vizard-border) !important;
+	border-radius: 4px !important;
+	box-shadow: var(--sl-shadow-sm) !important;
+	transition: filter 140ms ease, border-color 140ms ease, transform 80ms ease;
 }
 
 .pagination-links a:hover {
-	background: rgb(255 255 255 / 2.5%) !important;
+	border-color: var(--vizard-border-bright) !important;
+	filter: brightness(1.08);
+}
+
+.pagination-links a:active {
+	transform: translateY(1px);
 }
 
 .pagination-links .link-title {
-	color: var(--vizard-accent-high) !important;
-	font-size: 0.98rem !important;
-	font-weight: 520;
+	color: var(--vizard-green) !important;
+	font-size: 0.92rem !important;
+	font-weight: 650;
 }
 
 .meta {
 	width: 100%;
 }
 
+.meta a {
+	color: var(--vizard-green) !important;
+}
+
 :focus-visible {
-	outline: 2px solid var(--vizard-accent) !important;
+	outline: 2px solid var(--vizard-orange) !important;
 	outline-offset: 2px;
 }
 
 ::selection {
-	background: rgb(232 135 50 / 28%);
+	background: rgb(232 145 42 / 25%);
 	color: var(--vizard-text);
 }
 
 ::-webkit-scrollbar {
-	width: 9px;
-	height: 9px;
+	width: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--vizard-bg);
+	background: var(--vizard-chassis);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #353941;
-	border: 2px solid var(--vizard-bg);
-	border-radius: 4px;
+	background: #303036;
+	border: 2px solid var(--vizard-chassis);
+	border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #4a4f59;
+	background: #43434a;
 }
 
 @media (max-width: 49.99rem) {
 	:root {
-		--sl-nav-height: 3.8rem;
+		--sl-nav-height: 3.75rem;
 	}
 
-	site-search > button {
-		min-width: auto;
+	site-search {
+		width: auto;
 	}
 
 	#starlight__sidebar,
 	mobile-starlight-toc,
 	.mobile-preferences {
-		background: var(--vizard-nav) !important;
+		background: var(--vizard-recess) !important;
 	}
 
 	.main-pane > .content-panel:first-child {
-		padding-top: 2rem;
+		padding-block: 1.5rem 1rem;
+	}
+
+	h1 {
+		font-size: 1.7rem !important;
+	}
+
+	.sl-markdown-content {
+		font-size: 0.91rem;
+		line-height: 1.72;
 	}
 }
 
 @media (min-width: 50rem) {
+	site-search > button {
+		justify-self: end;
+		width: 15rem;
+		max-width: 15rem;
+	}
+
 	site-search dialog {
-		inset: 4.5rem auto auto 50%;
+		inset: 4.25rem auto auto 50%;
 		margin: 0;
-		width: min(90vw, 44rem);
-		max-width: 44rem;
+		width: min(90vw, 42rem);
+		max-width: 42rem;
 		height: max-content;
 		min-height: 15rem;
-		max-height: calc(100dvh - 9rem);
-		border-radius: 3px;
+		max-height: calc(100dvh - 8.5rem);
+		border-radius: 4px;
 		transform: translateX(-50%);
+	}
+}
+
+@media (min-width: 72rem) {
+	.main-frame > div:has(> .right-sidebar-container .right-sidebar-panel li:only-child > a[href='#_top'])
+		> .right-sidebar-container {
+		display: none;
+	}
+
+	.main-frame > div:has(> .right-sidebar-container .right-sidebar-panel li:only-child > a[href='#_top'])
+		> .main-pane {
+		--sl-content-margin-inline: auto;
+		width: 100% !important;
 	}
 }
 

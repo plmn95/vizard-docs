@@ -11,7 +11,6 @@ export default defineConfig({
 			title: 'Vizard Documentation',
 			description: 'Documentation for the Vizard video synthesizer.',
 			customCss: [
-				'@fontsource-variable/ibm-plex-sans',
 				'@fontsource-variable/jetbrains-mono',
 				'./src/styles/vizard.css',
 			],
