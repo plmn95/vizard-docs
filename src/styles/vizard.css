@@ -1,0 +1,354 @@
+/*
+ * Vizard documentation theme
+ *
+ * This maps Starlight onto the approved Vizard interface language in BRAND.md:
+ * near-black graphite, top-lit plates, recessed wells, JetBrains Mono, and two
+ * accents with distinct jobs. Orange reports selection/state. Green is reserved
+ * for navigation actions and other affirmative paths through the documentation.
+ */
+
+@layer starlight.base {
+	:root,
+	:root[data-theme='light'],
+	::backdrop,
+	[data-theme='light'] ::backdrop {
+		color-scheme: dark;
+
+		/* Vizard surface and text tokens. */
+		--vizard-chassis: #0f0f10;
+		--vizard-plate-top: #17171a;
+		--vizard-plate-bottom: #131315;
+		--vizard-recess: #121214;
+		--vizard-well: #0b0b0d;
+		--vizard-border: #26262a;
+		--vizard-border-bright: #34343a;
+		--vizard-text: #e8e8ea;
+		--vizard-text-muted: #8a8a90;
+		--vizard-orange: #e8912a;
+		--vizard-orange-low: #332312;
+		--vizard-green: #86c96b;
+		--vizard-green-high: #b1dfa0;
+		--vizard-green-low: #182617;
+		--vizard-red: #e5544a;
+
+		/* Starlight's semantic palette, locked to Vizard in both theme states. */
+		--sl-color-white: var(--vizard-text);
+		--sl-color-gray-1: #d1d1d4;
+		--sl-color-gray-2: #b0b0b5;
+		--sl-color-gray-3: var(--vizard-text-muted);
+		--sl-color-gray-4: #5d5d64;
+		--sl-color-gray-5: var(--vizard-border-bright);
+		--sl-color-gray-6: var(--vizard-plate-top);
+		--sl-color-gray-7: var(--vizard-recess);
+		--sl-color-black: var(--vizard-chassis);
+
+		--sl-color-accent-low: var(--vizard-orange-low);
+		--sl-color-accent: var(--vizard-orange);
+		--sl-color-accent-high: #f0b86e;
+		--sl-color-text: #b0b0b5;
+		--sl-color-text-accent: var(--vizard-orange);
+		--sl-color-text-invert: var(--vizard-text);
+		--sl-color-bg: var(--vizard-chassis);
+		--sl-color-bg-nav: var(--vizard-plate-top);
+		--sl-color-bg-sidebar: var(--vizard-recess);
+		--sl-color-bg-inline-code: var(--vizard-well);
+		--sl-color-bg-accent: var(--vizard-orange);
+		--sl-color-hairline-light: var(--vizard-border-bright);
+		--sl-color-hairline: var(--vizard-border);
+		--sl-color-hairline-shade: #070708;
+		--sl-color-backdrop-overlay: rgb(5 5 6 / 82%);
+
+		--sl-font: 'JetBrains Mono Variable';
+		--sl-font-mono: 'JetBrains Mono Variable';
+		--sl-line-height: 1.72;
+		--sl-line-height-headings: 1.18;
+		--sl-content-width: 48rem;
+		--sl-sidebar-width: 19rem;
+
+		--sl-shadow-sm: 0 1px 0 rgb(255 255 255 / 5%), 0 2px 4px rgb(0 0 0 / 35%);
+		--sl-shadow-md: 0 1px 0 rgb(255 255 255 / 6%), 0 5px 14px rgb(0 0 0 / 45%);
+		--sl-shadow-lg: 0 1px 0 rgb(255 255 255 / 7%), 0 16px 36px rgb(0 0 0 / 60%);
+	}
+}
+
+@layer starlight.core {
+	html {
+		background: var(--vizard-chassis);
+	}
+
+	body {
+		background:
+			linear-gradient(180deg, rgb(255 255 255 / 1.4%), transparent 13rem),
+			var(--vizard-chassis);
+	}
+
+	/* Vizard has one dark instrument theme. Hide Starlight's redundant chooser. */
+	starlight-theme-select {
+		display: none;
+	}
+
+	.header {
+		background:
+			linear-gradient(180deg, var(--vizard-plate-top), var(--vizard-plate-bottom)) !important;
+		border-bottom-color: #070708 !important;
+		box-shadow:
+			inset 0 1px 0 rgb(255 255 255 / 9%),
+			inset 0 -1px 0 var(--vizard-border),
+			0 4px 12px rgb(0 0 0 / 45%);
+	}
+
+	.site-title {
+		color: var(--vizard-text) !important;
+		font-size: 0.98rem !important;
+		font-weight: 700 !important;
+		letter-spacing: 0.13em;
+		text-transform: uppercase;
+		text-shadow: 0 1px 0 #000;
+	}
+
+	.social-icons::after {
+		border-color: var(--vizard-border) !important;
+	}
+
+	/* Search reads as a recessed value field on the top plate. */
+	site-search > button {
+		background: var(--vizard-well) !important;
+		border: 1px solid var(--vizard-border) !important;
+		border-radius: 3px !important;
+		box-shadow:
+			inset 0 1px 3px rgb(0 0 0 / 70%),
+			0 1px 0 rgb(255 255 255 / 4%);
+		color: var(--vizard-text-muted) !important;
+		transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+	}
+
+	site-search > button:hover {
+		background: #111114 !important;
+		border-color: var(--vizard-border-bright) !important;
+		color: var(--vizard-text) !important;
+	}
+
+	site-search kbd {
+		background: var(--vizard-plate-top) !important;
+		border-color: var(--vizard-border) !important;
+		border-radius: 2px !important;
+		box-shadow: inset 0 1px 0 rgb(255 255 255 / 7%);
+		color: var(--vizard-text-muted) !important;
+	}
+
+	#starlight__sidebar {
+		background:
+			linear-gradient(90deg, rgb(255 255 255 / 1.5%), transparent 28%),
+			var(--vizard-recess) !important;
+		border-inline-end-color: var(--vizard-border) !important;
+		box-shadow: inset -8px 0 18px rgb(0 0 0 / 18%);
+	}
+
+	#starlight__sidebar .large,
+	.right-sidebar-panel h2 {
+		color: var(--vizard-text-muted) !important;
+		font-size: 0.72rem !important;
+		font-weight: 600 !important;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	#starlight__sidebar a {
+		border-radius: 2px !important;
+		transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+	}
+
+	#starlight__sidebar a:hover,
+	#starlight__sidebar a:focus {
+		background: #18181b;
+		color: var(--vizard-text) !important;
+	}
+
+	#starlight__sidebar a[aria-current='page'] {
+		background: linear-gradient(180deg, #1b1b1e, #151517) !important;
+		box-shadow:
+			inset 2px 0 0 var(--vizard-orange),
+			inset 0 1px 0 rgb(255 255 255 / 6%),
+			0 2px 3px rgb(0 0 0 / 30%);
+		color: var(--vizard-orange) !important;
+		font-weight: 600;
+	}
+
+	#starlight__sidebar ul ul li {
+		border-inline-start-color: var(--vizard-border) !important;
+	}
+
+	.main-frame {
+		background: var(--vizard-chassis);
+	}
+
+	/* Content sections are adjoining plates, not floating cards. */
+	.content-panel {
+		background: linear-gradient(180deg, rgb(255 255 255 / 1.2%), transparent 5rem);
+		box-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
+	}
+
+	.content-panel + .content-panel {
+		border-top-color: var(--vizard-border) !important;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'JetBrains Mono Variable', var(--sl-font-system-mono);
+		color: var(--vizard-text) !important;
+		font-weight: 600 !important;
+		text-shadow: 0 1px 0 #000;
+	}
+
+	h1 {
+		letter-spacing: -0.035em;
+	}
+
+	.sl-markdown-content h2 {
+		border-bottom: 1px solid var(--vizard-border);
+		padding-bottom: 0.45rem;
+		letter-spacing: 0.035em;
+	}
+
+	.sl-markdown-content h3,
+	.sl-markdown-content h4 {
+		letter-spacing: 0.025em;
+	}
+
+	.sl-markdown-content a:not(:where(.not-content *)) {
+		color: var(--vizard-green);
+		text-decoration-color: rgb(134 201 107 / 45%);
+		text-underline-offset: 0.2em;
+	}
+
+	.sl-markdown-content a:hover {
+		color: var(--vizard-green-high);
+		text-decoration-color: currentColor;
+	}
+
+	.sl-markdown-content :not(pre) > code {
+		background: var(--vizard-well);
+		border: 1px solid var(--vizard-border);
+		border-radius: 2px;
+		box-shadow: inset 0 1px 2px rgb(0 0 0 / 60%);
+		color: #d8d8dc;
+	}
+
+	.sl-markdown-content pre,
+	.expressive-code .frame {
+		border: 1px solid var(--vizard-border) !important;
+		border-radius: 4px !important;
+		box-shadow:
+			inset 0 2px 5px rgb(0 0 0 / 70%),
+			0 1px 0 rgb(255 255 255 / 4%) !important;
+	}
+
+	.sl-markdown-content blockquote {
+		background: var(--vizard-recess);
+		border-inline-start-color: #5d5d64;
+		box-shadow: inset 0 1px 3px rgb(0 0 0 / 45%);
+	}
+
+	.sl-markdown-content table {
+		border: 1px solid var(--vizard-border);
+		box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+	}
+
+	.sl-markdown-content th {
+		background: linear-gradient(180deg, var(--vizard-plate-top), var(--vizard-plate-bottom));
+		color: var(--vizard-text);
+		font-size: 0.76rem;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	.sl-markdown-content th,
+	.sl-markdown-content td {
+		border-color: var(--vizard-border) !important;
+	}
+
+	.right-sidebar {
+		border-inline-start: 1px solid var(--vizard-border);
+		background: linear-gradient(270deg, rgb(255 255 255 / 1%), transparent 45%);
+	}
+
+	.right-sidebar-panel a[aria-current='true'] {
+		color: var(--vizard-orange) !important;
+	}
+
+	.pagination-links a {
+		background: linear-gradient(180deg, var(--vizard-plate-top), var(--vizard-plate-bottom));
+		border-color: var(--vizard-border) !important;
+		border-radius: 4px !important;
+		box-shadow:
+			inset 0 1px 0 rgb(255 255 255 / 7%),
+			0 3px 8px rgb(0 0 0 / 38%) !important;
+		transition: background 180ms ease, border-color 180ms ease, transform 80ms ease;
+	}
+
+	.pagination-links a:hover {
+		background: linear-gradient(180deg, #1c1c20, #171719);
+		border-color: var(--vizard-border-bright) !important;
+	}
+
+	.pagination-links a:active {
+		transform: translateY(1px);
+	}
+
+	.pagination-links .link-title {
+		color: var(--vizard-green) !important;
+		font-size: 1rem !important;
+	}
+
+	:focus-visible {
+		outline-color: var(--vizard-orange) !important;
+	}
+
+	::selection {
+		background: rgb(232 145 42 / 25%);
+		color: var(--vizard-text);
+	}
+
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: var(--vizard-chassis);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #303036;
+		border: 2px solid var(--vizard-chassis);
+		border-radius: 3px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #43434a;
+	}
+
+	@media (max-width: 49.99rem) {
+		#starlight__sidebar {
+			background: var(--vizard-chassis) !important;
+		}
+
+		mobile-starlight-toc,
+		.mobile-preferences {
+			background: var(--vizard-recess) !important;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		*,
+		*::before,
+		*::after {
+			scroll-behavior: auto !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
+}
