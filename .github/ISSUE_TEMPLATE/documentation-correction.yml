@@ -1,0 +1,35 @@
+name: Documentation correction
+description: Report something incorrect, unclear, or missing in the Vizard documentation.
+title: "Docs: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve the Vizard documentation.
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Link to the page that needs a correction.
+      placeholder: https://plmn95.github.io/vizard-docs/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect or unclear?
+      description: Quote the relevant text when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording
+      description: Optional. Tell us how you would change it.
+  - type: input
+    id: version
+    attributes:
+      label: Vizard version
+      description: Include the version if the correction concerns application behavior.
+      placeholder: v0.11.1
