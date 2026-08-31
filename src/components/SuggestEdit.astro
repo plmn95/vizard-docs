@@ -1,0 +1,568 @@
+---
+import { Icon } from '@astrojs/starlight/components';
+
+const { editUrl, entry } = Astro.locals.starlightRoute;
+const pageTitle = entry.data.title;
+const pageUrl = Astro.url.href;
+const endpoint = import.meta.env.PUBLIC_SUGGESTION_ENDPOINT ?? '';
+---
+
+<div class="suggest-edit-root print:hidden" data-suggest-edit-root>
+	<section class="contribution-callout" aria-labelledby="contribution-title">
+		<div>
+			<p class="contribution-title" id="contribution-title">Was this page unclear?</p>
+			<p class="contribution-copy">Tell us what is missing, confusing, or incorrect.</p>
+		</div>
+		<div class="contribution-actions">
+			<button class="suggest-button" type="button" data-suggest-open>
+				<Icon name="pencil" size="1.1em" />
+				Suggest an edit
+			</button>
+			{
+				editUrl && (
+					<a class="github-edit-link" href={editUrl}>
+						Edit on GitHub
+						<Icon name="external" size="0.95em" />
+					</a>
+				)
+			}
+		</div>
+	</section>
+
+	<dialog class="suggestion-drawer" data-suggest-dialog data-endpoint={endpoint}>
+		<div class="drawer-shell">
+			<header class="drawer-header">
+				<div>
+					<h2>Suggest an edit</h2>
+					<p>Tell us what is unclear or incorrect. No GitHub account needed.</p>
+				</div>
+				<button type="button" class="icon-button" aria-label="Close suggestion form" data-suggest-close>
+					<Icon name="close" size="1.25rem" />
+				</button>
+			</header>
+
+			<form class="suggestion-form" data-suggest-form novalidate>
+				<input type="hidden" name="pageUrl" value={pageUrl} />
+				<label>
+					<span>Page</span>
+					<input name="pageTitle" value={pageTitle} readonly />
+				</label>
+
+				<label>
+					<span>What should change?</span>
+					<textarea
+						name="problem"
+						rows="6"
+						maxlength="2000"
+						placeholder="Describe what is unclear, incorrect, or missing…"
+						required
+					></textarea>
+					<small>Provide as much detail as you can.</small>
+				</label>
+
+				<label>
+					<span>Suggested wording <em>optional</em></span>
+					<textarea
+						name="wording"
+						rows="4"
+						maxlength="3000"
+						placeholder="Share wording that would make this clearer…"
+					></textarea>
+				</label>
+
+				<label>
+					<span>Your email <em>optional</em></span>
+					<input name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+					<small>Only used if we need to follow up about this suggestion.</small>
+				</label>
+
+				<p class="transport-note" data-transport-note>
+					{
+						endpoint
+							? 'Your suggestion will be sent privately to the documentation team.'
+							: 'Prototype mode: nothing leaves this browser.'
+					}
+				</p>
+				<p class="form-error" role="alert" data-form-error hidden></p>
+
+				<div class="form-actions">
+					<button class="submit-button" type="submit" data-submit-button>Send suggestion</button>
+					<button class="cancel-button" type="button" data-suggest-close>Cancel</button>
+				</div>
+
+				{
+					editUrl && (
+						<p class="github-alternative">
+							Prefer GitHub? <a href={editUrl}>Edit the source.</a>
+						</p>
+					)
+				}
+			</form>
+
+			<section class="suggestion-success" data-suggest-success hidden aria-live="polite">
+				<div class="success-mark" aria-hidden="true"><Icon name="approve-check" size="1.4rem" /></div>
+				<h2 data-success-title>Thanks for helping.</h2>
+				<p data-success-copy>Your suggestion was sent to the documentation team.</p>
+				<button class="submit-button" type="button" data-suggest-close>Back to the page</button>
+				<button class="text-button" type="button" data-suggest-another>Send another suggestion</button>
+			</section>
+		</div>
+	</dialog>
+</div>
+
+<script>
+	const roots = document.querySelectorAll<HTMLElement>('[data-suggest-edit-root]');
+
+	for (const root of roots) {
+		const dialog = root.querySelector<HTMLDialogElement>('[data-suggest-dialog]');
+		const form = root.querySelector<HTMLFormElement>('[data-suggest-form]');
+		const success = root.querySelector<HTMLElement>('[data-suggest-success]');
+		const submitButton = root.querySelector<HTMLButtonElement>('[data-submit-button]');
+		const error = root.querySelector<HTMLElement>('[data-form-error]');
+		const successTitle = root.querySelector<HTMLElement>('[data-success-title]');
+		const successCopy = root.querySelector<HTMLElement>('[data-success-copy]');
+		if (!dialog || !form || !success || !submitButton || !error || !successTitle || !successCopy) continue;
+
+		const resetView = () => {
+			form.hidden = false;
+			success.hidden = true;
+			error.hidden = true;
+			error.textContent = '';
+			submitButton.disabled = false;
+			submitButton.textContent = 'Send suggestion';
+		};
+
+		const focusDrawer = () => {
+			const compactViewport = window.matchMedia('(max-width: 50rem)').matches;
+			const target = compactViewport
+				? dialog.querySelector<HTMLButtonElement>('[aria-label="Close suggestion form"]')
+				: dialog.querySelector<HTMLTextAreaElement>('[name="problem"]');
+			target?.focus({ preventScroll: true });
+			dialog.scrollTop = 0;
+		};
+
+		root.querySelectorAll<HTMLButtonElement>('[data-suggest-open]').forEach((button) => {
+			button.addEventListener('click', () => {
+				resetView();
+				dialog.showModal();
+				document.body.toggleAttribute('data-suggestion-open', true);
+				focusDrawer();
+			});
+		});
+
+		root.querySelectorAll<HTMLButtonElement>('[data-suggest-close]').forEach((button) => {
+			button.addEventListener('click', () => dialog.close());
+		});
+
+		dialog.addEventListener('close', () => {
+			document.body.toggleAttribute('data-suggestion-open', false);
+		});
+
+		dialog.addEventListener('click', (event) => {
+			if (event.target === dialog) dialog.close();
+		});
+
+		root.querySelector<HTMLButtonElement>('[data-suggest-another]')?.addEventListener('click', () => {
+			form.reset();
+			resetView();
+			focusDrawer();
+		});
+
+		form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+			if (!form.reportValidity()) return;
+
+			error.hidden = true;
+			submitButton.disabled = true;
+			submitButton.textContent = 'Sending…';
+			const values = Object.fromEntries(new FormData(form).entries());
+			const endpoint = dialog.dataset.endpoint;
+
+			try {
+				if (endpoint) {
+					const response = await fetch(endpoint, {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+						body: JSON.stringify(values),
+					});
+					if (!response.ok) throw new Error(`Suggestion endpoint returned ${response.status}`);
+					successTitle.textContent = 'Thanks for helping.';
+					successCopy.textContent = 'Your suggestion was sent to the documentation team.';
+				} else {
+					const preview = { ...values, email: values.email ? '[provided]' : '' };
+					sessionStorage.setItem('vizard-docs-suggestion-preview', JSON.stringify(preview));
+					successTitle.textContent = 'This is the complete flow.';
+					successCopy.textContent =
+						'The form validated successfully, but nothing was sent because the submission endpoint is not connected yet.';
+				}
+
+				form.hidden = true;
+				success.hidden = false;
+				success.querySelector<HTMLButtonElement>('[data-suggest-close]')?.focus();
+			} catch {
+				error.textContent = 'We could not send this suggestion. Please try again.';
+				error.hidden = false;
+				submitButton.disabled = false;
+				submitButton.textContent = 'Send suggestion';
+			}
+		});
+	}
+</script>
+
+<style>
+	@layer starlight.core {
+		.contribution-callout {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1.5rem;
+			width: 100%;
+			margin-top: 2rem;
+			padding-top: 1.4rem;
+			border-top: 1px solid var(--sl-color-hairline-light);
+		}
+
+		.contribution-title,
+		.contribution-copy {
+			margin: 0;
+		}
+
+		.contribution-title {
+			color: var(--sl-color-white);
+			font-size: 1rem;
+			font-weight: 520;
+		}
+
+		.contribution-copy {
+			margin-top: 0.2rem;
+			color: var(--sl-color-gray-3);
+			font-size: 0.88rem;
+		}
+
+		.contribution-actions {
+			display: flex;
+			align-items: center;
+			gap: 1.25rem;
+			flex-shrink: 0;
+		}
+
+		.suggest-button,
+		.github-edit-link {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5rem;
+			font: inherit;
+			font-size: 0.9rem;
+			text-decoration: none;
+		}
+
+		.suggest-button {
+			min-height: 2.75rem;
+			padding: 0.65rem 0.9rem;
+			border: 1px solid var(--sl-color-accent);
+			border-radius: 3px;
+			background: transparent;
+			color: var(--sl-color-accent-high);
+			cursor: pointer;
+		}
+
+		.suggest-button:hover {
+			background: var(--sl-color-accent-low);
+		}
+
+		.github-edit-link {
+			color: var(--sl-color-gray-3);
+		}
+
+		.github-edit-link:hover {
+			color: var(--sl-color-white);
+		}
+
+		.suggestion-drawer {
+			position: fixed;
+			inset: 0 0 0 auto;
+			margin: 0;
+			width: min(100%, 32rem);
+			max-width: 32rem;
+			height: 100dvh;
+			max-height: 100dvh;
+			padding: 0;
+			border: 0;
+			border-inline-start: 1px solid var(--sl-color-hairline-light);
+			border-radius: 0;
+			background: var(--vizard-panel);
+			color: var(--sl-color-text);
+			box-shadow: -1rem 0 3rem rgb(0 0 0 / 28%);
+		}
+
+		.suggestion-drawer[open] {
+			display: block;
+		}
+
+		.suggestion-drawer::backdrop {
+			background: rgb(5 6 7 / 62%);
+		}
+
+		.drawer-shell {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			overflow-y: auto;
+		}
+
+		.drawer-header {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 2rem;
+			padding: 2rem 2rem 1.4rem;
+			border-bottom: 1px solid var(--sl-color-hairline-light);
+		}
+
+		.drawer-header h2,
+		.suggestion-success h2 {
+			margin: 0;
+			color: var(--sl-color-white);
+			font-size: 1.6rem;
+			font-weight: 550;
+			letter-spacing: -0.02em;
+		}
+
+		.drawer-header p {
+			max-width: 24rem;
+			margin: 0.55rem 0 0;
+			color: var(--sl-color-gray-3);
+			font-size: 0.92rem;
+			line-height: 1.5;
+		}
+
+		.icon-button {
+			display: grid;
+			place-items: center;
+			width: 2.5rem;
+			height: 2.5rem;
+			margin: -0.45rem -0.55rem 0 0;
+			border: 0;
+			background: transparent;
+			color: var(--sl-color-gray-3);
+			cursor: pointer;
+		}
+
+		.icon-button:hover {
+			color: var(--sl-color-white);
+		}
+
+		.suggestion-form,
+		.suggestion-success {
+			padding: 1.6rem 2rem 2.5rem;
+		}
+
+		.suggestion-form {
+			display: grid;
+			gap: 1.25rem;
+		}
+
+		.suggestion-form label {
+			display: grid;
+			gap: 0.48rem;
+			color: var(--sl-color-white);
+			font-size: 0.9rem;
+			font-weight: 500;
+		}
+
+		.suggestion-form em {
+			color: var(--sl-color-gray-3);
+			font-size: 0.82rem;
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		.suggestion-form input,
+		.suggestion-form textarea {
+			width: 100%;
+			border: 1px solid var(--sl-color-gray-5);
+			border-radius: 3px;
+			background: var(--vizard-field);
+			color: var(--sl-color-white);
+			font: inherit;
+			font-size: 0.95rem;
+			line-height: 1.5;
+		}
+
+		.suggestion-form input {
+			height: 2.75rem;
+			padding: 0 0.75rem;
+		}
+
+		.suggestion-form textarea {
+			min-height: 6rem;
+			padding: 0.7rem 0.75rem;
+			resize: vertical;
+		}
+
+		.suggestion-form input[readonly] {
+			color: var(--sl-color-gray-2);
+		}
+
+		.suggestion-form input:focus,
+		.suggestion-form textarea:focus {
+			border-color: var(--sl-color-accent);
+			outline: 1px solid var(--sl-color-accent);
+			outline-offset: 0;
+		}
+
+		.suggestion-form small {
+			color: var(--sl-color-gray-3);
+			font-size: 0.78rem;
+			font-weight: 400;
+		}
+
+		.transport-note {
+			margin: 0;
+			padding: 0.8rem 0;
+			border-block: 1px solid var(--sl-color-hairline-light);
+			color: var(--sl-color-gray-3);
+			font-size: 0.82rem;
+		}
+
+		.form-error {
+			margin: 0;
+			color: #ff9289;
+			font-size: 0.86rem;
+		}
+
+		.form-actions {
+			display: grid;
+			gap: 0.6rem;
+		}
+
+		.submit-button,
+		.cancel-button,
+		.text-button {
+			min-height: 2.8rem;
+			border-radius: 3px;
+			font: inherit;
+			font-size: 0.92rem;
+			font-weight: 520;
+			cursor: pointer;
+		}
+
+		.submit-button {
+			border: 1px solid var(--sl-color-accent);
+			background: var(--sl-color-accent);
+			color: #17100a;
+		}
+
+		.submit-button:hover:not(:disabled) {
+			background: var(--sl-color-accent-high);
+		}
+
+		.submit-button:disabled {
+			cursor: wait;
+			opacity: 0.65;
+		}
+
+		.cancel-button {
+			border: 1px solid var(--sl-color-gray-5);
+			background: transparent;
+			color: var(--sl-color-gray-2);
+		}
+
+		.cancel-button:hover {
+			border-color: var(--sl-color-gray-3);
+			color: var(--sl-color-white);
+		}
+
+		.github-alternative {
+			margin: 0.4rem 0 0;
+			color: var(--sl-color-gray-3);
+			font-size: 0.84rem;
+		}
+
+		.github-alternative a {
+			color: var(--sl-color-accent-high);
+		}
+
+		.suggestion-success {
+			display: grid;
+			align-content: center;
+			justify-items: start;
+			flex: 1;
+			min-height: 28rem;
+		}
+
+		.suggestion-success[hidden] {
+			display: none;
+		}
+
+		.success-mark {
+			display: grid;
+			place-items: center;
+			width: 2.75rem;
+			height: 2.75rem;
+			margin-bottom: 1.2rem;
+			border: 1px solid var(--sl-color-accent);
+			border-radius: 50%;
+			color: var(--sl-color-accent-high);
+		}
+
+		.suggestion-success p {
+			max-width: 24rem;
+			margin: 0.8rem 0 1.8rem;
+			color: var(--sl-color-gray-2);
+			line-height: 1.65;
+		}
+
+		.suggestion-success .submit-button {
+			width: 100%;
+		}
+
+		.text-button {
+			margin-top: 0.55rem;
+			padding: 0;
+			border: 0;
+			background: transparent;
+			color: var(--sl-color-gray-3);
+		}
+
+		.text-button:hover {
+			color: var(--sl-color-white);
+		}
+
+		:global(body[data-suggestion-open]) {
+			overflow: hidden;
+		}
+
+		@media (max-width: 48rem) {
+			.contribution-callout,
+			.contribution-actions {
+				align-items: stretch;
+				flex-direction: column;
+			}
+
+			.contribution-actions {
+				gap: 0.9rem;
+			}
+
+			.suggest-button {
+				justify-content: center;
+			}
+
+			.github-edit-link {
+				justify-content: center;
+			}
+
+			.suggestion-drawer {
+				width: 100%;
+				max-width: 100%;
+				border-inline-start: 0;
+			}
+
+			.drawer-header,
+			.suggestion-form,
+			.suggestion-success {
+				padding-inline: 1.2rem;
+			}
+		}
+	}
+</style>

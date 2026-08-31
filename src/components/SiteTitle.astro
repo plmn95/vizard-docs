@@ -1,0 +1,41 @@
+---
+const { siteTitleHref } = Astro.locals.starlightRoute;
+---
+
+<a href={siteTitleHref} class="vizard-site-title" aria-label="Vizard Documentation home">
+	<span class="vizard-wordmark" translate="no">VIZARD</span>
+	<span class="vizard-site-label">Documentation</span>
+</a>
+
+<style>
+	@layer starlight.core {
+		.vizard-site-title {
+			display: inline-flex;
+			align-items: baseline;
+			gap: 0.8rem;
+			min-width: 0;
+			color: var(--sl-color-white);
+			text-decoration: none;
+			white-space: nowrap;
+		}
+
+		.vizard-wordmark {
+			font-family: 'JetBrains Mono Variable', var(--sl-font-system-mono);
+			font-size: 1rem;
+			font-weight: 700;
+			letter-spacing: 0.16em;
+		}
+
+		.vizard-site-label {
+			color: var(--sl-color-gray-3);
+			font-size: 0.88rem;
+			font-weight: 450;
+		}
+
+		@media (max-width: 28rem) {
+			.vizard-site-label {
+				display: none;
+			}
+		}
+	}
+</style>
