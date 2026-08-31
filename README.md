@@ -16,6 +16,15 @@ npm ci
 npm run dev
 ```
 
+### Suggestion form
+
+The per-page **Suggest an edit** drawer runs in an explicit local prototype mode
+until `PUBLIC_SUGGESTION_ENDPOINT` is set at build time. The endpoint must accept
+an unauthenticated JSON `POST` containing `pageTitle`, `pageUrl`, `problem`,
+`wording`, and `email`, and return a successful HTTP status. Keep abuse controls,
+rate limiting, storage, and moderation in that service rather than in the public
+GitHub Pages client.
+
 The development server prints the local URL. To validate the documentation and
 create a production build, run:
 

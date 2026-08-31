@@ -11,20 +11,18 @@ export default defineConfig({
 			title: 'Vizard Documentation',
 			description: 'Documentation for the Vizard video synthesizer.',
 			customCss: [
+				'@fontsource-variable/ibm-plex-sans',
 				'@fontsource-variable/jetbrains-mono',
 				'./src/styles/vizard.css',
 			],
+			components: {
+				EditLink: './src/components/SuggestEdit.astro',
+				SiteTitle: './src/components/SiteTitle.astro',
+			},
 			editLink: {
 				baseUrl: 'https://github.com/plmn95/vizard-docs/edit/main/',
 			},
 			lastUpdated: true,
-			social: [
-				{
-					icon: 'github',
-					label: 'Vizard documentation on GitHub',
-					href: 'https://github.com/plmn95/vizard-docs',
-				},
-			],
 			sidebar: [
 				{
 					label: 'Getting Started',
