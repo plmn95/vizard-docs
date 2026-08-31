@@ -10,6 +10,10 @@ export default defineConfig({
 		starlight({
 			title: 'Vizard Documentation',
 			description: 'Documentation for the Vizard video synthesizer.',
+			customCss: [
+				'@fontsource-variable/jetbrains-mono',
+				'./src/styles/vizard.css',
+			],
 			editLink: {
 				baseUrl: 'https://github.com/plmn95/vizard-docs/edit/main/',
 			},
