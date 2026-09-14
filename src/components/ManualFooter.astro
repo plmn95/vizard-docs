@@ -1,0 +1,13 @@
+---
+import Footer from '@astrojs/starlight/components/Footer.astro';
+const version = process.env.VIZARD_DOCS_VERSION;
+---
+<div class="manual-links" data-pagefind-ignore>
+  {version && <p>Manual for Vizard {version}. Corrections are made in the latest documentation; check the current source before editing.</p>}
+  <a href="https://plmn95.github.io/vizard-docs/versions/">Documentation versions (online)</a>
+</div>
+<Footer><slot /></Footer>
+<style>
+  .manual-links { margin-block: 2rem 1rem; font-size: var(--sl-text-sm); color: var(--sl-color-gray-2); }
+  p { margin-bottom: 0.5rem; }
+</style>

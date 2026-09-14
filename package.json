@@ -11,7 +11,10 @@
     "check": "npm run check:docs && npm run build",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:release": "node scripts/build-release.mjs",
+    "assemble:archives": "python3 scripts/assemble-archives.py",
+    "test:archives": "python3 scripts/test-archives.py"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.10",
