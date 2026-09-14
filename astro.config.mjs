@@ -7,7 +7,7 @@ const isVercel = process.env.VERCEL === '1';
 // https://astro.build/config
 export default defineConfig({
 	site: isVercel ? 'https://vizard-docs.vercel.app' : 'https://plmn95.github.io',
-	base: isVercel ? '/' : '/vizard-docs',
+	base: process.env.VIZARD_DOCS_BASE || (isVercel ? '/' : '/vizard-docs'),
 	integrations: [
 		starlight({
 			title: 'Vizard Documentation',
@@ -18,6 +18,7 @@ export default defineConfig({
 			],
 			components: {
 				SiteTitle: './src/components/SiteTitle.astro',
+				Footer: './src/components/ManualFooter.astro',
 			},
 			editLink: {
 				baseUrl: 'https://github.com/plmn95/vizard-docs/edit/main/',

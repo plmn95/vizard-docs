@@ -4,7 +4,7 @@ const { siteTitleHref } = Astro.locals.starlightRoute;
 
 <a href={siteTitleHref} class="vizard-site-title" aria-label="Vizard Documentation home">
 	<span class="vizard-wordmark" translate="no">VIZARD</span>
-	<span class="vizard-site-label">Documentation</span>
+	<span class="vizard-site-label">Documentation{process.env.VIZARD_DOCS_VERSION ? ` · ${process.env.VIZARD_DOCS_VERSION}` : ''}</span>
 </a>
 
 <style>
