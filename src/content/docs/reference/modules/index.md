@@ -2,7 +2,7 @@
 title: "Modules"
 ---
 
-The 9 module types a chain can contain.
+The module types a chain can contain.
 
 Every module here carries its own Insert FX chain and its own Sends; see
 [Insert FX Chains](../../concepts/insert-fx-chains/) and
@@ -20,6 +20,7 @@ work in general.
 | [SHAPE](shape/) | Procedural 2D shapes and symmetry: circles, polygons, Lissajous curves, and more. |
 | [SOURCE](source/) | Brings external video into the chain: a file, a capture device, or NDI/Spout/Syphon input. |
 | [SPRITE](sprite/) | Places an image, sprite sheet, or hand-drawn pixel art in the chain, tiled, scattered, or fractal-repeated. |
+| [TEXT](text/) | Draws a typed line or block of text in the chain, in a bundled, installed, or custom font, with fill, outline, background, emboss, and warp styling. |
 
 One chain holds up to 8 instances of each type, with two exceptions: INSERT
 allows 16, and SCOPE is a singleton. A type already at its limit stays
