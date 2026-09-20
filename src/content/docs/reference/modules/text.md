@@ -16,7 +16,6 @@ without re-rendering it, so all of them can be modulated.
 | Position / Size / Rotation | Pad, Trough, Wheel | Size is the only size control; there is no separate font size. |
 | Fill | Trough | Fill color and alpha. |
 | Stroke | Rocker, Trough | An outline around the glyphs: width (0 to 24) and color/alpha. Dimmed while the Rocker is off. |
-| Background | Rocker, Trough | A solid box behind the whole block: color/alpha and padding (0 to 64). Follows the same transform and warp as the text. |
 | Emboss | Rocker, Wheel, Trough | A directional light shading the glyph edges: angle, depth and strength. |
 | Warp | Selector, Trough | None, Arc, Bulge, Flag, Wave, or Fisheye, driven by Bend, Horizontal and Vertical. The sliders are dimmed while the preset is None. |
 
