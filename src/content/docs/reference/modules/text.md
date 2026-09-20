@@ -9,7 +9,8 @@ without re-rendering it, so all of them can be modulated.
 | Parameter | Control | Notes |
 |---|---|---|
 | Text | text field | The content. Enter starts a new line; the field grows one row per line and each line is centered in the block. |
-| Font | Dropdown | One alphabetical list of the bundled retro/terminal fonts and the fonts installed on the computer, plus `Load Custom...` (a `.ttf`, `.otf` or `.ttc` file) and `Refresh List`. A font that cannot be found on this machine is drawn with the bundled default and shown as `(missing)`. |
+| Font | Dropdown | The font family: one alphabetical list of the bundled retro/terminal fonts and the fonts installed on the computer, each row drawn in its own typeface, plus `Load Custom...` (a `.ttf`, `.otf` or `.ttc` file) and `Refresh List`. A font that cannot be found on this machine is drawn with the bundled default and shown as `(missing)`. |
+| Style | Dropdown | The family's styles (Regular, Bold, Italic, ...), also drawn in their own face. Dimmed when the family has only one style. |
 | Mix | Trough | Opacity of the module's contribution to the chain. |
 | Blend | Selector | Add, Multiply, Screen, Difference, XOR, Replace, or Phoenix into the chain. |
 | Position / Size / Rotation | Pad, Trough, Wheel | Size is the only size control; there is no separate font size. |
