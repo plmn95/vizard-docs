@@ -24,7 +24,7 @@ export default defineConfig({
 				PageTitle: './src/components/PageTitle.astro',
 				SiteTitle: './src/components/SiteTitle.astro',
 				Footer: './src/components/ManualFooter.astro',
-				EditLink: './src/components/GitHubEditLink.astro',
+				EditLink: './src/components/NoFooterEditLink.astro',
 			},
 			editLink: {
 				baseUrl: 'https://github.com/plmn95/vizard-docs/edit/main/',
