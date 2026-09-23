@@ -1,4 +1,5 @@
 ---
+import SectionLinks from './SectionLinks.astro';
 import Footer from '@astrojs/starlight/components/Footer.astro';
 import SuggestChange from './SuggestChange.astro';
 const version = process.env.VIZARD_DOCS_VERSION;
@@ -13,6 +14,7 @@ const correctionUrl = route !== undefined ? `https://plmn95.github.io/vizard-doc
   <a href="https://plmn95.github.io/vizard-docs/versions/">Documentation versions (online)</a>
 </div>
 <Footer><slot /></Footer>
+<SectionLinks />
 <style>
   .manual-links { margin-block: 2rem 1rem; font-size: var(--sl-text-sm); color: var(--sl-color-gray-2); }
   p { margin-bottom: 0.5rem; }

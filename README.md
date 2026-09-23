@@ -25,14 +25,14 @@ npm run check
 
 ## Contributing
 
-When enabled, **Edit this page** opens a full-page Milkdown editor. Readers can
+**Edit this page** opens a full-page Milkdown editor. Readers can
 send changes for review without a GitHub account. **Describe a problem** accepts reports.
 GitHub editing remains available for experienced contributors. See
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The account-free service requires separate Cloudflare and GitHub App setup;
-see [setup and operations](services/suggestions/README.md). It stays disabled
-until configured. Run `npm run test:suggestions` for delivery and source-mapping
+see [setup and operations](services/suggestions/README.md). Local editor routes stay disabled until configured; unconfigured mirrors link to
+the canonical GitHub Pages editor. Versioned manuals retain their online correction link. Run `npm run test:suggestions` for delivery and source-mapping
 tests, `npm run test:editor` for corpus and browser checks, and `npm run suggestions:check` to verify the Worker bundle.
 
 ## Manuals shipped with Vizard

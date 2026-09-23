@@ -537,3 +537,14 @@ mobile-starlight-toc:has(li:only-child > a[href='#_top']) {
 		transition-duration: 0.01ms !important;
 	}
 }
+
+/* Match wrapper metrics to our heading sizes; Starlight uses them for icon placement. */
+.sl-markdown-content .sl-heading-wrapper.level-h2 { font-size: clamp(1.35rem, 2.4vw, 1.65rem); }
+.sl-markdown-content .sl-heading-wrapper.level-h3 { font-size: 1.15rem; }
+.sl-markdown-content .sl-anchor-link { vertical-align: 0.15em; }
+.sl-markdown-content .sl-anchor-icon > svg {
+  display: inline-block;
+  height: var(--sl-anchor-icon-size);
+  vertical-align: baseline;
+  transform: none;
+}

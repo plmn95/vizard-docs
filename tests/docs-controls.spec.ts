@@ -1,0 +1,24 @@
+import { test, expect } from '@playwright/test';
+
+test('page editing is discoverable and section links copy without scrolling', async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.addInitScript(() => Object.defineProperty(navigator, 'clipboard', {value: {writeText: async (text: string) => { (window as any).copiedLink = text; }}}));
+  await page.goto('./');
+  await expect(page).toHaveTitle(/Vizard/);
+  await expect(page.locator('.title-row').getByRole('link', {name: 'Edit this page'})).toBeVisible();
+  const link = page.getByRole('link', {name: 'Copy link to Start here', exact: true});
+  await link.scrollIntoViewIfNeeded();
+  const before = await page.evaluate(() => ({y: scrollY, url: location.href}));
+  await link.click();
+  await expect(page.getByRole('status')).toHaveText('Link to Start here copied.');
+  expect(await page.evaluate(() => ({y: scrollY, url: location.href}))).toEqual(before);
+  expect(await page.evaluate(() => (window as any).copiedLink)).toContain('#start-here');
+  await page.screenshot({path: '/tmp/vizard-doc-controls-desktop.png'});
+  await page.setViewportSize({width: 390, height: 844});
+  await page.goto('./');
+  await expect(page.locator('.title-row').getByRole('link', {name: 'Edit this page'})).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({path: '/tmp/vizard-doc-controls-mobile.png'});
+  expect(errors).toEqual([]);
+});
