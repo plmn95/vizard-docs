@@ -1,12 +1,22 @@
 ---
 import EditPageLink from './EditPageLink.astro';
+import GitHubEditLink from './GitHubEditLink.astro';
 import { contributionEnabled, editorUrl } from '../lib/suggestions/config.mjs';
 const path = String(Astro.locals.starlightRoute.editUrl ?? '').split('/edit/main/src/content/docs/')[1];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 {contributionEnabled && path && <section class="contribute" data-pagefind-ignore>
-  <EditPageLink />
-  <a data-edit-page-link href={`${editorUrl(path, base)}?mode=problem`}>Describe a problem</a>
+  <div class="contribute-actions">
+    <EditPageLink />
+    <GitHubEditLink />
+    <a data-edit-page-link href={`${editorUrl(path, base)}?mode=problem`}>Describe a problem</a>
+  </div>
   <p>No account needed. Changes are reviewed before publication.</p>
 </section>}
-<style>.contribute { margin-block:2rem; font-size:.8rem; }.contribute>a {margin-left:1.5rem; color:var(--sl-color-gray-3);}.contribute p {color:var(--sl-color-gray-3);margin-top:.65rem;} @media print {.contribute{display:none;}}</style>
+<style>
+  .contribute { margin-block: .5rem 1.5rem; font-size: .8rem; }
+  .contribute-actions { display:flex; align-items:center; flex-wrap:wrap; gap:.35rem 1.5rem; }
+  .contribute-actions > a { color:var(--sl-color-gray-3); }
+  .contribute p { color:var(--sl-color-gray-3); margin-top:.4rem; }
+  @media print {.contribute{display:none;}}
+</style>

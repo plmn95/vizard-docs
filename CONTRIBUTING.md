@@ -21,9 +21,12 @@ alternative for people who already have an account.
 
 ## Edit a page on GitHub
 
-Use **Edit on GitHub** at the bottom of a published article. GitHub will guide you
+Use **Edit on GitHub** beside **Edit this page** near the top of a current article. GitHub will guide you
 through proposing the change. Contributors without write access can submit the
 change from a fork as a pull request.
+
+Archived manuals are preserved snapshots. Their notice links to the matching
+page in the current documentation, where corrections can be suggested.
 
 ## Work locally
 

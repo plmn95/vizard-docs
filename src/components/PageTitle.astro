@@ -1,6 +1,18 @@
 ---
 import PageTitle from '@astrojs/starlight/components/PageTitle.astro';
-import EditPageLink from './EditPageLink.astro';
+import SuggestChange from './SuggestChange.astro';
+const version = process.env.VIZARD_DOCS_VERSION;
+const editUrl = String(Astro.locals.starlightRoute.editUrl ?? '');
+const source = editUrl.split('/edit/main/src/content/docs/')[1];
+const route = source?.replace(/(?:\/index)?\.md$/, '').replace(/^index$/, '');
+const currentUrl = `https://plmn95.github.io/vizard-docs/${route ? `${route}/` : ''}?manual=${encodeURIComponent(version ?? '')}`;
 ---
-<div class="title-row"><PageTitle /><EditPageLink /></div>
-<style>.title-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;}</style>
+<div class="title-row"><PageTitle />{!version && <SuggestChange />}</div>
+{version && <p class="archive-notice" data-pagefind-ignore>
+  Manual for Vizard {version}. This is an archived snapshot. Corrections can be suggested on the <a href={currentUrl}>current version of this page</a>.
+</p>}
+<style>
+  .title-row { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+  .archive-notice { margin-block: .75rem 1.5rem; color: var(--sl-color-gray-2); font-size: var(--sl-text-sm); }
+  .archive-notice a { color: var(--sl-color-text-accent); }
+</style>
