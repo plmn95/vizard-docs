@@ -4,17 +4,44 @@
     const heading = link.previousElementSibling?.textContent?.trim() || 'section';
     link.setAttribute('aria-label', `Copy link to ${heading}`);
     link.title = 'Copy section link';
+    const icon = link.querySelector('.sl-anchor-icon');
+    const originalIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+    if (icon) icon.innerHTML = originalIcon;
+    const feedback = document.createElement('span');
+    feedback.className = 'section-link-feedback';
+    feedback.setAttribute('aria-hidden', 'true');
+    link.append(feedback);
+    let resetTimer: ReturnType<typeof setTimeout>;
+    let copying = false;
     link.addEventListener('click', async event => {
       if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
+      if (copying) return;
+      copying = true;
+      clearTimeout(resetTimer);
       const status = document.getElementById('section-link-status');
+      if (status) status.textContent = '';
       try {
         await navigator.clipboard.writeText(link.href);
         link.title = 'Link copied';
+        link.dataset.copyState = 'success';
+        feedback.textContent = 'Link copied';
+        if (icon) icon.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 7"/></svg>';
         if (status) status.textContent = `Link to ${heading} copied.`;
       } catch {
         link.title = 'Right-click to copy link';
+        link.dataset.copyState = 'error';
+        feedback.textContent = 'Couldn’t copy link';
+        if (icon) icon.innerHTML = originalIcon;
         if (status) status.textContent = 'Could not copy. Use the link’s context menu to copy its address.';
+      } finally {
+        copying = false;
+        resetTimer = setTimeout(() => {
+          delete link.dataset.copyState;
+          link.title = 'Copy section link';
+          if (icon) icon.innerHTML = originalIcon;
+          if (status) status.textContent = '';
+        }, 2400);
       }
     });
   });

@@ -293,8 +293,8 @@ h1 {
 
 /* Heading links are quiet utilities, not part of the heading's visual weight. */
 .sl-markdown-content .sl-heading-wrapper {
-	--sl-anchor-icon-size: 0.82rem;
-	--sl-anchor-icon-gap: 0.42rem;
+	--sl-anchor-icon-size: 0.9em;
+	--sl-anchor-icon-gap: 0.4em;
 }
 
 .sl-markdown-content .sl-anchor-link {
@@ -541,10 +541,47 @@ mobile-starlight-toc:has(li:only-child > a[href='#_top']) {
 /* Match wrapper metrics to our heading sizes; Starlight uses them for icon placement. */
 .sl-markdown-content .sl-heading-wrapper.level-h2 { font-size: clamp(1.35rem, 2.4vw, 1.65rem); }
 .sl-markdown-content .sl-heading-wrapper.level-h3 { font-size: 1.15rem; }
-.sl-markdown-content .sl-anchor-link { vertical-align: 0.15em; }
-.sl-markdown-content .sl-anchor-icon > svg {
+/* Align the icon box to the font's capital-letter center, not a flex baseline.
+   Both symbols share this exact box at every heading size. */
+.sl-markdown-content .sl-anchor-link {
   display: inline-block;
+  width: var(--sl-anchor-icon-size);
   height: var(--sl-anchor-icon-size);
-  vertical-align: baseline;
+  line-height: 0;
+  vertical-align: calc((1cap - var(--sl-anchor-icon-size)) / 2);
+}
+.sl-markdown-content .sl-anchor-icon > svg {
+  display: block;
+  width: var(--sl-anchor-icon-size);
+  height: var(--sl-anchor-icon-size);
   transform: none;
+}
+
+/* Feedback stays attached to the action without moving the heading. */
+.sl-markdown-content .sl-anchor-icon { display: block; }
+.sl-markdown-content .sl-anchor-link[data-copy-state] { opacity: 1; }
+.sl-markdown-content .sl-anchor-link[data-copy-state="success"] {
+  color: var(--vizard-green) !important;
+}
+.sl-markdown-content .section-link-feedback {
+  position: absolute;
+  inset-block-end: calc(100% + 0.65rem);
+  inset-inline-end: -0.35rem;
+  z-index: 5;
+  margin: 0;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--vizard-border);
+  border-radius: 0.375rem;
+  background: var(--sl-color-bg);
+  color: var(--sl-color-text);
+  box-shadow: 0 3px 12px rgb(0 0 0 / 15%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  pointer-events: none;
+  visibility: hidden;
+}
+.sl-markdown-content .sl-anchor-link[data-copy-state] .section-link-feedback {
+  visibility: visible;
 }
