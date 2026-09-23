@@ -1,0 +1,32 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { api } from '../lib/suggestions/config.mjs';
+---
+<StarlightPage frontmatter={{ title: 'Your suggestion', editUrl: false, sidebar: { hidden: true } }}>
+  <div data-receipt-page data-api={api}>
+    <p data-receipt-message role="status">Loading your suggestion status…</p>
+    <button type="button" data-refresh>Refresh status</button>
+    <p>You don’t need an account. Save this page’s link to check again later.</p>
+  </div>
+</StarlightPage>
+<script>
+  const root = document.querySelector<HTMLElement>('[data-receipt-page]')!;
+  const message = root.querySelector<HTMLElement>('[data-receipt-message]')!;
+  const button = root.querySelector<HTMLButtonElement>('[data-refresh]')!;
+  async function refresh() {
+    const id = location.hash.slice(1);
+    if (!/^[a-f0-9-]{36}$/.test(id)) { message.textContent = 'Open the receipt link shown after sending your suggestion.'; button.hidden = true; return; }
+    if (!root.dataset.api) { message.textContent = 'Suggestion status is unavailable here. Open your receipt on the current online documentation site.'; button.hidden = true; return; }
+    button.disabled = true;
+    try {
+      const response = await fetch(`${root.dataset.api}/receipts/${id}`, { signal: AbortSignal.timeout(10000) });
+      const result = await response.json();
+      message.textContent = response.ok ? result.message : result.error;
+    } catch { message.textContent = 'Could not check your suggestion right now. Please try again later.'; }
+    finally { button.disabled = false; }
+  }
+  button.addEventListener('click', refresh);
+  window.addEventListener('hashchange', refresh);
+  refresh();
+</script>
+<style>button { font: inherit; padding: .6rem 1rem; border: 1px solid var(--sl-color-gray-5); border-radius: .3rem; color: var(--sl-color-white); background: var(--sl-color-gray-6); cursor: pointer; }</style>

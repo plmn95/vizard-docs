@@ -25,9 +25,15 @@ npm run check
 
 ## Contributing
 
-Small corrections can be made with the **Edit page** link on the published
-site. For larger changes, read [CONTRIBUTING.md](CONTRIBUTING.md) and open a
-pull request.
+When enabled, **Suggest a change** lets readers edit a passage and send it for
+review without a GitHub account. **Describe a problem** accepts broader reports.
+GitHub editing remains available for experienced contributors. See
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
+The account-free service requires separate Cloudflare and GitHub App setup;
+see [setup and operations](services/suggestions/README.md). It stays disabled
+until configured. Run `npm run test:suggestions` for delivery and source-mapping
+tests, and `npm run suggestions:check` to verify the Worker bundle.
 
 ## Manuals shipped with Vizard
 

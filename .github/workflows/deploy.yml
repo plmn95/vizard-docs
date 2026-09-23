@@ -29,7 +29,11 @@ jobs:
       - name: Validate documentation
         run: npm run check:docs
       - run: npm run test:archives
+      - run: npm run test:suggestions
       - run: npm run build
+        env:
+          VIZARD_SUGGESTIONS_API: ${{ vars.VIZARD_SUGGESTIONS_API }}
+          VIZARD_TURNSTILE_SITE_KEY: ${{ vars.VIZARD_TURNSTILE_SITE_KEY }}
       - name: Assemble frozen release manuals
         run: npm run assemble:archives
         env:

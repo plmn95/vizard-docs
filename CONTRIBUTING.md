@@ -4,10 +4,20 @@ Corrections, clearer explanations, and missing documentation are welcome.
 
 ## Suggest a correction
 
-If you do not want to edit Markdown, open a
+When **Suggest a change** is available on a published page, choose a passage,
+edit its wording, review it, and send. You do not need a GitHub account or
+Markdown knowledge. Use **Describe a problem** for missing information or a
+larger change. Suggestions and explanations are public and reviewed before
+publication. Save the receipt link if you want to check progress.
+
+For contributors who already use GitHub, you can also open a
 [documentation correction](https://github.com/plmn95/vizard-docs/issues/new?template=documentation-correction.yml).
 Include the page URL, what is unclear or incorrect, and the wording you suggest
 when you have it.
+
+If the on-page contribution controls are unavailable, the account-free service
+has not been enabled or is temporarily disabled. The GitHub route below is an
+alternative for people who already have an account.
 
 ## Edit a page on GitHub
 

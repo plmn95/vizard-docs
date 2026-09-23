@@ -1,0 +1,5 @@
+---
+const { editUrl } = Astro.locals.starlightRoute;
+---
+{editUrl && <a class="print:hidden" href={editUrl}>Edit on GitHub</a>}
+<style>a { color: var(--sl-color-gray-3); text-decoration: none; } a:hover { color: var(--sl-color-white); text-decoration: underline; }</style>

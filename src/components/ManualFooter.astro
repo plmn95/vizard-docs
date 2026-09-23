@@ -1,9 +1,15 @@
 ---
 import Footer from '@astrojs/starlight/components/Footer.astro';
+import SuggestChange from './SuggestChange.astro';
 const version = process.env.VIZARD_DOCS_VERSION;
+const editUrl = String(Astro.locals.starlightRoute.editUrl ?? '');
+const source = editUrl.split('/edit/main/src/content/docs/')[1];
+const route = source?.replace(/(?:\/index)?\.md$/, '').replace(/^index$/, '');
+const correctionUrl = route !== undefined ? `https://plmn95.github.io/vizard-docs/${route ? route + '/' : ''}?manual=${encodeURIComponent(version ?? '')}` : 'https://plmn95.github.io/vizard-docs/';
 ---
+{!version && <SuggestChange />}
 <div class="manual-links" data-pagefind-ignore>
-  {version && <p>Manual for Vizard {version}. Corrections are made in the latest documentation; check the current source before editing.</p>}
+  {version && <p>Manual for Vizard {version}. <a href={correctionUrl}>Suggest a correction in the current documentation (online)</a>.</p>}
   <a href="https://plmn95.github.io/vizard-docs/versions/">Documentation versions (online)</a>
 </div>
 <Footer><slot /></Footer>
