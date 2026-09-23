@@ -15,6 +15,7 @@ label{display:block;margin:24px 0 10px;font-size:13px;}textarea{display:block;wi
 .milkdown .milkdown-top-bar .top-bar-item{margin:4px;width:32px;height:32px;}
 .milkdown .milkdown-top-bar .top-bar-divider{margin:6px;height:20px;background:var(--border);}
 .milkdown .milkdown-top-bar .top-bar-divider:has(+.top-bar-divider){display:none;}
+.editor-toolbar-tooltip{position:fixed;z-index:50;max-width:min(260px,calc(100vw - 16px));padding:6px 9px;border:1px solid #66666d;border-radius:4px;background:#252529;color:#f2f2f3;box-shadow:0 4px 16px #0009;font-size:12px;line-height:1.4;white-space:nowrap;pointer-events:auto;}
 .milkdown .milkdown-table-block{overflow-x:auto;padding:20px 1px;}
 .milkdown .ProseMirror table{min-width:680px;table-layout:auto;width:100%;}
 .milkdown .ProseMirror td,.milkdown .ProseMirror th{min-width:130px;border-color:var(--border);vertical-align:top;padding:10px 12px;}

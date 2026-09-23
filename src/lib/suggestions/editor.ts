@@ -8,6 +8,7 @@ import { editorViewCtx } from '@milkdown/kit/core';
 import { undoCommand, redoCommand } from '@milkdown/kit/plugin/history';
 import { callCommand } from '@milkdown/kit/utils';
 import { cleanEditorMarkdown, equivalent, validateBody } from './document.mjs';
+import { installToolbarTooltip } from './toolbar-tooltip';
 
 export async function createDocumentEditor(root: HTMLElement, markdown: string, onChange = (_text: string) => {}) {
   validateBody(markdown);
@@ -58,6 +59,12 @@ export async function createDocumentEditor(root: HTMLElement, markdown: string, 
       event.preventDefault(); target.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, cancelable: true}));
     }
   });
+  const toolbar = root.querySelector<HTMLElement>('.milkdown-top-bar');
+  if (toolbar) {
+    const removeTooltip = installToolbarTooltip(root, toolbar);
+    const destroy = editor.destroy.bind(editor);
+    editor.destroy = async () => { removeTooltip(); await destroy(); };
+  }
   editor.on(listener => listener.markdownUpdated((_ctx, markdown, previous) => {
     if (markdown !== previous) onChange(cleanEditorMarkdown(markdown));
   }));
