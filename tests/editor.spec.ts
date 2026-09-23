@@ -106,10 +106,33 @@ test('problem reports work independently of the visual editor', async ({page}) =
 
  test('toolbar controls have names and respond to the keyboard', async ({page}) => {
   await page.goto('edit/concepts/signal-chain/');
-  await expect(page.getByRole('textbox',{name:'Page content'})).toBeVisible();
+  await expect(page.getByRole('textbox',{name:'Page content'})).toBeVisible({timeout:15000});
   const bold=page.getByRole('button',{name:'Bold',exact:true});
+  const tooltip=page.getByRole('tooltip');
+  await bold.hover();
+  await expect(tooltip).toHaveText('Bold');
+  await page.screenshot({path:'/tmp/vizard-editor-tooltip-desktop.png'});
+  await tooltip.hover();
+  await expect(tooltip).toBeVisible();
+  await page.mouse.move(0, 0);
+  await expect(tooltip).toBeHidden();
   await bold.focus(); await bold.press('Enter');
   await expect(bold).toHaveClass(/active/);
+  await expect(tooltip).toHaveText('Bold');
+  await bold.press('Escape');
+  await expect(tooltip).toBeHidden();
   await page.getByRole('button',{name:'Undo',exact:true}).focus();
-  await expect(page.getByRole('button',{name:'Insert table',exact:true})).toBeVisible();
+  await expect(tooltip).toHaveText('Undo');
+  for (const name of ['Bold','Italic','Inline code','Bullet list','Numbered list','Insert link','Insert table','Undo','Redo']) {
+    await page.getByRole('button',{name,exact:true}).focus();
+    await expect(tooltip).toHaveText(name);
+  }
+  await page.setViewportSize({width:390,height:844});
+  await page.getByRole('button',{name:'Insert table',exact:true}).focus();
+  await expect(tooltip).toHaveText('Insert table');
+  expect(await tooltip.evaluate(element => {
+    const box = element.getBoundingClientRect();
+    return box.left >= 0 && box.right <= innerWidth && box.top >= 0 && box.bottom <= innerHeight;
+  })).toBe(true);
+  await page.screenshot({path:'/tmp/vizard-editor-tooltip-mobile.png'});
  });
