@@ -11,12 +11,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <GitHubEditLink />
     <a data-edit-page-link href={`${editorUrl(path, base)}?mode=problem`}>Describe a problem</a>
   </div>
-  <p>No account needed. Changes are reviewed before publication.</p>
+  <p>Changes are reviewed before publication.</p>
 </section>}
 <style>
-  .contribute { margin-block: .5rem 1.5rem; font-size: .8rem; }
-  .contribute-actions { display:flex; align-items:center; flex-wrap:wrap; gap:.35rem 1.5rem; }
+  .contribute { margin:0; font-size:.8rem; }
+  .contribute-actions { display:flex; align-items:center; flex-wrap:wrap; gap:.25rem 1.25rem; }
   .contribute-actions > a { color:var(--sl-color-gray-3); }
-  .contribute p { color:var(--sl-color-gray-3); margin-top:.4rem; }
+  .contribute p { color:var(--sl-color-gray-3); margin:.25rem 0 0; }
   @media print {.contribute{display:none;}}
 </style>

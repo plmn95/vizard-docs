@@ -12,6 +12,7 @@ test('page editing is discoverable and section links copy without scrolling', as
   await expect(actions.getByRole('link', {name: 'Describe a problem'})).toBeVisible();
   await expect(page.getByRole('link', {name: 'Edit this page'})).toHaveCount(1);
   await expect(page.getByRole('link', {name: 'Edit on GitHub'})).toHaveCount(1);
+  await expect(page.locator('.contribute p')).toHaveText('Changes are reviewed before publication.');
   const link = page.getByRole('link', {name: 'Copy link to Start here', exact: true});
   await link.scrollIntoViewIfNeeded();
   const before = await page.evaluate(() => ({y: scrollY, url: location.href}));

@@ -248,7 +248,7 @@ site-search .pagefind-ui__search-input:focus-visible {
 
 /* Keep the article identity compact; the page is for reading, not a hero. */
 .main-pane > .content-panel:first-child {
-	padding-block: 2rem 1.35rem;
+	padding-block: 1.35rem 1.25rem;
 }
 
 h1,

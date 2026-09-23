@@ -12,7 +12,8 @@ const currentUrl = `https://plmn95.github.io/vizard-docs/${route ? `${route}/` :
   Manual for Vizard {version}. This is an archived snapshot. Corrections can be suggested on the <a href={currentUrl}>current version of this page</a>.
 </p>}
 <style>
-  .title-row { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+  .title-row { display:grid; gap:.4rem; }
+  .title-row :global(h1) { margin-top:0; }
   .archive-notice { margin-block: .75rem 1.5rem; color: var(--sl-color-gray-2); font-size: var(--sl-text-sm); }
   .archive-notice a { color: var(--sl-color-text-accent); }
 </style>
