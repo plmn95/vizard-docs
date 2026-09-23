@@ -14,18 +14,29 @@
     "astro": "astro",
     "build:release": "node scripts/build-release.mjs",
     "assemble:archives": "python3 scripts/assemble-archives.py",
-    "test:archives": "python3 scripts/test-archives.py"
+    "test:archives": "python3 scripts/test-archives.py",
+    "test:suggestions": "node --experimental-sqlite --test services/suggestions/test.mjs",
+    "suggestions:dev": "wrangler dev --config services/suggestions/wrangler.jsonc",
+    "suggestions:check": "wrangler deploy --dry-run --config services/suggestions/wrangler.jsonc"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "7.2.4",
     "@astrojs/starlight": "^0.41.10",
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
     "astro": "^7.1.6",
-    "sharp": "^0.35.3"
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "sharp": "^0.35.3",
+    "unified": "^11.0.5"
   },
   "allowScripts": {
     "esbuild": true
   },
   "engines": {
     "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.136.3"
   }
 }

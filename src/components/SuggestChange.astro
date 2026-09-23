@@ -1,0 +1,74 @@
+---
+import { api, siteKey, enabled, revision } from '../lib/suggestions/config.mjs';
+const { editUrl } = Astro.locals.starlightRoute;
+const path = String(editUrl ?? '').split('/edit/main/')[1] ?? '';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+{enabled && path && <section class="suggestions" data-suggestions data-api={api} data-key={siteKey}
+  data-path={path} data-revision={revision} data-receipt={`${base}/suggestion/`} data-pagefind-ignore>
+  <div class="contribute-actions">
+    <button type="button" data-start>Suggest a change</button>
+    <button type="button" class="quiet" data-problem>Describe a problem</button>
+  </div>
+  <p class="hint">No account needed. Changes are reviewed before publication.</p>
+  <noscript>Enable JavaScript to send a suggestion without an account.</noscript>
+  <div data-picker hidden role="region" aria-label="Choose a passage" class="picker">
+    <p>Choose a passage on this page to edit its wording.</p>
+    <button type="button" class="quiet" data-stop>Cancel</button>
+  </div>
+  <dialog aria-labelledby="suggestion-title">
+    <form data-form>
+      <div class="dialog-heading"><h2 id="suggestion-title">Suggest a change</h2><button type="button" class="quiet" data-close aria-label="Close suggestion">Close</button></div>
+      <p class="intro">No account needed. We’ll review your suggestion before updating the documentation.</p>
+      <div data-edit-fields><div data-editor>
+        <details><summary>Original wording</summary><p data-original></p></details>
+        <label for="suggestion-wording">Your wording</label>
+        <textarea id="suggestion-wording" data-wording maxlength="6000" rows="7"></textarea>
+      </div>
+      <label for="suggestion-explanation" data-explanation-label>Why this change? <span>(optional)</span></label>
+      <textarea id="suggestion-explanation" data-explanation maxlength="3000" rows="3"></textarea>
+      </div>
+      <div data-preview hidden><h3>Review your suggestion</h3><p class="preview-before" data-before></p><p class="preview-after" data-after></p><p data-review-reason></p></div>
+      <p class="hint">Your wording and explanation will be public. Please leave out personal information.</p>
+      <div data-challenge></div>
+      <p data-message role="status" aria-live="polite"></p>
+      <div class="contribute-actions"><button type="button" data-review>Review suggestion</button><button type="submit" data-send hidden>Send suggestion</button><button type="button" class="quiet" data-back hidden>Keep editing</button></div>
+      <div data-success hidden><p>Thank you. Your suggestion has been saved.</p><a data-status-link>Check suggestion status</a></div>
+    </form>
+  </dialog>
+</section>}
+<script>
+  import '../lib/suggestions/client';
+</script>
+<style is:global>
+  .suggestions { margin-block: 2rem; }
+  .suggestions button, .suggestion-pick {
+    font: inherit; font-size: .85rem; cursor: pointer; border: 1px solid var(--sl-color-gray-5);
+    border-radius: .35rem; padding: .65rem .9rem; color: var(--sl-color-white); background: var(--sl-color-gray-6);
+  }
+  .suggestions button:hover, .suggestion-pick:hover { border-color: var(--sl-color-accent); }
+  .suggestions button:focus-visible, .suggestion-pick:focus-visible { outline: 2px solid var(--sl-color-accent); outline-offset: 3px; }
+  .suggestions .quiet { background: transparent; }
+  .suggestions .hint, .suggestions .intro { font-size: .8rem; color: var(--sl-color-gray-3); }
+  .contribute-actions { display: flex; gap: .65rem; flex-wrap: wrap; align-items: center; }
+  .suggestions .picker { position: sticky; bottom: 1rem; padding: 1rem; background: var(--sl-color-gray-6); border: 1px solid var(--sl-color-accent); z-index: 10; }
+  .suggestion-pick { display: block; margin-block: .5rem; color: var(--sl-color-text-accent); }
+  .suggestions dialog { margin: auto; width: min(42rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); padding: 1.4rem; border: 1px solid var(--sl-color-gray-5); border-radius: .5rem; background: var(--sl-color-bg); color: var(--sl-color-text); overflow-y: auto; }
+  .suggestions dialog::backdrop { background: rgb(0 0 0 / 75%); }
+  .suggestions .dialog-heading { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+  .suggestions h2 { font-size: 1.15rem; margin: 0; }
+  .suggestions h3 { font-size: .95rem; }
+  .suggestions label { display: block; margin-top: 1rem; margin-bottom: .4rem; font-size: .9rem; }
+  .suggestions label span { color: var(--sl-color-gray-3); }
+  .suggestions textarea { box-sizing: border-box; display: block; width: 100%; resize: vertical; font: inherit; font-size: .9rem; line-height: 1.65; padding: .75rem; border: 1px solid var(--sl-color-gray-5); border-radius: .3rem; color: var(--sl-color-white); background: var(--sl-color-black); }
+  .suggestions textarea:focus { outline: 2px solid var(--sl-color-accent); outline-offset: 2px; }
+  .suggestions details, .suggestions [data-preview] { margin-top: 1rem; font-size: .85rem; }
+  .suggestions summary { cursor: pointer; }
+  .suggestions [data-original], .suggestions [data-before], .suggestions [data-after] { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .suggestions .preview-before { border-left: 2px solid var(--vizard-red); padding-left: .75rem; }
+  .suggestions .preview-after { border-left: 2px solid var(--vizard-green); padding-left: .75rem; }
+  .suggestions [data-message] { font-size: .85rem; }
+  .suggestions [hidden] { display: none !important; }
+  .suggestions button:disabled { opacity: .5; cursor: wait; }
+  @media print { .suggestions, .suggestion-pick { display: none; } }
+</style>

@@ -22,3 +22,7 @@ jobs:
         run: npm ci
       - name: Validate and build
         run: npm run check
+      - name: Verify suggestions service
+        run: npm run test:suggestions && npm run suggestions:check
+      - name: Verify frozen manuals
+        run: npm run test:archives
