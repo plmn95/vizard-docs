@@ -1,0 +1,14 @@
+---
+import { enabled } from '../lib/suggestions/config.mjs';
+const path = String(Astro.locals.starlightRoute.editUrl ?? '').split('/edit/main/src/content/docs/')[1];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = path ? `${base}/edit/${path.replace(/\.md$/, '')}/` : '';
+---
+{enabled && href && <a class="edit-page-link" href={href} data-edit-page-link data-pagefind-ignore>Edit this page <span aria-hidden="true">↗</span></a>}
+<script>
+  const version = new URLSearchParams(location.search).get('manual')?.slice(0, 80);
+  if (version) document.querySelectorAll<HTMLAnchorElement>('[data-edit-page-link]').forEach(link => {
+    const url = new URL(link.href); url.searchParams.set('manual', version); link.href = url.href;
+  });
+</script>
+<style>.edit-page-link { display:inline-flex;gap:.5rem;align-items:center;font-size:.8rem;color:var(--sl-color-text-accent);text-decoration:none;white-space:nowrap;}.edit-page-link:hover{text-decoration:underline;}@media print{.edit-page-link{display:none;}}</style>

@@ -4,10 +4,10 @@ Corrections, clearer explanations, and missing documentation are welcome.
 
 ## Suggest a correction
 
-When **Suggest a change** is available on a published page, choose a passage,
-edit its wording, review it, and send. You do not need a GitHub account or
-Markdown knowledge. Use **Describe a problem** for missing information or a
-larger change. Suggestions and explanations are public and reviewed before
+Choose **Edit this page** to edit the full document, including paragraphs,
+headings, lists, links, and tables. Review the highlighted changes and send. You do not need a GitHub account or
+Markdown knowledge. Use **Describe a problem** if you would rather explain a change
+than edit the page. Suggestions and explanations are public and reviewed before
 publication. Save the receipt link if you want to check progress.
 
 For contributors who already use GitHub, you can also open a
@@ -21,7 +21,7 @@ alternative for people who already have an account.
 
 ## Edit a page on GitHub
 
-Use **Edit page** at the bottom of a published article. GitHub will guide you
+Use **Edit on GitHub** at the bottom of a published article. GitHub will guide you
 through proposing the change. Contributors without write access can submit the
 change from a fork as a pull request.
 

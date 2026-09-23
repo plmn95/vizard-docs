@@ -26,3 +26,7 @@ jobs:
         run: npm run test:suggestions && npm run suggestions:check
       - name: Verify frozen manuals
         run: npm run test:archives
+      - name: Install browser for editor checks
+        run: npx playwright install --with-deps chromium
+      - name: Verify full-page editor and complete Markdown corpus
+        run: npm run test:editor

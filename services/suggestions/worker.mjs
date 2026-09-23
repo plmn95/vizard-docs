@@ -94,7 +94,7 @@ export async function handle(request, env, ctx, dependencies = {}) {
   if (env.ENABLED !== 'true') return json({ error: 'Suggestions are temporarily unavailable. Your draft has been kept.' }, 503);
   if (!request.headers.get('content-type')?.startsWith('application/json')) return json({ error: 'Expected JSON.' }, 415);
   let value, item;
-  try { value = JSON.parse(await limitedBody(request, 50000)); item = validateSubmission(value); }
+  try { value = JSON.parse(await limitedBody(request, 250000)); item = validateSubmission(value); }
   catch (error) { return json({ error: error.message }, 400); }
   const saved = await env.DB.prepare('SELECT payload FROM suggestions WHERE id = ?').bind(item.id).first();
   if (saved) return saved.payload === JSON.stringify(item) ? json({ id: item.id }, 202) : json({ error: 'This receipt belongs to a different submission.' }, 409);

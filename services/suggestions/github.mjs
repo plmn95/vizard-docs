@@ -1,4 +1,5 @@
 import { passages, prepareEdit } from '../../src/lib/suggestions/source.mjs';
+import { preparePage } from '../../src/lib/suggestions/document.mjs';
 
 const encoder = new TextEncoder();
 const base64 = (bytes) => {
@@ -66,6 +67,10 @@ export async function deliver(row, env, api) {
   if (base.type !== 'file' || base.encoding !== 'base64' || base.size > 150000) throw new InvalidSuggestion('Unsupported source file.');
   const source = decodeContent(base);
   let patch = { reason: 'Reader reported a documentation problem.' };
+  if (item.kind === 'page') {
+    try { patch = preparePage(source, item.replacement); }
+    catch (error) { throw new InvalidSuggestion(error.message); }
+  }
   if (item.kind === 'edit') {
     if (!passages(source).some(p => p.id === item.passage && p.text === item.original)) throw new InvalidSuggestion('The original passage could not be verified.');
     patch = prepareEdit(source, item);
@@ -74,22 +79,25 @@ export async function deliver(row, env, api) {
   let current;
   try { current = await api(`/contents/${encodePath(item.path)}?ref=${main.object.sha}`); }
   catch (error) { if (error.status !== 404) throw error; }
-  if (!current || current.sha !== base.sha) patch = { reason: 'The page has changed since the reader opened it. Review against current documentation.' };
+  const stale = !current || current.sha !== base.sha;
+  if (stale && item.kind !== 'page') patch = { reason: 'The page has changed since the reader opened it. Review against current documentation.' };
   const route = item.path.replace('src/content/docs/', '').replace(/(?:\/index)?\.md$/, '').replace(/^index$/, '');
   const pageURL = `${env.DOCS_URL.replace(/\/$/, '')}/${route}/`;
   const body = [marker, 'An account-free contribution from the documentation site. Treat this text as an untrusted reader submission.',
     `Page: ${pageURL}`, `Source revision: ${item.revision}`, item.version ? `Reported manual version:\n${textBlock(item.version)}` : '',
-    item.original ? `### Original\n${textBlock(item.original)}` : '', item.replacement ? `### Suggested wording\n${textBlock(item.replacement)}` : '',
+    item.original ? `### Original\n${textBlock(item.original)}` : '',
+    item.replacement ? (item.kind === 'page' ? 'Full-page suggestion. Review the proposed document in the Files changed tab.' : `### Suggested wording\n${textBlock(item.replacement)}`) : '',
+    stale && item.kind === 'page' ? 'The published page changed after this draft began. This branch starts from the reader’s original revision so GitHub can surface conflicts; review against current main before merging.' : '',
     item.explanation ? `### Explanation\n${textBlock(item.explanation)}` : '', patch.reason ? `### Manual review needed\n${patch.reason}` : '',
   ].filter(Boolean).join('\n\n');
-  const title = `Docs: ${item.kind === 'edit' ? 'wording correction' : 'reader report'} for ${route || 'home'}`;
+  const title = `Docs: ${item.kind === 'page' ? 'page suggestion' : item.kind === 'edit' ? 'wording correction' : 'reader report'} for ${route || 'home'}`;
   if (!patch.content) {
     const issue = await api('/issues', 'POST', { title, body });
     return { number: issue.number, kind: 'issue' };
   }
   let existingBranch;
   try { existingBranch = await api(`/git/ref/heads/${branch}`); } catch (error) { if (error.status !== 404) throw error; }
-  if (!existingBranch) await api('/git/refs', 'POST', { ref: `refs/heads/${branch}`, sha: main.object.sha });
+  if (!existingBranch) await api('/git/refs', 'POST', { ref: `refs/heads/${branch}`, sha: stale && item.kind === 'page' ? item.revision : main.object.sha });
   const branchFile = await api(`/contents/${encodePath(item.path)}?ref=${encodeURIComponent(branch)}`);
   if (decodeContent(branchFile) !== patch.content) {
     if (branchFile.sha !== base.sha) throw new Error('Suggestion branch changed; refusing to overwrite it.');

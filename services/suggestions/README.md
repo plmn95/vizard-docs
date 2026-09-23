@@ -1,9 +1,9 @@
 # Account-free documentation suggestions
 
-Readers edit a passage on the documentation site, review their wording, and send
+Readers edit the whole page in a Milkdown visual editor, review changed sections, and send
 it without a login. A separate Cloudflare Worker saves each submission in D1.
-A GitHub App opens a pull request for safe text edits, or an issue for stale
-pages, changes across formatting boundaries, and problem reports. Maintainers
+A GitHub App opens a pull request for page edits, or an issue for problem reports.
+Older passage submissions remain supported, including their manual-review fallbacks. Maintainers
 review in GitHub. Merging a PR invokes the existing docs deployment.
 
 The feature is off unless both site build variables are configured. The service
@@ -21,7 +21,45 @@ npm run test:suggestions
 npm run check
 npm run test:archives
 npm run suggestions:check
+npx playwright install chromium
+npm run test:editor
 ```
+
+The browser suite opens all authored pages in the actual Milkdown editor, verifies
+semantic import/export equivalence, byte-identical no-op saves, and an edit to each
+page. It also covers desktop/mobile editing, table cells, keyboard toolbar controls,
+local draft recovery, review, failed submission/retry, and problem reports. GitHub
+and Turnstile are mocked in browser tests. On a Mac with installed Chrome, use
+`PLAYWRIGHT_CHROMIUM_EXECUTABLE='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' npm run test:editor`.
+
+## Full-page editing contract
+
+- Editor code loads only on `/edit/.../`, never on the reading page. These routes
+  are absent from disabled/release builds and excluded from indexing.
+- The page body is editable; the existing page title and other frontmatter remain
+  protected. Tables, headings, lists, links, code, and paragraphs are supported.
+  Raw HTML, uploads, images, scripts, and unsupported Markdown nodes are rejected.
+- The original source is captured with its commit. Matching unchanged top-level
+  blocks (including duplicate blocks) and intervening whitespace are reused verbatim.
+  Changed blocks may be normalized by Milkdown. The reconstructed body must parse
+  to the same semantic document as the proposal. No-op submissions are rejected.
+- Empty table cells in Milkdown 7.22.1 export as `<br />`. Our adapter removes only
+  a sole HTML break inside an otherwise empty table cell. It never strips arbitrary
+  HTML. Initial import/export checks fail closed if any other content changes.
+- Crepe's top bar lacks button names and keyboard activation in this version. The
+  integration supplies accessible names and bridges Enter/Space to its pointer
+  command handler. These are narrow compatibility adaptations, not a dependency fork.
+- Drafts stay in localStorage on the reader's device, keyed by page and mode. They
+  retain their original source/revision across site updates. Discard clears a draft;
+  successful submission clears it. If storage is blocked, the UI says it is tab-only.
+- Full-page requests allow at most 100,000 UTF-8 bytes of body and 250,000 bytes of
+  JSON transport. The server validates content independently and retains metadata.
+- If the page changed since the draft began, the bot branches from the original
+  verified main-branch revision. GitHub then exposes conflicts against current main;
+  it never commits the old full page directly onto the newer main revision. Review
+  the warning on such PRs before merging. Existing review and build rules still apply.
+- Deploy the backward-compatible Worker update before merging the UI PR. Old
+  passage clients and saved submissions continue to work during the transition.
 
 To preview the UI, use a local Worker endpoint and Cloudflare's public test key:
 
@@ -112,8 +150,9 @@ GitHub App credentials if you want it to create real review items.
 - First rehearse against a test repository and a staging Worker/database.
 - Submit a plain wording correction and inspect the exact PR diff. Verify that
   no unrelated Markdown, frontmatter, links, or workflow files change.
-- Submit a change spanning inline code/formatting and a stale revision. Verify
-  that they become issues with both versions, not guessed patches.
+- Submit a multi-section edit with inline code and tables. Verify unrelated blocks
+  remain unchanged. Submit a stale revision and verify its PR branches from the
+  original commit, with a warning and any conflicts visible against current main.
 - Retry after a simulated network error; verify one review item and one receipt.
 - Merge the test PR; check the receipt changes to Accepted and the normal
   deployment succeeds. Accepted does not claim the site is already published.
@@ -152,6 +191,6 @@ and redeploy current docs. Existing receipts continue to work while the service
 is running. Rotate compromised secrets through Wrangler and the corresponding
 provider settings.
 
-Release builds never embed passage editors or CAPTCHA requests. Future manuals
+Release builds never embed visual editors or CAPTCHA requests. Future manuals
 link to the matching current online page with their version attached; archived
 manual files already published are never rewritten by this feature.

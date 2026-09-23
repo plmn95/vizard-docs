@@ -4,7 +4,7 @@ title: "Modulation Matrix"
 
 Any parameter that accepts modulation can be assigned one from the same
 place: right-clicking it and choosing `Add Modulation Source` opens a tabbed
-popover, headed "Modulate: <parameter>," with one tab per source family:
+popover, headed "Modulate: `<parameter>`," with one tab per source family:
 `LFO`, `ENV`, `TIME`, `MACRO`, `Audio`, `CV/Gate`, `MIDI`, `MIDI Note`, and
 `OpenSoundControl`.
 
