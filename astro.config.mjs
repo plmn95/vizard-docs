@@ -1,18 +1,16 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import { unified } from '@astrojs/markdown-remark';
 import starlight from '@astrojs/starlight';
-import suggestionPassages from './src/lib/suggestions/remark.mjs';
-import { revision, enabled } from './src/lib/suggestions/config.mjs';
+import sitemap from '@astrojs/sitemap';
 
 const isVercel = process.env.VERCEL === '1';
 
 // https://astro.build/config
 export default defineConfig({
-	markdown: { processor: unified({ remarkPlugins: [[suggestionPassages, { revision, enabled }]] }) },
 	site: isVercel ? 'https://vizard-docs.vercel.app' : 'https://plmn95.github.io',
 	base: process.env.VIZARD_DOCS_BASE || (isVercel ? '/' : '/vizard-docs'),
 	integrations: [
+		sitemap({ filter: (page) => !/\/(edit|suggestion)(\/|$)/.test(new URL(page).pathname) }),
 		starlight({
 			title: 'Vizard Documentation',
 			description: 'Documentation for the Vizard video synthesizer.',
@@ -21,6 +19,7 @@ export default defineConfig({
 				'./src/styles/vizard.css',
 			],
 			components: {
+				PageTitle: './src/components/PageTitle.astro',
 				SiteTitle: './src/components/SiteTitle.astro',
 				Footer: './src/components/ManualFooter.astro',
 				EditLink: './src/components/GitHubEditLink.astro',

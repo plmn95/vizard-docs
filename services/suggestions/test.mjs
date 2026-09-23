@@ -8,6 +8,51 @@ import suggestionPassages from '../../src/lib/suggestions/remark.mjs';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import worker, { handle, drain, limitedBody } from './worker.mjs';
+import { splitDocument, preserveSource, equivalent, preparePage, validateBody, cleanEditorMarkdown } from '../../src/lib/suggestions/document.mjs';
+
+test('Milkdown empty-cell adaptation never strips authored HTML or real line breaks', () => {
+  const md = '| A | B |\n|---|---|\n| <br /> | x<br />y |\n\n<br />\n';
+  assert.equal(cleanEditorMarkdown(md), md.replace('| <br /> |', '|  |'));
+  assert.throws(() => validateBody(cleanEditorMarkdown(md)));
+});
+
+test('full-page no-op saves preserve every byte, including metadata and source wrapping', () => {
+  const {body} = splitDocument(source);
+  assert.equal(preserveSource(body, body.replace(/\n\n/g, '\n\n\n')), body);
+  assert.throws(() => preparePage(source, body), /Make a change/);
+});
+test('full-page edits preserve unrelated sections, tables, relative links, and duplicate paragraphs', () => {
+  const input = '\nFirst wrapped\nparagraph.\n\n| Key | Value |\n|---|---|\n| A | `B` |\n\nSame text.\n\nSame text.\n\n[Next](../next/)\n';
+  const edited = input.replace('First wrapped\nparagraph.', 'First revised paragraph.').replace('Same text.\n\n[Next]', 'Different text.\n\n[Next]');
+  assert.equal(preserveSource(input, edited), edited);
+  const inserted = edited + '\n## Added section\n\nUseful content.\n';
+  assert.ok(equivalent(preserveSource(input, inserted), inserted));
+  assert.ok(preserveSource(input, inserted).includes('|---|---|'));
+  const deletion = edited.replace('Same text.\n\n', '');
+  assert.ok(equivalent(preserveSource(input, deletion), deletion));
+});
+test('full-page validation rejects executable HTML, dangerous URLs, images, metadata and oversize documents', () => {
+  for (const body of ['<script>alert(1)</script>', '[x](javascript:alert)', '[x](data:text/html,hello)', '![](https://example.com/x)', '---\ntitle: changed\n---', '# New title', 'x'.repeat(100001)])
+    assert.throws(() => validateBody(body), body.slice(0, 50));
+  assert.doesNotThrow(() => validateBody('Useful `code` and [link](../next/).'));
+});
+test('full-page delivery creates one PR, preserves metadata, and recovers a lost GitHub response', async () => {
+  const body = splitDocument(source).body.replace('useful', 'clearer');
+  const item = validateSubmission(submission({kind: 'page', passage: '', original: '', replacement: body}));
+  const mock = github({loseResponse: true});
+  await assert.rejects(deliver(row(item), environment(), mock.api));
+  assert.equal((await deliver(row(item), environment(), mock.api)).kind, 'pull');
+  const write = mock.writes.find(w => w.method === 'PUT');
+  assert.equal(Buffer.from(write.body.content, 'base64').toString(), source.replace('useful', 'clearer'));
+  assert.equal(mock.writes.filter(w => w.path === '/pulls').length, 1);
+});
+test('a stale full-page draft branches from its verified original revision instead of replacing current main', async () => {
+  const item = submission({kind: 'page', passage: '', original: '', replacement: splitDocument(source).body.replace('useful', 'clearer')});
+  const mock = github({current: source.replace('useful', 'published')});
+  assert.equal((await deliver(row(item), environment(), mock.api)).kind, 'pull');
+  assert.equal(mock.writes.find(w => w.path === '/git/refs').body.sha, item.revision);
+  assert.match(mock.writes.find(w => w.path === '/pulls').body.body, /published page changed/);
+});
 
 const source = '---\ntitle: Example\n---\n\nA useful **bold word** with a [link](../target/) and `CODE`.\n\nSame text.\n\nSame text.\n';
 function submission(overrides = {}) {

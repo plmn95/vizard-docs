@@ -2,6 +2,7 @@ import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkGfm from 'remark-gfm';
+import { validateBody } from './document.mjs';
 
 const parser = unified().use(remarkParse).use(remarkFrontmatter, ['yaml']).use(remarkGfm);
 export const normalize = (text) => text.replace(/\r?\n/g, ' ');
@@ -65,14 +66,15 @@ export function validateSubmission(value) {
   if (!value || typeof value !== 'object') throw new Error('Invalid submission.');
   const { id, path, revision, kind, passage = '', original = '', replacement = '', explanation = '', version = '' } = value;
   if (!/^[a-f0-9-]{36}$/.test(id ?? '') || !validPath(path) || !/^[a-f0-9]{40}$/.test(revision ?? '') ||
-    !['edit', 'problem'].includes(kind)) throw new Error('Invalid page or submission identity.');
+    !['edit', 'problem', 'page'].includes(kind)) throw new Error('Invalid page or submission identity.');
   for (const text of [passage, original, replacement, explanation, version]) {
     if (typeof text !== 'string' || /[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(text)) throw new Error('Invalid text.');
   }
-  if (original.length > 6000 || replacement.length > 6000 || explanation.length > 3000 || version.length > 80 ||
+  if (original.length > 6000 || (kind !== 'page' && replacement.length > 6000) || explanation.length > 3000 || version.length > 80 ||
     passage.length > 40) throw new Error('Please shorten your suggestion.');
   if (kind === 'edit' && (!/^\d+-\d+$/.test(passage) || !original.trim() || !replacement.trim() || original === replacement))
     throw new Error('Please change the wording before sending.');
   if (kind === 'problem' && !explanation.trim()) throw new Error('Please describe the problem.');
+  if (kind === 'page') { if (original || passage) throw new Error('Invalid page suggestion.'); validateBody(replacement); }
   return { id, path, revision, kind, passage, original, replacement, explanation, version };
 }
