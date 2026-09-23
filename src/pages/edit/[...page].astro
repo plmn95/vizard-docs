@@ -3,6 +3,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { api, siteKey, enabled, revision } from '../../lib/suggestions/config.mjs';
 import { splitDocument } from '../../lib/suggestions/document.mjs';
 import '@fontsource-variable/jetbrains-mono';
+import '@fontsource-variable/space-grotesk';
 import '../../styles/editor.css';
 export function getStaticPaths() {
   if (!enabled) return [];
@@ -23,7 +24,7 @@ const data = JSON.stringify({ body, title, path, revision, api, siteKey, returnU
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex, nofollow" /><title>Edit {title} | Vizard Documentation</title></head>
 <body data-pagefind-ignore="all">
-  <header class="edit-header"><a href={`${base}/`} class="brand">VIZARD <span>/ Documentation</span></a><div class="actions"><a data-cancel href={returnUrl}>Cancel</a><button data-review class="primary" disabled>Review changes</button><button data-back hidden>Keep editing</button><button data-send class="primary" hidden>Send suggestion</button></div></header>
+  <header class="edit-header"><a href={`${base}/`} class="brand" aria-label="Vizard Documentation home"><img src={`${base}/vizard-logo.svg`} alt="" width="32" height="26" /><strong translate="no">VIZARD</strong><span>Documentation</span></a><div class="actions"><a data-cancel href={returnUrl}>Cancel</a><button data-review class="primary" disabled>Review changes</button><button data-back hidden>Keep editing</button><button data-send class="primary" hidden>Send suggestion</button></div></header>
   <main>
     <div class="page-heading"><h1>{title}</h1><p data-intro>Edit the page. Your changes will be reviewed before publication.</p></div>
     <p data-draft-status class="draft-status" role="status">Loading editor…</p>
