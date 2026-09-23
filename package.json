@@ -9,7 +9,7 @@
     "start": "astro dev",
     "check:docs": "node scripts/check-docs.mjs",
     "check": "npm run check:docs && npm run build",
-    "build": "astro build",
+    "build": "astro build && node scripts/check-branding.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "build:release": "node scripts/build-release.mjs",

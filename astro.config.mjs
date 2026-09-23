@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
+import { FAVICON_PATH } from './src/lib/brand-assets.mjs';
 
 const isVercel = process.env.VERCEL === '1';
 
@@ -13,10 +14,10 @@ export default defineConfig({
 		sitemap({ filter: (page) => !/\/(edit|suggestion)(\/|$)/.test(new URL(page).pathname) }),
 		starlight({
 			title: 'Vizard Documentation',
+			favicon: FAVICON_PATH,
 			description: 'Documentation for the Vizard video synthesizer.',
 			customCss: [
 				'@fontsource-variable/jetbrains-mono',
-				'@fontsource-variable/space-grotesk',
 				'./src/styles/vizard.css',
 			],
 			components: {

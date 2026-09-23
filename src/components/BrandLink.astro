@@ -1,0 +1,48 @@
+---
+import '@fontsource-variable/space-grotesk';
+import { assetWithBase, LOGO_PATH } from '../lib/brand-assets.mjs';
+
+const { href, version } = Astro.props;
+const logoHref = assetWithBase(import.meta.env.BASE_URL, LOGO_PATH);
+---
+
+<a href={href} class="vizard-brand" data-vizard-brand aria-label="Vizard Documentation home">
+  <img src={logoHref} alt="" width="32" height="26" />
+  <strong translate="no">VIZARD</strong>
+  <span>Documentation{version ? ` · ${version}` : ''}</span>
+</a>
+
+<style>
+  .vizard-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 0;
+    color: #e8e8ea;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .vizard-brand img {
+    width: 2rem;
+    height: 1.6rem;
+    flex: none;
+  }
+
+  .vizard-brand strong {
+    font-family: 'Space Grotesk Variable', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+  }
+
+  .vizard-brand span {
+    color: #8a8a90;
+    font-size: 0.88rem;
+    font-weight: 450;
+  }
+
+  @media (max-width: 28rem) {
+    .vizard-brand span { display: none; }
+  }
+</style>
