@@ -16,6 +16,7 @@ export default defineConfig({
 			description: 'Documentation for the Vizard video synthesizer.',
 			customCss: [
 				'@fontsource-variable/jetbrains-mono',
+				'@fontsource-variable/space-grotesk',
 				'./src/styles/vizard.css',
 			],
 			components: {

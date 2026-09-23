@@ -1,8 +1,10 @@
 ---
 const { siteTitleHref } = Astro.locals.starlightRoute;
+const logoHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/vizard-logo.svg`;
 ---
 
 <a href={siteTitleHref} class="vizard-site-title" aria-label="Vizard Documentation home">
+	<img class="vizard-mark" src={logoHref} alt="" width="32" height="26" />
 	<span class="vizard-wordmark" translate="no">VIZARD</span>
 	<span class="vizard-site-label">Documentation{process.env.VIZARD_DOCS_VERSION ? ` · ${process.env.VIZARD_DOCS_VERSION}` : ''}</span>
 </a>
@@ -11,19 +13,25 @@ const { siteTitleHref } = Astro.locals.starlightRoute;
 	@layer starlight.core {
 		.vizard-site-title {
 			display: inline-flex;
-			align-items: baseline;
-			gap: 0.8rem;
+			align-items: center;
+			gap: 0.7rem;
 			min-width: 0;
 			color: var(--sl-color-white);
 			text-decoration: none;
 			white-space: nowrap;
 		}
 
+		.vizard-mark {
+			width: 2rem;
+			height: 1.6rem;
+			flex: none;
+		}
+
 		.vizard-wordmark {
-			font-family: 'JetBrains Mono Variable', var(--sl-font-system-mono);
-			font-size: 1rem;
+			font-family: 'Space Grotesk Variable', sans-serif;
+			font-size: 1.15rem;
 			font-weight: 700;
-			letter-spacing: 0.16em;
+			letter-spacing: 0.11em;
 		}
 
 		.vizard-site-label {

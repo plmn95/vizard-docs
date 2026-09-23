@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0f0f10"/>
-  <path d="M17 13h22l8 8v30H17z" fill="#17171a" stroke="#8a8a90" stroke-width="2"/>
-  <path d="M39 13v10h8" fill="none" stroke="#8a8a90" stroke-width="2"/>
-  <path d="M24 31h16M24 38h16M24 45h10" fill="none" stroke="#86c96b" stroke-linecap="round" stroke-width="3"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title"><title id="title">Vizard</title><rect width="64" height="64" rx="13" fill="#0f0f10"/><path fill="#e8e8ea" d="M21 14 12 23v18l9 9v-9l-4-4V27l4-4Zm22 0 9 9v18l-9 9v-9l4-4V27l-4-4Z"/><circle fill="#86c96b" cx="32" cy="32" r="9"/></svg>
