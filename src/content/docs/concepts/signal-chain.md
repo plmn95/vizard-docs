@@ -2,7 +2,7 @@
 title: "Signal Chain"
 ---
 
-A patch is the chain you build: modules run in the order shown top to bottom
+A patch is the chain you assemble: modules run in the order shown top to bottom
 in `Chain`, each one blending its own output into the running composite
 before the next module runs. The last module in that order is what `Output`
 shows.
