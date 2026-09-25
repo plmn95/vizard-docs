@@ -2,8 +2,7 @@
 title: "Mod Matrix"
 ---
 
-Every active modulation assignment, main patch and Mixer Mode together, in
-one table: `SOURCE`, `AMOUNT`, `TARGET`, `LIVE`, `BYP`, and a delete column.
+Every active modulation assignment in the current patch, in one table: `SOURCE`, `AMOUNT`, `TARGET`, `LIVE`, `BYP`, and a delete column.
 
 `LIVE` shows how strongly the assignment is moving its target right now, as
 a share of the target's range. At the source's peak the meter reaches the
@@ -21,9 +20,7 @@ constant offset on top of the swing, and a shaping control. The shaping
 control is live only for assignments driven by the `L Level` or `R Level`
 audio sources; on every other source it is greyed out. See [Audio-Reactive](../../modulation/audio-reactive/).
 
-Mixer-scoped assignments are shared across every patch in the same bank,
-driven by Mixer Mode's own LFO, Envelope, Time, and Macro banks rather than
-the patch's, and are saved with the bank rather than with any individual
-patch.
+Mixer Mode's modulation is not listed here. It is set up on the mixer
+controls themselves; see [Mixer Mode](../../../concepts/mixer-mode/).
 
 Related: [Modulation Matrix](../../../concepts/modulation-matrix/).
