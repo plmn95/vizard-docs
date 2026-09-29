@@ -130,7 +130,7 @@ a fixed string the reader can find on screen: write it in backticks
 (`` `Reset to Default` ``, `` `+ Add` ``, `` `INSERT FX` ``), matching how
 the control-vocabulary terms above are treated. Plain quotes are for
 citing an example of something that varies, like a factory patch's name
-("Test Pattern 1953") or a window title template ("Modulate:
+("Big Brother") or a window title template ("Modulate:
 &lt;parameter&gt;"), not for a control a reader could click.
 
 ---

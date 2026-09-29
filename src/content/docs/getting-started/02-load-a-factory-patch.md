@@ -2,7 +2,7 @@
 title: "Load a Factory Patch"
 ---
 
-Open `File > Factory Patches`. Pick one, for example "Test Pattern 1953".
+Open `File > Factory Patches`. Pick one, for example "Big Brother".
 `Output` updates immediately: that's the whole patch, already running,
 nothing left to configure.
 
