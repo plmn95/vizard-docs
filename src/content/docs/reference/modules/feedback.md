@@ -20,7 +20,7 @@ much of the loop reaches the output in place of the incoming frame.
 | Amount | Trough | How strongly the incoming frame is fed into the loop, 0-1. At 0 nothing new enters and the loop fades away. |
 | Decay | Trough | How much of the loop survives each lap, 0-1. 1 never fades. |
 | Loop Blend | Selector | Same seven modes as `Blend`. How each new frame recombines with what is already circulating. `Add` builds the trail up, `Difference` and `XOR` churn on the edges between laps, `Multiply` and `Screen` keep it bounded. `Replace` paints each new frame over the echoes: where the frame has picture it replaces them and `Decay` has no effect; where it is empty the echoes stay and fade by `Decay`. |
-| Black Key | Trough | 0-1. Parts of the incoming frame darker than this count as empty, fading smoothly to see-through, so older echoes show through under `Loop Blend` Replace. 0 = off. Default 0.10. |
+| Black Key | Trough | 0-1. Parts of the incoming frame darker than this count as empty, fading smoothly to see-through, so older echoes show through under `Loop Blend` Replace. 0 = off (default). |
 
 ## Timing and routing
 
