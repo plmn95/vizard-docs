@@ -17,8 +17,8 @@ redrawing from a sample ring.
 | Brightness / Width | Trough | Line width in line mode; also sizes points when Points Only is on. |
 | Points Only | Rocker | Renders each frame's beam position as a discrete point-glow instead of a connected line between positions. |
 | Detail | Trough | Beam segments drawn per frame; hidden (and has no effect) when both axes are Manual. |
-| Generator A / Generator B | Selector, Trough | Wave (Sine, Square, Sawtooth, Triangle, and the same 6 noise waves LFO offers), Freq, Phase, Amp, plus Seed/Harmonics/Spread/Gain/Density for the noise waves. |
-| Reset Generators | Button | Zeroes Generator A/B's phase accumulators back in lock-step and clears the phosphor trail. Only shown when Generator A or B drives an axis: independent modulation of Gen A/B Freq drifts their phases apart over time, skewing the default clean-circle Lissajous shape, and this snaps it back. |
+| Generator A / Generator B | Selector, Trough | Wave (Sine, Square, Sawtooth, Triangle, S+H, and the same 6 noise waves LFO offers), Freq, Phase, Amp. Square adds Duty, the share of each cycle spent high (1-99%, default 50). S+H jumps to a new random level once per cycle, with no glide. Seed picks the random sequence for S+H and the noise waves; the noise waves also add Harmonics/Spread/Gain/Density. |
+| Reset Generators | Button | Zeroes Generator A/B's phase accumulators back in lock-step (restarting S+H at the start of its sequence) and clears the phosphor trail. Only shown when Generator A or B drives an axis: independent modulation of Gen A/B Freq drifts their phases apart over time, skewing the default clean-circle Lissajous shape, and this snaps it back. |
 
 Insert FX on SCOPE applies to the full composited result, backdrop and
 phosphor trace together, not the trace alone. See
