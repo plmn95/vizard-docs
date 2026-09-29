@@ -19,7 +19,8 @@ much of the loop reaches the output in place of the incoming frame.
 |---|---|---|
 | Amount | Trough | How strongly the incoming frame is fed into the loop, 0-1. At 0 nothing new enters and the loop fades away. |
 | Decay | Trough | How much of the loop survives each lap, 0-1. 1 never fades. |
-| Loop Blend | Selector | Same seven modes as `Blend`. How each new frame recombines with what is already circulating. `Add` builds the trail up, `Difference` and `XOR` churn on the edges between laps, `Multiply` and `Screen` keep it bounded. `Replace` stops the loop recirculating wherever the incoming frame is opaque, so the module acts as a plain delay there and `Decay` only affects transparent areas. |
+| Loop Blend | Selector | Same seven modes as `Blend`. How each new frame recombines with what is already circulating. `Add` builds the trail up, `Difference` and `XOR` churn on the edges between laps, `Multiply` and `Screen` keep it bounded. `Replace` paints each new frame over the echoes: where the frame has picture it replaces them and `Decay` has no effect; where it is empty the echoes stay and fade by `Decay`. |
+| Black Key | Trough | 0-1. Parts of the incoming frame darker than this count as empty, fading smoothly to see-through, so older echoes show through under `Loop Blend` Replace. 0 = off. Default 0.10. |
 
 ## Timing and routing
 
@@ -51,21 +52,25 @@ stages together with the rest of the loop. See
 
 | Result | Settings |
 |---|---|
-| Input plus one repeat at the same level | `Loop Blend` Replace, `Amount` 1, `Blend` Add, `Dry/Wet` 0.50 |
+| Input plus one repeat at the same level | `Loop Blend` Replace, `Amount` 1, `Black Key` 0, `Blend` Add, `Dry/Wet` 0.50 |
 | Loop only, each repeat half as bright | `Loop Blend` Add, `Amount` 1, `Decay` 0.5, `Dry/Wet` 1 |
 | Afterimage held at half brightness | `Loop Blend` Add, `Amount` 1, `Decay` 1, `Blend` Add, `Dry/Wet` 0.25 |
-| Clean delay line | `Loop Blend` Replace, `Amount` 1, `Dry/Wet` 1, `Delay` as needed. Two in series add their delays. |
+| Clean delay line | `Loop Blend` Replace, `Amount` 1, `Black Key` 0, `Dry/Wet` 1, `Delay` as needed. Two in series add their delays. |
+| Painted trail that never fades | `Loop Blend` Replace, `Amount` 1, `Decay` 1, `Black Key` 0.10, `Dry/Wet` 1 |
 | Recursive edge churn | `Loop Blend` XOR or Difference, `Decay` around 0.9 |
 
-**NOTE:** opaque black is picture, not transparency, and covers older
-echoes under `Loop Blend` Replace. Add a `Luma Key` insert to the source
-module to let echoes show through its dark areas.
+**NOTE:** SCOPE, OSC and SHAPE draw on an opaque black background, so under
+`Loop Blend` Replace each new frame would cover every older echo.
+`Black Key` treats dark parts of the incoming frame as empty so echoes show
+through; set it to 0 for a plain delay. For a key by brightness range or
+colour, place an INSERT with `Luma Key` or `Chroma Key` right before
+FEEDBACK.
 
 **NOTE:** with `Feed back to` set to an earlier module, `Dry/Wet` is applied
 where the loop enters that module, so everything shown passes through the
 modules in between. At 0 the chain runs as if FEEDBACK were off. Below 0.50
-`Dry/Wet` also shortens the trail, and `Amount` and `Loop Blend` only take
-effect above 0.50. This routing has a single recursion, so the repeat-once,
+`Dry/Wet` also shortens the trail, and `Amount`, `Loop Blend` and
+`Black Key` only take effect above 0.50. This routing has a single recursion, so the repeat-once,
 held-afterimage and delay-line recipes need `Self`.
 
 FEEDBACK carries its own Sends. See
