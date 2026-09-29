@@ -11,7 +11,7 @@ work in general.
 
 | Module | What it does |
 |---|---|
-| [FEEDBACK](feedback/) | Ping-pong video feedback: decays and re-injects a previous frame. |
+| [FEEDBACK](feedback/) | Video feedback delay line with its own loop blend and Dry/Wet output. |
 | [INSERT](insert/) | Reads an AUX bus back into the chain, or acts as a plain insert stage. |
 | [ISF](isf/) | Runs a user-loaded ISF (Interactive Shader Format) shader. |
 | [NOISE](noise/) | Procedural noise generator: 7 families (Random, Perlin, Simplex, and more), each in 2D or 3D. |
