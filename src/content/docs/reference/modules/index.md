@@ -16,6 +16,7 @@ work in general.
 | [ISF](isf/) | Runs a user-loaded ISF (Interactive Shader Format) shader. |
 | [NOISE](noise/) | Procedural noise generator: 7 families (Random, Perlin, Simplex, and more), each in 2D or 3D. |
 | [OSC](osc/) | The oscillator generator: Sine, Square, Sawtooth, Triangle, Noise, or a custom waveform. |
+| [POINTCLOUD](pointcloud/) | Renders the chain or a bus as a 3D field of points or lines, displaced by brightness. |
 | [SCOPE](scope/) | An oscilloscope-style XY trace with GPU phosphor persistence. |
 | [SHAPE](shape/) | Procedural 2D shapes and symmetry: circles, polygons, Lissajous curves, and more. |
 | [SOURCE](source/) | Brings external video into the chain: a file, a capture device, or NDI/Spout/Syphon input. |

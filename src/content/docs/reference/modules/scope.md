@@ -21,7 +21,7 @@ redrawing from a sample ring.
 | Reset Generators | Button | Zeroes Generator A/B's phase accumulators back in lock-step (restarting S+H at the start of its sequence) and clears the phosphor trail. Only shown when Generator A or B drives an axis: independent modulation of Gen A/B Freq drifts their phases apart over time, skewing the default clean-circle Lissajous shape, and this snaps it back. |
 
 Insert FX on SCOPE applies to the full composited result, backdrop and
-phosphor trace together, not the trace alone. See
+phosphor trace together, not the trace alone. The effects see it over black; areas they leave dark stay empty. See
 [Insert FX Chains](../../../concepts/insert-fx-chains/).
 
 SCOPE's Sends are send-only: it can feed a bus but has no `Source` field to

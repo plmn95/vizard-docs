@@ -18,3 +18,6 @@ INSERT carries its own Insert FX chain and its own Sends, so it can feed one
 bus while reading a different one. A chain holds up to 16 of them, more than
 any other module type. See
 [Insert FX Chains](../../../concepts/insert-fx-chains/).
+
+**NOTE:** Insert FX on INSERT see the chain, or the bus, over black. Areas
+they leave dark stay empty unless the input had picture there.

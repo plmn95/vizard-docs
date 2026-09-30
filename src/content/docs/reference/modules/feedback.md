@@ -19,8 +19,7 @@ much of the loop reaches the output in place of the incoming frame.
 |---|---|---|
 | Amount | Trough | How strongly the incoming frame is fed into the loop, 0-1. At 0 nothing new enters and the loop fades away. |
 | Decay | Trough | How much of the loop survives each lap, 0-1. 1 never fades. |
-| Loop Blend | Selector | Same seven modes as `Blend`, default `Screen`. How each new frame recombines with what is already circulating. `Add` builds the trail up, `Difference` and `XOR` churn on the edges between laps, `Multiply` and `Screen` keep it bounded. `Replace` paints each new frame over the echoes: where the frame has picture it replaces them and `Decay` has no effect; where it is empty the echoes stay and fade by `Decay`. |
-| Black Key | Trough | 0-1. Parts of the incoming frame darker than this count as empty, fading smoothly to see-through, so older echoes show through under `Loop Blend` Replace. 0 = off (default). |
+| Loop Blend | Selector | Same seven modes as `Blend`, default `Screen`. How each new frame recombines with what is already circulating. `Add` builds the trail up, `Difference` and `XOR` churn on the edges between laps, `Multiply` and `Screen` keep it bounded. `Replace` paints each new frame over the echoes: where the frame has picture it replaces them and `Decay` has no effect; where it is empty the echoes stay and fade by `Decay`. `Decay` 0 makes Replace a plain delay. |
 
 ## Timing and routing
 
@@ -45,32 +44,34 @@ recycled loop every lap, so it compounds: a small rotation spirals, a small
 hue shift cycles. Every echo that reaches the output has passed through `Pre`
 at least once. `Post` runs once on the loop's output on the way out and does
 not compound. Each slot's own `Mix` still applies, and `Dry/Wet` scales both
-stages together with the rest of the loop. See
+stages together with the rest of the loop. `Pre` and `Post` see the loop
+over black; where they draw nothing, the loop stays empty. See
 [Insert FX Chains](../../../concepts/insert-fx-chains/).
 
 ## Recipes
 
 | Result | Settings |
 |---|---|
-| Input plus one repeat at the same level | `Loop Blend` Replace, `Amount` 1, `Black Key` 0, `Blend` Add, `Dry/Wet` 0.50 |
+| Input plus one repeat at the same level | `Loop Blend` Replace, `Amount` 1, `Decay` 0, `Blend` Add, `Dry/Wet` 0.50 |
 | Loop only, each repeat half as bright | `Loop Blend` Add, `Amount` 1, `Decay` 0.5, `Dry/Wet` 1 |
 | Afterimage held at half brightness | `Loop Blend` Add, `Amount` 1, `Decay` 1, `Blend` Add, `Dry/Wet` 0.25 |
-| Clean delay line | `Loop Blend` Replace, `Amount` 1, `Black Key` 0, `Dry/Wet` 1, `Delay` as needed. Two in series add their delays. |
-| Painted trail that never fades | `Loop Blend` Replace, `Amount` 1, `Decay` 1, `Black Key` 0.10, `Dry/Wet` 1 |
+| Clean delay line | `Loop Blend` Replace, `Amount` 1, `Decay` 0, `Dry/Wet` 1, `Delay` as needed. Two in series add their delays. |
+| Painted trail that never fades | `Loop Blend` Replace, `Amount` 1, `Decay` 1, `Dry/Wet` 1, behind SCOPE, SHAPE or TEXT |
 | Recursive edge churn | `Loop Blend` XOR or Difference, `Decay` around 0.9 |
 
-**NOTE:** SCOPE, OSC and SHAPE draw on an opaque black background, so under
-`Loop Blend` Replace each new frame would cover every older echo.
-`Black Key` treats dark parts of the incoming frame as empty so echoes show
-through; set it to 0 for a plain delay. For a key by brightness range or
-colour, place an INSERT with `Luma Key` or `Chroma Key` right before
-FEEDBACK.
+**NOTE:** SCOPE, SHAPE, TEXT and SPRITE leave the rest of the frame empty,
+so under `Loop Blend` Replace older echoes show wherever the new frame is
+empty. OSC, NOISE and video from SOURCE fill the whole frame: add `Luma Key`
+to that module's own Insert FX, or place an INSERT with `Luma Key` or
+`Chroma Key` right before FEEDBACK, so their dark parts count as empty.
+`Loop Blend` Multiply, Screen, Difference, XOR and Phoenix treat empty parts
+of the incoming frame as black.
 
 **NOTE:** with `Feed back to` set to an earlier module, `Dry/Wet` is applied
 where the loop enters that module, so everything shown passes through the
 modules in between. At 0 the chain runs as if FEEDBACK were off. Below 0.50
-`Dry/Wet` also shortens the trail, and `Amount`, `Loop Blend` and
-`Black Key` only take effect above 0.50. This routing has a single recursion, so the repeat-once,
+`Dry/Wet` also shortens the trail, and `Amount` and `Loop Blend` only take
+effect above 0.50. This routing has a single recursion, so the repeat-once,
 held-afterimage and delay-line recipes need `Self`.
 
 FEEDBACK carries its own Sends. See

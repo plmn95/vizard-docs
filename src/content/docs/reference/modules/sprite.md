@@ -20,5 +20,8 @@ instances.
 | Sheet Animation | Selector, Trough | Off, Forward, Ping-Pong, or Random playback through a sprite sheet's grid (columns, rows, frame count, and fps), independent of Display Mode. |
 | Loop / Speed | Rocker, Trough | File input only. Speed runs 0 to 4.0x, forward only, same shape as SOURCE's. |
 
+**NOTE:** with nothing loaded, the module adds nothing and the chain passes
+through unchanged in every `Blend` mode.
+
 Related: [Insert FX Chains](../../../concepts/insert-fx-chains/),
 [AUX Sends and Buses](../../../concepts/aux-sends-and-buses/).

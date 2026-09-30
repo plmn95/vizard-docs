@@ -15,5 +15,8 @@ another program's NDI/Spout/Syphon output.
 | Blend | Selector | Add, Multiply, Screen, Difference, XOR, Replace, or Phoenix into the chain. |
 | Mix | Trough | Wet/dry of the source against what's beneath it. |
 
+**NOTE:** with nothing loaded, the module adds nothing and the chain passes
+through unchanged in every `Blend` mode.
+
 Related: [Insert FX Chains](../../../concepts/insert-fx-chains/),
 [AUX Sends and Buses](../../../concepts/aux-sends-and-buses/).

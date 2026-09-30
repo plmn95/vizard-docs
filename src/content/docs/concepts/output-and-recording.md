@@ -16,6 +16,12 @@ NDI, Spout (Windows), and Syphon (macOS) each send the same output live to
 another program instead of, or alongside, a file. Each is enabled
 separately in `Settings > Output`, under its own sender name.
 
+Parts of the picture that no module has drawn on are empty. The `Output`
+window, `Dual Monitor Output`, recordings and snapshots show them as black.
+NDI, Spout and Syphon send them as transparency. A receiving program that
+ignores alpha shows partly see-through areas at full strength, for example
+FEEDBACK echoes that are fading out.
+
 `Dual Monitor Output`, also in `Settings > Output`, opens a second window
 carrying nothing but the output image, sized independently of the main
 window.
