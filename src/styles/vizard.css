@@ -88,6 +88,13 @@ starlight-theme-select {
 		0 3px 10px rgb(0 0 0 / 32%);
 }
 
+/* Give the inset plate more room above the mark without moving its contents. */
+.header > .header {
+	margin-block-start: -0.25rem;
+	height: calc(100% + 0.25rem);
+	padding-block-start: 0.25rem;
+}
+
 .social-icons::after {
 	display: none;
 }
