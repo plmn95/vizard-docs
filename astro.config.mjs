@@ -8,14 +8,14 @@ const isVercel = process.env.VERCEL === '1';
 
 // https://astro.build/config
 export default defineConfig({
-	site: isVercel ? 'https://vizard-docs.vercel.app' : 'https://plmn95.github.io',
+	site: isVercel ? 'https://docs.hexcomposer.com' : 'https://plmn95.github.io',
 	base: process.env.VIZARD_DOCS_BASE || (isVercel ? '/' : '/vizard-docs'),
 	integrations: [
 		sitemap({ filter: (page) => !/\/(edit|suggestion)(\/|$)/.test(new URL(page).pathname) }),
 		starlight({
-			title: 'Vizard Documentation',
+			title: 'Hex Composer Documentation',
 			favicon: FAVICON_PATH,
-			description: 'Documentation for the Vizard video synthesizer.',
+			description: 'Documentation for the Hex Composer video synthesizer.',
 			customCss: [
 				'@fontsource-variable/jetbrains-mono',
 				'./src/styles/vizard.css',

@@ -2,7 +2,7 @@
 title: "Docking and Layout"
 ---
 
-Every window in Vizard docks freely: dragged, resized, tabbed together, or
+Every window in Hex Composer docks freely: dragged, resized, tabbed together, or
 closed, the same way across the whole app. `View` lists eight of them by
 name, each with its own toggle: `Output`, `Chain`, `Patches`, `Module`,
 `Modulation`, `Mod Matrix`, `AUX Buses`, and `Settings`. The

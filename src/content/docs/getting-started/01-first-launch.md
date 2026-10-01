@@ -2,7 +2,7 @@
 title: "First Launch"
 ---
 
-Launch Vizard. It opens into a working docked layout, not a blank window:
+Launch Hex Composer. It opens into a working docked layout, not a blank window:
 `Output` fills the center, `Module` sits in the panel on the right, and
 `Chain` and `Patches` share one tabbed bar across the bottom. `Modulation`
 is docked as a second tab beside `Module` but starts closed; open it from

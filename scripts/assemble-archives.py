@@ -55,10 +55,10 @@ for release in releases:
                 if sha(z.read(name)) != expected:
                     raise RuntimeError('File checksum mismatch: ' + name)
             z.extractall(destination)
-        links.append(f'<li><a href="../releases/{version}/">Vizard {html.escape(version)}</a></li>')
+        links.append(f'<li><a href="../releases/{version}/">Hex Composer {html.escape(version)}</a></li>')
 chooser = root / 'versions'
 chooser.mkdir(exist_ok=True)
-(chooser / 'index.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vizard documentation versions</title><style>body{font:1rem/1.6 system-ui;max-width:44rem;margin:4rem auto;padding:0 1.5rem;background:#141517;color:#eceef2}a{color:#c0d7ff}li{margin:1rem 0}</style><main><h1>Documentation versions</h1><p>Each release keeps the manual and appearance shipped with the app.</p><ul><li><a href="../">Current documentation</a></li>' + ''.join(links) + '</ul></main></html>')
+(chooser / 'index.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hex Composer documentation versions</title><style>body{font:1rem/1.6 system-ui;max-width:44rem;margin:4rem auto;padding:0 1.5rem;background:#141517;color:#eceef2}a{color:#c0d7ff}li{margin:1rem 0}</style><main><h1>Documentation versions</h1><p>Each release keeps the manual and appearance shipped with the app.</p><ul><li><a href="../">Current documentation</a></li>' + ''.join(links) + '</ul></main></html>')
 size = sum(p.stat().st_size for p in root.rglob('*') if p.is_file())
 print(f'Published site: {size:,} bytes; {len(links)} frozen manuals')
 if size > 950_000_000:

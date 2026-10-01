@@ -5,7 +5,7 @@ title: "Record and Output"
 Click `REC` in the main toolbar. It starts recording immediately, no save
 dialog: the file is named `vizard_YYYYMMDD_HHMMSS.mp4` from the current time
 and written to the Movies folder on macOS, the home folder on Linux, and the
-folder Vizard was started from on Windows. The word stays `REC` while
+folder Hex Composer was started from on Windows. The word stays `REC` while
 recording and its lamp lights red; click it again to end the recording.
 `Ctrl+Alt+R` does the same from the keyboard.
 
@@ -21,7 +21,7 @@ Quality, frame rate, codec (H.264 or H.265), and whether to include audio
 are set once in `Settings > Recording` and apply to every recording started
 afterward.
 
-Vizard can also send its output live to another program instead of, or
+Hex Composer can also send its output live to another program instead of, or
 alongside, recording to a file: NDI, Spout (Windows), and Syphon (macOS) are
 each enabled separately in `Settings > Output`.
 

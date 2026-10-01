@@ -1,12 +1,12 @@
 name: Documentation correction
-description: Report something incorrect, unclear, or missing in the Vizard documentation.
+description: Report something incorrect, unclear, or missing in the Hex Composer documentation.
 title: "Docs: "
 labels:
   - documentation
 body:
   - type: markdown
     attributes:
-      value: Thanks for helping improve the Vizard documentation.
+      value: Thanks for helping improve the Hex Composer documentation.
   - type: input
     id: page
     attributes:
@@ -30,6 +30,6 @@ body:
   - type: input
     id: version
     attributes:
-      label: Vizard version
+      label: Hex Composer version
       description: Include the version if the correction concerns application behavior.
       placeholder: v0.11.1

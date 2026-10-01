@@ -1,9 +1,9 @@
 ---
-title: "Vizard documentation"
-description: "Learn Vizard, understand its signal model, and look up modules, effects, modulation sources, windows, and shortcuts."
+title: "Hex Composer documentation"
+description: "Learn Hex Composer, understand its signal model, and look up modules, effects, modulation sources, windows, and shortcuts."
 ---
 
-Vizard is a video synthesizer you play, not a video editor you configure. This
+Hex Composer is a video synthesizer you play, not a video editor you configure. This
 wiki documents the app as it exists now: what each module and effect does, how
 the signal chain and modulation system work, and how to get from a blank patch
 to recorded output.

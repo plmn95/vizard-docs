@@ -1,7 +1,7 @@
 {
   "name": "vizard-docs",
   "private": true,
-  "description": "Public documentation for the Vizard video synthesizer.",
+  "description": "Public documentation for the Hex Composer video synthesizer.",
   "type": "module",
   "version": "0.0.1",
   "scripts": {

@@ -1,14 +1,14 @@
-# Vizard Documentation
+# Hex Composer Documentation
 
-This repository contains the public documentation for Vizard, a video
+This repository contains the public documentation for Hex Composer, a video
 synthesizer you play rather than a video editor you configure.
 
 The published site is available at
-[plmn95.github.io/vizard-docs](https://plmn95.github.io/vizard-docs/).
+[docs.hexcomposer.com](https://docs.hexcomposer.com/).
 
 ## Local development
 
-Vizard Documentation uses [Starlight](https://starlight.astro.build/) and
+Hex Composer Documentation uses [Starlight](https://starlight.astro.build/) and
 requires Node.js 22.12 or newer.
 
 ```sh
@@ -35,7 +35,7 @@ see [setup and operations](services/suggestions/README.md). Local editor routes 
 the canonical GitHub Pages editor. Versioned manuals retain their online correction link. Run `npm run test:suggestions` for delivery and source-mapping
 tests, `npm run test:editor` for corpus and browser checks, and `npm run suggestions:check` to verify the Worker bundle.
 
-## Manuals shipped with Vizard
+## Manuals shipped with Hex Composer
 
 `npm run build:release -- vX.Y.Z` builds a complete manual at
 `/vizard-docs/releases/vX.Y.Z/`, with release identity, local search and a hashed

@@ -2,7 +2,7 @@
 title: "Keyboard Shortcuts"
 ---
 
-Every bound key and mouse gesture in Vizard, grouped by the scope it's live
+Every bound key and mouse gesture in Hex Composer, grouped by the scope it's live
 in. This table matches the app's own `Help > Keyboard Shortcuts` window
 exactly.
 

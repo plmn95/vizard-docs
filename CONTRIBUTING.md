@@ -1,4 +1,4 @@
-# Contributing to Vizard Documentation
+# Contributing to Hex Composer Documentation
 
 Corrections, clearer explanations, and missing documentation are welcome.
 

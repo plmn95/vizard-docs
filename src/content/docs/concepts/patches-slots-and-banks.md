@@ -25,7 +25,7 @@ not become an entry a later session mistakes for the user's own work.
 
 A slot can also be set as the startup default, from its right-click menu's
 `Set as Startup Default` or from `File > Set Active Patch as Startup
-Default`, so it opens automatically the next time Vizard launches, in place
+Default`, so it opens automatically the next time Hex Composer launches, in place
 of the one-`OSC` factory default.
 
 `Reopen Last Patch on Startup`, under `File > Recent Patches`, is the

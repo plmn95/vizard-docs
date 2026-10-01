@@ -49,7 +49,7 @@ test('reader edits multiple sections, restores draft, reviews, retries once and 
       headers:{'Access-Control-Allow-Origin':'*'}, body: JSON.stringify(payloads.length === 1 ? {error:'Temporary service outage.'} : {id:payloads[0].id})});
   });
   await page.goto('concepts/signal-chain/?manual=v0.14.0');
-  await expect(page).toHaveTitle('Signal Chain | Vizard Documentation');
+  await expect(page).toHaveTitle('Signal Chain | Hex Composer Documentation');
   await expect(page.locator('.suggestion-pick')).toHaveCount(0);
   await page.getByRole('link',{name:'Edit this page'}).first().click();
   const content = page.getByRole('textbox',{name:'Page content'});

@@ -20,22 +20,22 @@ title: "Settings"
 ## Graphics
 
 The `Graphics` section at the top of the `Output` category sets which graphics
-card Vizard renders on, and reports which one is in use.
+card Hex Composer renders on, and reports which one is in use.
 
 | Control | Covers |
 |---|---|
-| Graphics Card | `High performance (dedicated graphics)` or `Power saving (built-in graphics)`. Present only on machines with two graphics cards. Takes effect on the next launch; a `Restart VIZARD to apply` line appears once the selection differs from the card in use. |
+| Graphics Card | `High performance (dedicated graphics)` or `Power saving (built-in graphics)`. Present only on machines with two graphics cards. Takes effect on the next launch; a `Restart Hex Composer to apply` line appears once the selection differs from the card in use. |
 | Rendering on | Read-only. Names the graphics card the current session is actually running on. Shown on every machine, including those with a single card. |
 
 Laptops with both an integrated and a discrete graphics card default to the
-discrete one. Vizard's render chain is many fullscreen passes deep, so the
+discrete one. Hex Composer's render chain is many fullscreen passes deep, so the
 integrated card can saturate on a small patch and cost frame rate across the
-whole desktop, not just inside Vizard. `Power saving` moves rendering back to
+whole desktop, not just inside Hex Composer. `Power saving` moves rendering back to
 the integrated card and extends battery life.
 
 **NOTE:** when a launch fails to reach a window on the discrete card, the next
 launch comes up on the integrated one and says so beneath the control.
-Selecting `High performance` again is what asks Vizard to retry.
+Selecting `High performance` again is what asks Hex Composer to retry.
 
 **NOTE:** the `VIZARD_GPU` environment variable overrides the setting for one
 session. Accepted values are `discrete`, `integrated`, `auto` and `off`. Any

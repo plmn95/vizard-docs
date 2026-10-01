@@ -2,7 +2,7 @@
 title: "Reading the Panel"
 ---
 
-Vizard's interface is built as a front panel, not a settings screen: depth
+Hex Composer's interface is built as a front panel, not a settings screen: depth
 and position carry meaning the way they would on physical hardware, and
 color is reserved for two things only. Every page in this wiki names
 controls by these same terms.

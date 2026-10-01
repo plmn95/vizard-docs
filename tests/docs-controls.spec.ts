@@ -5,7 +5,7 @@ test('page editing is discoverable and section links copy without scrolling', as
   page.on('pageerror', error => errors.push(error.message));
   await page.addInitScript(() => Object.defineProperty(navigator, 'clipboard', {value: {writeText: async (text: string) => { (window as any).copiedLink = text; }}}));
   await page.goto('./');
-  await expect(page).toHaveTitle(/Vizard/);
+  await expect(page).toHaveTitle(/Hex Composer/);
   const actions = page.locator('.title-row .contribute-actions');
   await expect(actions.getByRole('link', {name: 'Edit this page'})).toBeVisible();
   await expect(actions.getByRole('link', {name: 'Edit on GitHub'})).toBeVisible();
