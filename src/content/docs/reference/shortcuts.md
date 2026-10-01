@@ -26,6 +26,8 @@ Live anywhere, in any mode.
 | `Ctrl+Z` | Undo |
 | `Ctrl+Shift+Z` | Redo |
 | `Ctrl+Y` | Redo |
+| `PrintScreen` / `Ctrl+Alt+S` | Snap Still |
+| `Ctrl+Alt+R` | Start or stop recording |
 
 ## Mixer Mode
 

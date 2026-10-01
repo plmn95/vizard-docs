@@ -2,11 +2,17 @@
 title: "Record and Output"
 ---
 
-Click `● Rec` in the main toolbar. It starts recording immediately, no save
+Click `REC` in the main toolbar. It starts recording immediately, no save
 dialog: the file is named `vizard_YYYYMMDD_HHMMSS.mp4` from the current time
 and written to the Movies folder on macOS, the home folder on Linux, and the
-folder Vizard was started from on Windows. Click the same button, now
-labeled `Stop`, to end the recording.
+folder Vizard was started from on Windows. The word stays `REC` while
+recording and its lamp lights red; click it again to end the recording.
+`Ctrl+Alt+R` does the same from the keyboard.
+
+The camera button next to `REC` saves the current output image as a PNG in
+the same folder (`PrintScreen` or `Ctrl+Alt+S` does the same). The
+`REC` and camera pill is also available in Mixer Mode, in a slim strip along
+the top.
 
 What gets recorded is the actual output image, aspect-locked, with no docked
 panels or letterbox bars in it, not a screen capture of the window.

@@ -10,7 +10,9 @@ image.
 Recording writes an MP4 straight to disk with no save dialog, at whatever
 quality, frame rate, codec, and audio-inclusion setting
 `Settings > Recording` holds at the time. The codec is H.264 or H.265. It captures the aspect-locked
-output image itself, not the window or its docked panels.
+output image itself, not the window or its docked panels. Start and stop it
+from the `REC` pill in the toolbar, which Mixer Mode also shows, or with
+`Ctrl+Alt+R`.
 
 NDI, Spout (Windows), and Syphon (macOS) each send the same output live to
 another program instead of, or alongside, a file. Each is enabled

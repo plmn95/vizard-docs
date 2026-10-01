@@ -26,4 +26,9 @@ pressing it again brings them back. `Escape` reverses whichever of the two
 is currently true: it un-hides the controls first if `H` hid them, and only
 exits Mixer Mode once the controls are already visible.
 
+A slim strip along the top keeps the `REC` and camera pill, the recording
+timer and the recording settings within reach, and `Ctrl+Alt+R` starts or
+stops a recording from the keyboard. While `H` hides the controls, a small
+red lamp in the corner shows that a recording is running.
+
 Related: [Signal Chain](../signal-chain/).
