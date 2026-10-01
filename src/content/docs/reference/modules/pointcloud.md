@@ -20,7 +20,7 @@ bulges with the audio input, and stays flat with no audio.
 | Thickness / Shell / Fill / Arms / Twist / Turbulence / Tube Size / Detail / Speed / Height / Smoothing | Trough | 0-1. One or two sliders that appear for the shapes that use them, and every one can be modulated. Sphere Volume: Thickness (0 is a hollow shell, 1 a solid ball). Box Volume: Shell (0 is a solid block, 1 only the outside faces). Torus: Fill (0 is a thin skin, 1 a filled tube) and Tube Size. Galaxy Spiral: Arms (2 to 6) and Twist. Noise Blob: Turbulence and Thickness. Strange Attractor: Detail (higher costs more on slow graphics cards) and Speed. Spectrum: Height and Smoothing. |
 | Curve | Selector | Strange Attractor only: Lorenz, Aizawa, or Thomas. |
 | Density | Trough | 0-1. Point and line grid resolution. In Voxels, how many cubes fit across the longest side, from 8 to 256. |
-| Depth Amount | Trough | 0-1. How strongly depth pushes points off their shape. In Voxels, how tall the cube columns can get. The volume shapes, Galaxy Spiral, Noise Blob and Strange Attractor ignore it. |
+| Depth Amount | Trough | 0-1. How strongly depth pushes points off their shape. In Voxels, how tall the cube columns can get. In the volume shapes, Noise Blob and Strange Attractor, brightness pushes points out from the centre or in toward it; in Galaxy Spiral, toward or away from the camera. |
 | Perspective | Trough | 0-2. 0 is flat. |
 | Zoom | Trough | 0.1-4. |
 | Orbit / Tilt | Wheel | -180 to 180 degrees. |
