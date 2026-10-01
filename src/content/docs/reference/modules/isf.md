@@ -13,9 +13,9 @@ inputs determine what parameters appear, not a fixed list this module owns.
 | Mix | Trough | Wet/dry of the shader's result. |
 | Shader Inputs | varies | Generated from the loaded shader's own metadata; shape and count vary shader to shader. |
 
-An ISF shader is a separate mechanism from the fixed 41-type Insert FX
+An ISF shader is a separate mechanism from the fixed 43-type Insert FX
 catalog: an ISF module also carries its own Insert FX chain, stacked after
-the shader's own result, not as a 42nd catalog entry. See
+the shader's own result, not as a 44th catalog entry. See
 [Insert FX Chains](../../../concepts/insert-fx-chains/).
 
 ## Filters and generators

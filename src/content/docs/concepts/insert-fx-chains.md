@@ -5,7 +5,7 @@ title: "Insert FX Chains"
 Insert FX gives a module its own local effects stack, layered onto that
 module's output without adding separate modules to the chain: every module
 carries one, with up to 8 ordered slots shown in `Module`'s `INSERT FX`
-section. Each slot holds one effect from the same 41-effect catalog wherever
+section. Each slot holds one effect from the same 43-effect catalog wherever
 it appears, and runs independent of the module's own position in the signal
 chain.
 
@@ -16,6 +16,12 @@ Rocker, and is deleted with its `X`.
 
 Each slot's own `Mix` sets how much of the effect blends back with what came
 into the slot, from fully dry to fully wet.
+
+Some effects work as a pair across slots. Dither set to Spread Only adds its
+pattern without reducing any colors, and a Palette Map placed later in the
+same chain then snaps each pixel to the nearest palette color, which dithers
+in the palette's own colors. The two slots stay independent: reordering,
+bypassing or deleting either one only changes what the other receives.
 
 A slot can also scope its effect to a circle instead of the whole frame, and
 melt into another slot's circle when the two come close, regardless of what
