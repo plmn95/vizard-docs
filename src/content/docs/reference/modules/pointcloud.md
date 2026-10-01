@@ -19,6 +19,7 @@ by brightness.
 | Orbit / Tilt | Wheel | -180 to 180 degrees. |
 | Point Size | Trough | 0.5-8 px. |
 | Style | Selector | Points, Horiz Scanlines, Vert Scanlines, Depth Circles, Wireframe, Radial Scan, Trail/Comet, or Solid Mesh. |
+| Point | Selector | Auto, Square, Round, Soft, or Ring. Look of each point. Auto uses Square for Flat and Sphere, and Soft for Flow. Only applies to Points, Depth Circles and Trail/Comet. |
 | Backdrop | Rocker | Replace only. Removes the chain behind the point cloud; the gaps between points and lines stay empty, black on the output. |
 | Trail | Trough | 0-1. Trail/Comet only: how much of the previous frame's points persist. |
 
