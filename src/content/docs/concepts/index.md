@@ -20,7 +20,7 @@ order.
   to any parameter.
 - [Output and Recording](output-and-recording/): what leaves the app, and
   by which route.
-- [Patches, Slots, and Banks](patches-slots-and-banks/): the `.viz` file
+- [Patches, Slots, and Banks](patches-slots-and-banks/): the `.hxc` file
   format and how slots and banks organize it.
 - [Reading the Panel](reading-the-panel/): the app's own control vocabulary
   (Knob, Trough, Wheel, and the rest), and what its colors mean.

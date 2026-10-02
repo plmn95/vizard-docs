@@ -3,7 +3,7 @@ title: "Record and Output"
 ---
 
 Click `REC` in the main toolbar. It starts recording immediately, no save
-dialog: the file is named `vizard_YYYYMMDD_HHMMSS.mp4` from the current time
+dialog: the file is named `hexcomposer_YYYYMMDD_HHMMSS.mp4` from the current time
 and written to the Movies folder on macOS, the Videos folder on Windows, and the
 home folder on Linux. The word stays `REC` while recording, its lamp lights
 red, and a timer next to it counts the length of the recording. Click it

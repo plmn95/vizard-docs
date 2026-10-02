@@ -2,7 +2,7 @@
 title: "Patches, Slots, and Banks"
 ---
 
-A patch is one `.viz` file: one signal chain, its modulators, and every mod
+A patch is one `.hxc` file: one signal chain, its modulators, and every mod
 assignment on it. `Patches` holds any number of patches as slots in one
 session, starting from one and growing every time its `[+]` button is
 clicked. Nothing caps how many a session can hold.
@@ -15,9 +15,13 @@ own yet, so its first save behaves as Save As instead of overwriting
 anything.
 
 `File > Save Bank` (`Ctrl+B`) writes every open slot, and which one is
-active, to a single file in one step; `File > Save Bank As...` writes it to
-a new one. `File > Load Bank...` replaces the open slots with a bank's
-contents.
+active, to a single `.hxcbank` file in one step; `File > Save Bank As...`
+writes it to a new one. `File > Load Bank...` replaces the open slots with a
+bank's contents.
+
+`File > Open...` also accepts `.viz` patch files and `File > Load Bank...`
+accepts `.vizbank` banks. Saving one of them keeps its file name and
+extension.
 
 `File > Recent Patches` lists the user's own recently opened files. Factory
 patches are excluded from it: opening one is meant to start something new,

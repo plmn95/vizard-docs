@@ -11,7 +11,7 @@ title: "Settings"
 | MIDI | MIDI port selection. |
 | OpenSoundControl | The UDP listen port. |
 | Recording | Quality (4 stops, Low to Lossless), frame rate (24, 30, or 60), codec (H.264 or H.265), and whether to include audio. Also `Output Folder` (defaults to Movies on macOS, Videos on Windows, the home folder on Linux) and `Filename` (strftime tokens, listed in the `(?)` tooltip beside it; `.mp4` is always appended). After a recording that skipped frames because encoding fell behind, a note under `Codec` suggests a faster choice. |
-| Patches | Whether referenced sprites, images, and video are embedded inside a saved `.viz` file, so the patch stays portable if the original files move. Increases file size. |
+| Patches | Whether referenced sprites, images, and video are embedded inside a saved `.hxc` file, so the patch stays portable if the original files move. Increases file size. |
 | Appearance | UI Scale: `Auto`, or one of four fixed stops, `100%`, `125%`, `150%`, `200%`. |
 | Interaction | Fine Mouse Control: how much Shift-drag slows a Trough or Knob down, across six stops from `20% (Coarser)` to `1% (Finest)`. |
 
@@ -37,11 +37,11 @@ the integrated card and extends battery life.
 launch comes up on the integrated one and says so beneath the control.
 Selecting `High performance` again is what asks Hex Composer to retry.
 
-**NOTE:** the `VIZARD_GPU` environment variable overrides the setting for one
-session. Accepted values are `discrete`, `integrated`, `auto` and `off`. Any
-graphics-card variable already set in the environment, such as `DRI_PRIME`, is
-honoured untouched and disables the control for that session, which reads
-`Set by the environment this session.` Both are troubleshooting aids; neither
-is persisted.
+**NOTE:** the `HEXCOMPOSER_GPU` environment variable overrides the setting for
+one session (`VIZARD_GPU` works as well). Accepted values are `discrete`,
+`integrated`, `auto` and `off`. Any graphics-card variable already set in the
+environment, such as `DRI_PRIME`, is honoured untouched and disables the
+control for that session, which reads `Set by the environment this session.`
+Both are troubleshooting aids; neither is persisted.
 
 Related: [Output and Recording](../../../concepts/output-and-recording/).
