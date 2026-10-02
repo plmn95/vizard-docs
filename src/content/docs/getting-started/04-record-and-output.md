@@ -4,10 +4,14 @@ title: "Record and Output"
 
 Click `REC` in the main toolbar. It starts recording immediately, no save
 dialog: the file is named `vizard_YYYYMMDD_HHMMSS.mp4` from the current time
-and written to the Movies folder on macOS, the home folder on Linux, and the
-folder Hex Composer was started from on Windows. The word stays `REC` while
-recording and its lamp lights red; click it again to end the recording.
-`Ctrl+Alt+R` does the same from the keyboard.
+and written to the Movies folder on macOS, the Videos folder on Windows, and the
+home folder on Linux. The word stays `REC` while recording, its lamp lights
+red, and a timer next to it counts the length of the recording. Click it
+again to end the recording. `Ctrl+Alt+R` does the same from the keyboard.
+
+The file finishes saving in the background, then a message shows where it
+was saved. If saving takes a moment, the timer shows `Saving...` until it's
+done.
 
 The camera button next to `REC` saves the current output image as a PNG in
 the same folder (`PrintScreen` or `Ctrl+Alt+S` does the same). The
