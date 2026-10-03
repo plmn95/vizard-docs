@@ -5,6 +5,11 @@
   "framework": "astro",
   "redirects": [
     {
+      "source": "/edit/:path*/",
+      "destination": "https://plmn95.github.io/vizard-docs/edit/:path*/",
+      "permanent": false
+    },
+    {
       "source": "/edit/:path*",
       "destination": "https://plmn95.github.io/vizard-docs/edit/:path*",
       "permanent": false
