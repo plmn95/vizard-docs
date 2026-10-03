@@ -1,0 +1,5 @@
+bash -n: Linux/Windows local build scripts and macOS make-app script passed.
+Ruby Psych: build.yml and release.yml parsed successfully.
+Documentation pipeline: 14 existing Python tests passed.
+Native macOS app rebuilt after packaging metadata changes.
+Windows/Linux packages were not built or run.

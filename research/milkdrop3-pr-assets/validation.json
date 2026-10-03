@@ -6,11 +6,19 @@
   "source_sha256": {
     "cmake/projectm-milk3.patch": "d70fa13cb30d78e500bded8f8554548f141a2933b3262f908418bbba059e880b",
     "cmake/ApplyProjectMPatch.cmake": "bedda1f3bf22c5815df115b571fad5df41bbc01d3e0c3a97f3a72c81cbe674b4",
-    "cmake/MilkDrop.cmake": "20d6069117fabce222715f2afe9b19acfa4a63dc81a340a08aafc9b0ac73c0b9",
+    "cmake/MilkDrop.cmake": "64a7ea2545a09ea0ff95e1ad671f645f19eaef081f03ad0b58586516f6d0f3ff",
     "src/renderer/milk_runtime.cpp": "8fa4f352f63aa51012019c59d598c574cddd7e6c38030dd34a7a86bb6473a43b",
     "src/renderer/milk_format.h": "68f090d35d4003b62af3a825d557f364c0c88055cc9cb54a90506b97879300b3",
     "src/renderer/crt_renderer.cpp": "0bb096d9e7eae110e89d80b07681ce3a813a1244ded51265eb26f8c3458287d2",
-    "tests/milk_module_test.cpp": "2bb9c3e36aeac06483bd683311b684e00320b3284983a3e9f9b390836acec5eb"
+    "tests/milk_module_test.cpp": "2bb9c3e36aeac06483bd683311b684e00320b3284983a3e9f9b390836acec5eb",
+    "CMakeLists.txt": "a74aa4736bf9599525ac90d928746ca268e3c36027b62076b1c65e6bf5eb1aa4",
+    ".github/workflows/build.yml": "f69632788beb28b84be7a3eee820a986c9272e9590d3560966945368535f5f37",
+    ".github/workflows/release.yml": "593e1f6225a76392d16975f2330cf260db11d0998026cc46da2ce0cf1bf44b39",
+    "scripts/build-linux.sh": "cf2117c249bb3d98cdc68c371ccc516432c6d325f49194f49a86a2cb8b3fc7ff",
+    "cmake/licenses/projectM-glm.txt": "62d2d642c7d054d4fb4c9b42faad617d6c88fcd91e317f8035aa9f277cc159c3",
+    "cmake/licenses/projectM-Apache-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "cmake/licenses/projectM-glad.txt": "cbb325cd4ac5bd06717ffa34a322b984f9d285e4c67c8ca1b7380d6ef08c2a77",
+    "cmake/licenses/projectM-vendor-notices.txt": "b8feed467aa5c5e8a227cf65a6c2c147cd1c02868d925a600b973f711fad6bb4"
   },
   "corpus_loaded": 122,
   "corpus_rejected": 40,
@@ -25,5 +33,6 @@
     "Official reference captured under Wine on macOS, not native Windows",
     "No distributable package or Windows/Linux runtime verification"
   ],
-  "log_normalization": "Trailing whitespace removed from documentation-build and wrong-revision diagnostic logs."
+  "log_normalization": "Trailing whitespace removed from documentation-build and wrong-revision diagnostic logs.",
+  "validation_phases": "Native GPU/corpus and persistence checks preceded a packaging-metadata-only follow-up; the app was rebuilt after that follow-up. Windows/Linux package execution remains unverified."
 }

@@ -12,7 +12,7 @@ Up to eight MILK modules can be placed in a chain. Each has independent equation
 
 Failed imports preserve the loaded runtime. Unsupported sprites, unknown double masks, missing textures, shader compiler failures and `MD31`/`MD32` references report errors instead of substituting a plausible-looking placeholder. Mute follows current Hex behavior and produces empty transparency; downstream keying remains an explicit creative operation. A full-frame MilkDrop image can intentionally contain opaque black.
 
-The backend is a replaceable shared projectM library pinned to `dd89dfba0852c0c7e0c4e668929118d91ec3a3f0`, with a cumulative 35-file patch. The source-revision guard rejects mismatched checkouts. Build and packaging changes carry the engine's license notices, upstream source reference and corresponding local patch. No official preset pack, proprietary cache payload or MDropDX12 renderer implementation is bundled.
+The backend is a replaceable shared projectM library pinned to `dd89dfba0852c0c7e0c4e668929118d91ec3a3f0`, with a cumulative 35-file patch. The source-revision guard rejects mismatched checkouts. Build and packaging changes carry the engine's license notices, upstream source reference and corresponding local patch. No official preset pack, proprietary cache payload or MDropDX12 renderer implementation is bundled. The CI packaging paths copy the shared engine and its notices, Linux uses a relative `lib/` search path, and the external MSVC build follows Hex's static C runtime policy. Windows dependency checks inspect both the app and engine DLL. These paths have source and syntax checks; their packaged execution still needs platform validation.
 
 ## Double preset rendering
 
