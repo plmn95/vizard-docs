@@ -1,5 +1,6 @@
 ---
 title: "Mixer Mode"
+description: "Mixer Mode: F3 toggles Mixer Mode: a live two-deck view built for performance, separate from the single-chain editing view the rest of the app defaults to."
 ---
 
 `F3` toggles Mixer Mode: a live two-deck view built for performance, separate

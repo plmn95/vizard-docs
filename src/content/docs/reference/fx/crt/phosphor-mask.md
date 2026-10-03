@@ -1,5 +1,6 @@
 ---
 title: "Phosphor Mask"
+description: "Phosphor Mask: Overlays a phosphor sub-pixel mask, the RGB triad or slot pattern of a real CRT tube."
 ---
 
 Overlays a phosphor sub-pixel mask, the RGB triad or slot pattern of a real

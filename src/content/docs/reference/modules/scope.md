@@ -1,5 +1,6 @@
 ---
 title: "SCOPE"
+description: "Generate XY oscilloscope traces from audio or internal signals with GPU phosphor persistence."
 ---
 
 An XY oscilloscope trace with GPU phosphor persistence: each axis reads a

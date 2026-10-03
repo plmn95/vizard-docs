@@ -1,5 +1,6 @@
 ---
 title: "Mixer Controls"
+description: "Mixer Controls: Mixer Mode's own mixing surface, separate from either deck's own controls."
 ---
 
 Mixer Mode's own mixing surface, separate from either deck's own controls.

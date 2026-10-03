@@ -1,5 +1,6 @@
 ---
 title: "Load a Factory Patch"
+description: "Open a factory patch, see its output immediately, and explore the running signal chain."
 ---
 
 Open `File > Factory Patches`. Pick one, for example "Big Brother".

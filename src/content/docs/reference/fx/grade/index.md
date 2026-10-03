@@ -1,5 +1,6 @@
 ---
 title: "GRADE"
+description: "GRADE: Color-correction and grading tools: per-channel or tonal adjustments to the image's existing color, distinct from COLOR's tone/value remapping."
 ---
 
 Color-correction and grading tools: per-channel or tonal adjustments to the

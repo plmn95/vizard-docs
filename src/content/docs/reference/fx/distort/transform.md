@@ -1,5 +1,6 @@
 ---
 title: "Transform"
+description: "Transform: Offsets, scales, and rotates the whole image."
 ---
 
 Offsets, scales, and rotates the whole image.

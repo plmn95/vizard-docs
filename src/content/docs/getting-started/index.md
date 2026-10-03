@@ -1,5 +1,6 @@
 ---
 title: "Getting Started"
+description: "Getting Started: A short, ordered path from a first launch to a recorded output."
 ---
 
 A short, ordered path from a first launch to a recorded output. Read the four

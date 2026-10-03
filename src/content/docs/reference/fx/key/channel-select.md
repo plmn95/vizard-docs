@@ -1,5 +1,6 @@
 ---
 title: "Channel Select"
+description: "Channel Select: Works on the image's channels directly: view one in grayscale, route it to alpha, or isolate it and zero the rest."
 ---
 
 Works on the image's channels directly: view one in grayscale, route it to

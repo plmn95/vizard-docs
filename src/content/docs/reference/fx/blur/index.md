@@ -1,5 +1,6 @@
 ---
 title: "BLUR"
+description: "BLUR: Effects that soften the image by spreading each pixel's value across its neighbors, uniformly, directionally, or radially."
 ---
 
 Effects that soften the image by spreading each pixel's value across its

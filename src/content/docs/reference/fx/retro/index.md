@@ -1,5 +1,6 @@
 ---
 title: "RETRO"
+description: "RETRO: Effects that add analog imperfection: tape artifacts, film grain, and raster displacement layered over the image."
 ---
 
 Effects that add analog imperfection: tape artifacts, film grain, and raster

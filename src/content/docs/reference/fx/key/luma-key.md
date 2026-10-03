@@ -1,5 +1,6 @@
 ---
 title: "Luma Key"
+description: "Luma Key: Pulls an alpha matte from brightness: everything above the threshold keys out."
 ---
 
 Pulls an alpha matte from brightness: everything above the threshold keys

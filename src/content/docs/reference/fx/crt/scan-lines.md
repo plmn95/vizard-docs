@@ -1,5 +1,6 @@
 ---
 title: "Scan Lines"
+description: "Scan Lines: Draws horizontal scanlines over the image, at a chosen density and sharpness."
 ---
 
 Draws horizontal scanlines over the image, at a chosen density and

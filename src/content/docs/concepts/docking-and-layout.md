@@ -1,5 +1,6 @@
 ---
 title: "Docking and Layout"
+description: "Arrange Hex Composer windows by docking, resizing, tabbing, and using the View menu."
 ---
 
 Every window in Hex Composer docks freely: dragged, resized, tabbed together, or

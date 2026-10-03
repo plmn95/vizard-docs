@@ -1,5 +1,6 @@
 ---
 title: "FX"
+description: "FX: The Insert FX catalog: 43 effect types, placed into any module's Insert FX chain."
 ---
 
 The Insert FX catalog: 43 effect types, placed into any module's Insert FX

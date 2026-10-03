@@ -1,5 +1,6 @@
 ---
 title: "Invert"
+description: "Invert: Inverts every color channel."
 ---
 
 Inverts every color channel. No parameters.

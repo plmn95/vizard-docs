@@ -1,5 +1,6 @@
 ---
 title: "MIDI Note"
+description: "Use MIDI note and channel-voice messages as modulation sources, with source and channel selection."
 ---
 
 The channel-voice MIDI messages, on their own tab separate from

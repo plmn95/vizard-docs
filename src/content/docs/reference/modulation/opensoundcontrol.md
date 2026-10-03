@@ -1,5 +1,6 @@
 ---
 title: "OpenSoundControl"
+description: "Use incoming OpenSoundControl messages as modulation sources by selecting their address."
 ---
 
 OpenSoundControl input as a modulation source: any incoming message, read by

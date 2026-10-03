@@ -1,5 +1,6 @@
 ---
 title: "Time"
+description: "Use a steadily rising or falling Time value as a modulation source, without the cycling of an LFO."
 ---
 
 A monotonic accumulator: rises or falls at a steady rate every frame,

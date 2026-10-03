@@ -1,5 +1,6 @@
 ---
 title: "Settings"
+description: "Configure Hex Composer using the eight categories in the Settings window."
 ---
 
 8 categories, listed down the left side of the `Settings` window.

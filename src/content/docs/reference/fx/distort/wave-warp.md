@@ -1,5 +1,6 @@
 ---
 title: "Wave Warp"
+description: "Wave Warp: Displaces the image along a sine wave, independently on each axis."
 ---
 
 Displaces the image along a sine wave, independently on each axis.

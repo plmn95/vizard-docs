@@ -1,5 +1,6 @@
 ---
 title: "Grain"
+description: "Grain: Adds film-style noise over the image."
 ---
 
 Adds film-style noise over the image.

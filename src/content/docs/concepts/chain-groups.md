@@ -1,5 +1,6 @@
 ---
 title: "Chain Groups"
+description: "Organize contiguous modules into chain groups without changing render order or signal processing."
 ---
 
 A chain group clusters a contiguous run of `Chain` pills for organization.

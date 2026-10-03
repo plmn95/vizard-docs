@@ -1,5 +1,6 @@
 ---
 title: "Macro"
+description: "Macro: A named, freely assignable value with no source of its own: set it by hand, or bind it to a MIDI CC, and every parameter it modulates follows."
 ---
 
 A named, freely assignable value with no source of its own: set it by hand,

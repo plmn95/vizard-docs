@@ -1,0 +1,30 @@
+---
+import { assetWithBase } from '../lib/brand-assets.mjs';
+const version = process.env.VIZARD_DOCS_VERSION;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// A mirror's deployment base must not become the identity of current docs.
+const pathname = Astro.url.pathname.slice(base.length) || '/';
+const canonical = new URL(pathname, 'https://docs.hexcomposer.com').href;
+const head = Astro.locals.starlightRoute.head.map((entry) => {
+  if (version) return entry;
+  if (entry.tag === 'link' && entry.attrs?.rel === 'canonical')
+    return { ...entry, attrs: { ...entry.attrs, href: canonical } };
+  if (entry.tag === 'meta' && entry.attrs?.property === 'og:url')
+    return { ...entry, attrs: { ...entry.attrs, content: canonical } };
+  if (entry.tag === 'link' && entry.attrs?.rel === 'sitemap')
+    return { ...entry, attrs: { ...entry.attrs, href: 'https://docs.hexcomposer.com/sitemap-index.xml' } };
+  return entry;
+});
+const image = 'https://docs.hexcomposer.com/social-ribbons-v2.png';
+const imageAlt = 'Blue and violet ribbons generated in Hex Composer, with the Hex Composer logo';
+---
+<link rel="icon" href={assetWithBase(base, '/favicon.ico')} type="image/x-icon" sizes="16x16 32x32 48x48" />
+<link rel="apple-touch-icon" href={assetWithBase(base, '/apple-touch-icon.png')} sizes="256x256" />
+{head.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
+<meta property="og:image" content={image} />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={imageAlt} />
+<meta name="twitter:image" content={image} />
+<meta name="twitter:image:alt" content={imageAlt} />

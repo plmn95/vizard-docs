@@ -1,5 +1,6 @@
 ---
 title: "Audio-Reactive"
+description: "Audio-Reactive: Live audio level as a modulation source, from the app's own audio input."
 ---
 
 Live audio level as a modulation source, from the app's own audio input. The

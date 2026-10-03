@@ -1,5 +1,6 @@
 ---
 title: "Hue Rotate"
+description: "Hue Rotate: Shifts every hue around the color wheel by a fixed number of degrees."
 ---
 
 Shifts every hue around the color wheel by a fixed number of degrees.

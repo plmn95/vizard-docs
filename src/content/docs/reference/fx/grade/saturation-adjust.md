@@ -1,5 +1,6 @@
 ---
 title: "Saturation Adjust"
+description: "Increase or decrease image saturation continuously with the Saturation Adjust effect."
 ---
 
 Continuously pushes saturation up or down. Not the same as

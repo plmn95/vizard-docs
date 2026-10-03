@@ -1,5 +1,6 @@
 ---
 title: "Channel Curves"
+description: "Shape red, green, blue, and luma tone curves with movable control points and Bezier handles."
 ---
 
 A Photoshop/After-Effects-style tone curve editor: any number of

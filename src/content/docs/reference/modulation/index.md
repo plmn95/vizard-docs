@@ -1,5 +1,6 @@
 ---
 title: "Modulation"
+description: "Modulation: The source families available from Add Modulation Source, MIDI Learn, and OpenSoundControl Learn, one tab each."
 ---
 
 The source families available from `Add Modulation Source`, `MIDI Learn`,

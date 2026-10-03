@@ -1,5 +1,6 @@
 ---
 title: "INSERT"
+description: "INSERT: Reads an AUX bus back into the chain, or, left at its default, behaves as a plain insert stage on the running chain with no bus involved at all."
 ---
 
 Reads an AUX bus back into the chain, or, left at its default, behaves as a

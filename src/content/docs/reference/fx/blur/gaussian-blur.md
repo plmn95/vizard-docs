@@ -1,5 +1,6 @@
 ---
 title: "Gaussian Blur"
+description: "Gaussian Blur: Softens the image with a Gaussian blur."
 ---
 
 Softens the image with a Gaussian blur.

@@ -36,6 +36,9 @@ for (const file of files) {
   if (!frontmatter || titleMatches.length !== 1) {
     errors.push(`${name}: expected one frontmatter title`);
   }
+  if (!/^description:\s*\S.+$/m.test(frontmatter?.[1] ?? '')) {
+    errors.push(`${name}: expected a page-specific frontmatter description`);
+  }
   if (/^#\s+/m.test(source.slice(frontmatter?.[0].length ?? 0))) {
     errors.push(`${name}: body contains an H1; Starlight renders the page title`);
   }

@@ -1,5 +1,6 @@
 ---
 title: "LFO"
+description: "LFO: A repeating or one-shot waveform generator."
 ---
 
 A repeating or one-shot waveform generator. A patch starts with one LFO and

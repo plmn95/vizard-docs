@@ -1,5 +1,6 @@
 ---
 title: "SOURCE"
+description: "SOURCE: Brings external video into the chain, from a file, a live capture device, or another program's NDI/Spout/Syphon output."
 ---
 
 Brings external video into the chain, from a file, a live capture device, or

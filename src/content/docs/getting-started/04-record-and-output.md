@@ -1,5 +1,6 @@
 ---
 title: "Record and Output"
+description: "Record your first video, find the saved file, and send Hex Composer output to other applications."
 ---
 
 Click `REC` in the main toolbar. It starts recording immediately, no save

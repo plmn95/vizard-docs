@@ -1,5 +1,6 @@
 ---
 title: "First Launch"
+description: "Find your way around the default docked layout, including Output, Module, Chain, Patches, and Modulation."
 ---
 
 Launch Hex Composer. It opens into a working docked layout, not a blank window:

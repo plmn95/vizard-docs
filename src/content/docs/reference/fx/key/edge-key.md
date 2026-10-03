@@ -1,5 +1,6 @@
 ---
 title: "Edge Key"
+description: "Edge Key: Pulls an alpha matte from detected edges: only outlines key in, flat regions key out."
 ---
 
 Pulls an alpha matte from detected edges: only outlines key in, flat regions

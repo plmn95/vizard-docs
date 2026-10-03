@@ -1,5 +1,6 @@
 ---
 title: "Convergence Error"
+description: "Convergence Error: Offsets the R, G, and B channels independently, simulating a CRT tube whose three electron guns don't quite land on the same spot."
 ---
 
 Offsets the R, G, and B channels independently, simulating a CRT tube whose

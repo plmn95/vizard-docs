@@ -1,5 +1,6 @@
 ---
 title: "SPRITE"
+description: "Load images, sprite sheets, video, or GIFs, or draw pixel artwork and arrange repeated sprite instances."
 ---
 
 Places an image in the chain: a loaded file (still image, sprite sheet, or

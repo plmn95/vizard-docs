@@ -1,5 +1,6 @@
 ---
 title: "MIDI"
+description: "MIDI: Continuous controller input."
 ---
 
 Continuous controller input. The `MIDI` tab carries CC and nothing else:

@@ -1,5 +1,6 @@
 ---
 title: "ISF"
+description: "Load an Interactive Shader Format shader and control the parameters declared by its inputs."
 ---
 
 Runs a user-loaded ISF (Interactive Shader Format) shader. `Load .fs...`

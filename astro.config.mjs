@@ -21,6 +21,7 @@ export default defineConfig({
 				'./src/styles/vizard.css',
 			],
 			components: {
+				Head: './src/components/Head.astro',
 				PageTitle: './src/components/PageTitle.astro',
 				SiteTitle: './src/components/SiteTitle.astro',
 				Footer: './src/components/ManualFooter.astro',

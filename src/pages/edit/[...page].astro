@@ -24,7 +24,7 @@ const returnUrl = `${base}/${route ? route + '/' : ''}`;
 const data = JSON.stringify({ body, title, path, revision, api, siteKey, returnUrl, receipt: `${base}/suggestion/` }).replace(/</g, '\\u003c');
 ---
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex, nofollow" /><title>Edit {title} | Hex Composer Documentation</title><link rel="icon" type="image/svg+xml" href={faviconHref} /></head>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex, nofollow" /><title>Edit {title} | Hex Composer Documentation</title><link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href={assetWithBase(base, '/favicon.ico')} /><link rel="icon" type="image/svg+xml" sizes="any" href={faviconHref} /></head>
 <body data-pagefind-ignore="all">
   <header class="edit-header"><BrandLink href={`${base}/`} /><div class="actions"><a data-cancel href={returnUrl}>Cancel</a><button data-review class="primary" disabled>Review changes</button><button data-back hidden>Keep editing</button><button data-send class="primary" hidden>Send suggestion</button></div></header>
   <main>

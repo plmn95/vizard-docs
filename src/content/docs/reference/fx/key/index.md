@@ -1,5 +1,6 @@
 ---
 title: "KEY"
+description: "KEY: Effects that pull a matte from the image, isolating part of it by color, luminance, saturation, motion, or edges, or that clean up around a matte another effect already pulled."
 ---
 
 Effects that pull a matte from the image, isolating part of it by color,

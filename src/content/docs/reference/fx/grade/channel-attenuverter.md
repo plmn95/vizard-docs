@@ -1,5 +1,6 @@
 ---
 title: "Channel Attenuverter"
+description: "Channel Attenuverter: Attenuates or inverts each of the R/G/B channels independently, through zero."
 ---
 
 Attenuates or inverts each of the R/G/B channels independently, through

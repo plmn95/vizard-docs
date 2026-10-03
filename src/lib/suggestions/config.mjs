@@ -10,5 +10,5 @@ if (api && !/^https:\/\/[^\s]+$/.test(api) && !/^http:\/\/(localhost|127\.0\.0\.
 // Unconfigured mirrors still offer the canonical, account-free editor.
 export const contributionEnabled = !process.env.VIZARD_DOCS_VERSION;
 export function editorUrl(path, base = '') {
-  return `${enabled ? base.replace(/\/$/, '') : 'https://plmn95.github.io/vizard-docs'}/edit/${path.replace(/\.md$/, '')}/`;
+  return `${enabled ? base.replace(/\/$/, '') : 'https://docs.hexcomposer.com'}/edit/${path.replace(/\.md$/, '')}/`;
 }

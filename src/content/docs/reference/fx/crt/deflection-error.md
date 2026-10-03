@@ -1,5 +1,6 @@
 ---
 title: "Deflection Error"
+description: "Deflection Error: Simulates an unstable CRT deflection coil: image roll, line bend, sync jitter, and flicker, layered independently."
 ---
 
 Simulates an unstable CRT deflection coil: image roll, line bend, sync

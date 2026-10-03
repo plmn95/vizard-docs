@@ -1,5 +1,6 @@
 ---
 title: "VHS"
+description: "VHS: Layers analog tape artifacts over the image: chroma bleed and horizontal scan shift, in addition to a base intensity."
 ---
 
 Layers analog tape artifacts over the image: chroma bleed and horizontal

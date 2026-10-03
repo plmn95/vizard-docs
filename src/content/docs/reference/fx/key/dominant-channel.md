@@ -1,5 +1,6 @@
 ---
 title: "Dominant Channel"
+description: "Dominant Channel: Isolates whichever of R, G, or B is strongest at each pixel."
 ---
 
 Isolates whichever of R, G, or B is strongest at each pixel. No parameters.

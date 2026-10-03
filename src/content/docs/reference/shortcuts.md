@@ -1,5 +1,6 @@
 ---
 title: "Keyboard Shortcuts"
+description: "Keyboard Shortcuts: Every bound key and mouse gesture in Hex Composer, grouped by the scope it's live in."
 ---
 
 Every bound key and mouse gesture in Hex Composer, grouped by the scope it's live

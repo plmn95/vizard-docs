@@ -1,5 +1,6 @@
 ---
 title: "Palette Map"
+description: "Palette Map: Repaints the picture using only the colors in an editable palette: each pixel takes the palette color nearest to its own."
 ---
 
 Repaints the picture using only the colors in an editable palette: each pixel takes the palette color nearest to its own.

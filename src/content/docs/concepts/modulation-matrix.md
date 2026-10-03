@@ -1,5 +1,6 @@
 ---
 title: "Modulation Matrix"
+description: "Assign modulation sources, adjust their amount, and inspect active parameter assignments in the Modulation Matrix."
 ---
 
 Any parameter that accepts modulation can be assigned one from the same

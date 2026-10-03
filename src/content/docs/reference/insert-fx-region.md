@@ -1,5 +1,6 @@
 ---
 title: "Region"
+description: "Region: An optional soft-edged circular boundary any Insert FX slot can turn on, independent of which effect the slot runs."
 ---
 
 An optional soft-edged circular boundary any Insert FX slot can turn on,

@@ -1,5 +1,6 @@
 ---
 title: "NOISE"
+description: "NOISE: Procedural noise."
 ---
 
 Procedural noise. A noise family and a dimension combine into the actual

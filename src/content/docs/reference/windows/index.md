@@ -1,5 +1,6 @@
 ---
 title: "Windows"
+description: "Windows: The non-module UI surfaces: lookup material for windows rather than modules, effects, or modulation sources."
 ---
 
 The non-module UI surfaces: lookup material for windows rather than

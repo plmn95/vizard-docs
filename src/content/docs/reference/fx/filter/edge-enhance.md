@@ -1,5 +1,6 @@
 ---
 title: "Edge Enhance"
+description: "Edge Enhance: Sharpens the image by boosting contrast along detected edges, rather than discarding everything else the way Edge Detect does."
 ---
 
 Sharpens the image by boosting contrast along detected edges, rather than

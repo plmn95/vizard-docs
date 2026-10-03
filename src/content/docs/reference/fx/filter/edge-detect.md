@@ -1,5 +1,6 @@
 ---
 title: "Edge Detect"
+description: "Edge Detect: Finds edges by local contrast (a Sobel filter) and draws only the boundaries, discarding flat regions."
 ---
 
 Finds edges by local contrast (a Sobel filter) and draws only the

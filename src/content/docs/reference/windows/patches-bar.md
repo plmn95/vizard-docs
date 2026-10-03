@@ -1,5 +1,6 @@
 ---
 title: "Patches Bar"
+description: "Patches Bar: A row of pills, one per open patch slot, plus a [+] at the end to add another."
 ---
 
 A row of pills, one per open patch slot, plus a `[+]` at the end to add

@@ -1,5 +1,6 @@
 ---
 title: "Reading the Panel"
+description: "Understand Hex Composer controls, panel depth, position, and the meaning of interface colors."
 ---
 
 Hex Composer's interface is built as a front panel, not a settings screen: depth

@@ -1,5 +1,6 @@
 ---
 title: "POINTCLOUD"
+description: "POINTCLOUD: Renders the chain, or an AUX bus, as a 3D field of points or lines, displaced by brightness."
 ---
 
 Renders the chain, or an AUX bus, as a 3D field of points or lines, displaced

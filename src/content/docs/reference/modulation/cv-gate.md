@@ -1,5 +1,6 @@
 ---
 title: "CV/Gate"
+description: "Use audio-interface channels as external control voltage and gate modulation inputs."
 ---
 
 External control voltage and gate input, carried on the audio interface's

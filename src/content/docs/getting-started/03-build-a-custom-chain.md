@@ -1,5 +1,6 @@
 ---
 title: "Build a Custom Chain"
+description: "Build your first custom signal chain from the default OSC module and explore how modules combine."
 ---
 
 A fresh slot starts with one `OSC` module already in the chain. If the

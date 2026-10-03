@@ -1,5 +1,6 @@
 ---
 title: "MIDI and OpenSoundControl Learn"
+description: "Assign incoming MIDI and OpenSoundControl messages to parameters with Learn mode."
 ---
 
 Learn mode assigns a modulation source to a parameter from the next incoming

@@ -1,5 +1,6 @@
 ---
 title: "Envelope"
+description: "Envelope: An ADSR envelope."
 ---
 
 An ADSR envelope. A patch starts with one and grows the bank from its own

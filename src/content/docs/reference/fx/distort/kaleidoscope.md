@@ -1,5 +1,6 @@
 ---
 title: "Kaleidoscope"
+description: "Kaleidoscope: Mirrors the image into a wedge and repeats it around the center."
 ---
 
 Mirrors the image into a wedge and repeats it around the center.

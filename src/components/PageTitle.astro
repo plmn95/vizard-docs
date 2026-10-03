@@ -5,7 +5,7 @@ const version = process.env.VIZARD_DOCS_VERSION;
 const editUrl = String(Astro.locals.starlightRoute.editUrl ?? '');
 const source = editUrl.split('/edit/main/src/content/docs/')[1];
 const route = source?.replace(/(?:\/index)?\.md$/, '').replace(/^index$/, '');
-const currentUrl = `https://plmn95.github.io/vizard-docs/${route ? `${route}/` : ''}?manual=${encodeURIComponent(version ?? '')}`;
+const currentUrl = `https://docs.hexcomposer.com/${route ? `${route}/` : ''}?manual=${encodeURIComponent(version ?? '')}`;
 ---
 <div class="title-row"><PageTitle />{!version && <SuggestChange />}</div>
 {version && <p class="archive-notice" data-pagefind-ignore>

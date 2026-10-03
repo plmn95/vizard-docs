@@ -1,5 +1,6 @@
 ---
 title: "Barrel"
+description: "Barrel: Bows the image outward from its center, simulating the curvature of a CRT tube's glass."
 ---
 
 Bows the image outward from its center, simulating the curvature of a CRT

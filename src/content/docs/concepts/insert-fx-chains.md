@@ -1,5 +1,6 @@
 ---
 title: "Insert FX Chains"
+description: "Build a local effects stack for each module with up to eight ordered Insert FX slots."
 ---
 
 Insert FX gives a module its own local effects stack, layered onto that

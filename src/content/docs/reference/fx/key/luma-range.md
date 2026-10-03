@@ -1,5 +1,6 @@
 ---
 title: "Luma Range"
+description: "Luma Range: Pulls an alpha matte from a brightness band: everything between Min and Max keys in, everything outside it keys out."
 ---
 
 Pulls an alpha matte from a brightness band: everything between Min and Max

@@ -1,5 +1,6 @@
 ---
 title: "Sat Isolate"
+description: "Sat Isolate: Pulls an alpha matte from color saturation: everything between Min Sat and Max Sat keys in."
 ---
 
 Pulls an alpha matte from color saturation: everything between Min Sat and

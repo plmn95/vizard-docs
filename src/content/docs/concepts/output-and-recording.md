@@ -1,5 +1,6 @@
 ---
 title: "Output and Recording"
+description: "Output and Recording: Output is the app's own composite: the last module in the chain, or the mixed result of both decks in Mixer Mode."
 ---
 
 `Output` is the app's own composite: the last module in the chain, or the

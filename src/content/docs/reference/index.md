@@ -1,5 +1,6 @@
 ---
 title: "Reference"
+description: "Reference: Lookup material."
 ---
 
 Lookup material. Each page documents one thing on its own; nothing here is

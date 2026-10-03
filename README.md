@@ -32,7 +32,7 @@ GitHub editing remains available for experienced contributors. See
 
 The account-free service requires separate Cloudflare and GitHub App setup;
 see [setup and operations](services/suggestions/README.md). Local editor routes stay disabled until configured; unconfigured mirrors link to
-the canonical GitHub Pages editor. Versioned manuals retain their online correction link. Run `npm run test:suggestions` for delivery and source-mapping
+the account-free editor hosted on GitHub Pages through the canonical docs URL. Versioned manuals retain their online correction link. Run `npm run test:suggestions` for delivery and source-mapping
 tests, `npm run test:editor` for corpus and browser checks, and `npm run suggestions:check` to verify the Worker bundle.
 
 ## Manuals shipped with Hex Composer
@@ -52,3 +52,19 @@ and archived manuals; links from installed manuals are marked online.
 Run `npm run test:archives` to check preservation and failure behavior. To deploy
 current docs explicitly: `gh workflow run deploy.yml --repo plmn95/vizard-docs`.
 The app repository owns publication credentials and the build/release procedure.
+
+## Hosting and link previews
+
+Vercel serves the current manual at `docs.hexcomposer.com`. Current reading pages
+on every host use that canonical origin. The older GitHub Pages deployment keeps
+serving the account-free editor and frozen release manuals; `/edit/...` on Vercel
+redirects to that editor. The canonical `/versions/` page lists the existing frozen
+manuals without copying or rebuilding them. Vercel fetches public release metadata
+at build time and fails the build if it cannot load it. Release/offline builds do
+not perform that request.
+
+Every authored page has a content-specific description. Shared social preview,
+ICO/SVG favicons, an Apple touch icon, and crawler guidance ship with the manual.
+Vercel headers allow Starlight inline scripts/styles, Pagefind WebAssembly, and
+the existing suggestion service while preventing framing and object embedding.
+GitHub Pages does not support these custom response headers.

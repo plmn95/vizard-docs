@@ -1,5 +1,6 @@
 ---
 title: "FEEDBACK"
+description: "Create video feedback loops with delay, decay, blending, routing, and Pre/Post Insert FX."
 ---
 
 Video feedback as a delay line: the incoming frame is sent into a loop,

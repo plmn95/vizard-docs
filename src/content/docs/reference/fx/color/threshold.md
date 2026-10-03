@@ -1,5 +1,6 @@
 ---
 title: "Threshold"
+description: "Threshold: Snaps every pixel to pure black or pure white based on a luminance cutoff."
 ---
 
 Snaps every pixel to pure black or pure white based on a luminance cutoff.

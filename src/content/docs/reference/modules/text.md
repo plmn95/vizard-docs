@@ -1,5 +1,6 @@
 ---
 title: "TEXT"
+description: "Draw, position, size, and scroll text in the video chain using the TEXT module."
 ---
 
 Draws a line or block of text into the chain, placed, sized and scrolled

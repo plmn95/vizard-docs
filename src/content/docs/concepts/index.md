@@ -1,5 +1,6 @@
 ---
 title: "Concepts"
+description: "Concepts: How the app's model works."
 ---
 
 How the app's model works. Each page stands on its own; there's no reading

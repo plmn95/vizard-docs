@@ -1,5 +1,6 @@
 ---
 title: "Patches, Slots, and Banks"
+description: "Save signal chains and modulation as .hxc patches, manage patch slots, and organize sessions into banks."
 ---
 
 A patch is one `.hxc` file: one signal chain, its modulators, and every mod

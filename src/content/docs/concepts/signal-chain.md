@@ -1,5 +1,6 @@
 ---
 title: "Signal Chain"
+description: "Understand module order, blending, and how the running chain composite becomes the final output."
 ---
 
 A patch is the chain you build: modules run in the order shown top to bottom

@@ -1,5 +1,6 @@
 ---
 title: "Motion Key"
+description: "Motion Key: Pulls an alpha matte from frame-to-frame motion: whatever is moving keys in."
 ---
 
 Pulls an alpha matte from frame-to-frame motion: whatever is moving keys in.

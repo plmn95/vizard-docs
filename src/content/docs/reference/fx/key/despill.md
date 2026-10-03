@@ -1,5 +1,6 @@
 ---
 title: "Despill"
+description: "Despill: Removes leftover key-color spill from a subject after a chroma key, without touching the matte itself."
 ---
 
 Removes leftover key-color spill from a subject after a chroma key,

@@ -1,5 +1,6 @@
 ---
 title: "Dither"
+description: "Dither: Reduces each color to a few shades and arranges the rounding error into a pattern, so smooth gradients read as texture instead of hard bands."
 ---
 
 Reduces each color to a few shades and arranges the rounding error into a pattern, so smooth gradients read as texture instead of hard bands.

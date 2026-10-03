@@ -1,5 +1,6 @@
 ---
 title: "Persistence"
+description: "Persistence: Simulates phosphor afterglow: bright content lingers and decays instead of updating instantly frame to frame."
 ---
 
 Simulates phosphor afterglow: bright content lingers and decays instead of

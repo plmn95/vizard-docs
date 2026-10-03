@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /edit/
+Disallow: /suggestion/
+Sitemap: https://docs.hexcomposer.com/sitemap-index.xml

@@ -1,5 +1,6 @@
 ---
 title: "Pixelate"
+description: "Pixelate: Snaps the image onto a coarse grid, mosaicking it into flat blocks."
 ---
 
 Snaps the image onto a coarse grid, mosaicking it into flat blocks.

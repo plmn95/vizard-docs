@@ -1,5 +1,6 @@
 ---
 title: "Modules"
+description: "Modules: The module types a chain can contain."
 ---
 
 The module types a chain can contain.

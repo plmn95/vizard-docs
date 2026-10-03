@@ -1,5 +1,6 @@
 ---
 title: "Chroma Key"
+description: "Chroma Key: Pulls an alpha matte from a chosen color: a green- or blue-screen key."
 ---
 
 Pulls an alpha matte from a chosen color: a green- or blue-screen key.

@@ -1,5 +1,6 @@
 ---
 title: "AUX Buses Monitor"
+description: "AUX Buses Monitor: Every AUX bus, in one table: BUS, SENDERS, READERS, and a live PREVIEW thumbnail."
 ---
 
 Every AUX bus, in one table: `BUS`, `SENDERS`, `READERS`, and a live

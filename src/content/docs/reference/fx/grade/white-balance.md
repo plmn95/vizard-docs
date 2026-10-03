@@ -1,5 +1,6 @@
 ---
 title: "White Balance"
+description: "White Balance: Warm/cool and green/magenta color correction."
 ---
 
 Warm/cool and green/magenta color correction.

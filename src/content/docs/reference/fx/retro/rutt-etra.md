@@ -1,5 +1,6 @@
 ---
 title: "Rutt-Etra"
+description: "Rutt-Etra: Displaces the image along scanlines, after a video synthesizer's classic raster-displacement effect."
 ---
 
 Displaces the image along scanlines, after a video synthesizer's classic
