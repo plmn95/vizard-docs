@@ -1,0 +1,3 @@
+[patch] Dropping AUXSEND at chain position 0 (no predecessor to migrate onto)
+[patch] Legacy CRT-stage migration: no insert-capable host existed in this patch -- synthesized a fresh OSC module to hold the migrated CRT/Convergence/Deflect/Persist stack
+patch_snapshot_json_test: all checks passed

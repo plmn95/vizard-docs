@@ -1,0 +1,209 @@
+{
+  "counts": {
+    "sprites": 24,
+    "missing texture": 10,
+    "closed shader cache": 6
+  },
+  "cases": [
+    {
+      "preset": "Mdgeorge - 3Body Glass - MilkDrop2077 Butterfly1.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: Mdgeorge - 3Body Glass - MilkDrop2077 Butterfly1.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "Mdgeorge - 3Body Glass - MilkDrop2077 Butterfly2.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: Mdgeorge - 3Body Glass - MilkDrop2077 Butterfly2.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 - 5 Stars.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 - 5 Stars.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 - Ivermectin.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 - Ivermectin.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 - Mandala.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 - Mandala.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 - MilkDrop 3.27 Spirale3.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 - MilkDrop 3.27 Spirale3.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 Manda3.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 Manda3.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 Manda4.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 Manda4.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 5b Spirale.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 5b Spirale.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 - RGB star and Spirale.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 - RGB star and Spirale.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 vs martin - golden mirror.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 vs martin - golden mirror.milk2: Preset 2: [TextureManager] Failed to find requested texture \"worms\""
+    },
+    {
+      "preset": "MilkDrop2077 vs martin - golden mirror5.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 vs martin - golden mirror5.milk2: Preset 2: [TextureManager] Failed to find requested texture \"worms\""
+    },
+    {
+      "preset": "MilkDrop2077 vs martin - liquid gold+.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 vs martin - liquid gold+.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 vs martin - liquid gold.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 vs martin - liquid gold.milk2: Preset 2: [TextureManager] Failed to find requested texture \"worms\""
+    },
+    {
+      "preset": "MilkDrop2077 vs martin - on air 004 ball.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 vs martin - on air 004 ball.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077 vs martin - on air.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077 vs martin - on air.milk2: Preset 2: [TextureManager] Failed to find requested texture \"worms\""
+    },
+    {
+      "preset": "MilkDrop2077.016 fiShbRaiN + geiss - witchcraft 7.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.016 fiShbRaiN + geiss - witchcraft 7.milk2: Preset 1: [TextureManager] Failed to find requested texture \"worms\""
+    },
+    {
+      "preset": "MilkDrop2077.022 Simple Wave 6c + sprite.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.022 Simple Wave 6c + sprite.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.022 Simple Wave 6e Mandala2.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.022 Simple Wave 6e Mandala2.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.023 Ultra Plasma 3b.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.023 Ultra Plasma 3b.milk2: Preset 2: [TextureManager] Failed to find requested texture \"worms\""
+    },
+    {
+      "preset": "MilkDrop2077.036 Triangle of Sadness 002.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.036 Triangle of Sadness 002.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.040 Sand Rose 1e.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.040 Sand Rose 1e.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.042 Wall of peas10.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.042 Wall of peas10.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.R054 double.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.R054 double.milk2: Preset 2: [TextureManager] Failed to find requested texture \"worms\""
+    },
+    {
+      "preset": "MilkDrop2077.R070 Cubes.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.R070 Cubes.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.R115 cope - the drain to heaven 2 Mandala.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.R115 cope - the drain to heaven 2 Mandala.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.R148.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.R148.milk2: Preset 2: [TextureManager] Failed to find requested texture \"grad3\""
+    },
+    {
+      "preset": "MilkDrop2077.R148s.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.R148s.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.R192 Cubes.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.R192 Cubes.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop2077.R197.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.R197.milk2: Preset 2: [TextureManager] Failed to find requested texture \"worms\""
+    },
+    {
+      "preset": "MilkDrop2077.R292b face.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: MilkDrop2077.R292b face.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "MilkDrop3 - Equalizer5 Round Hz.milk",
+      "category": "closed shader cache",
+      "diagnostic": "PRESET REJECTED: MilkDrop3 - Equalizer5 Round Hz.milk: MilkDrop closed shader reference MD31 requires an unsupported shader cache; placeholder rendering is disabled."
+    },
+    {
+      "preset": "MilkDrop3 - Equalizer5 Round.milk",
+      "category": "closed shader cache",
+      "diagnostic": "PRESET REJECTED: MilkDrop3 - Equalizer5 Round.milk: MilkDrop closed shader reference MD31 requires an unsupported shader cache; placeholder rendering is disabled."
+    },
+    {
+      "preset": "Royal - Mashup (190) MilkDrop2077 remix3 + sprite.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: Royal - Mashup (190) MilkDrop2077 remix3 + sprite.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "XorDev - MilkDrop2077 - Traffic.milk",
+      "category": "closed shader cache",
+      "diagnostic": "PRESET REJECTED: XorDev - MilkDrop2077 - Traffic.milk: MilkDrop closed shader reference MD31 requires an unsupported shader cache; placeholder rendering is disabled."
+    },
+    {
+      "preset": "XorDev - MilkDrop2077 - Traffic2.milk",
+      "category": "closed shader cache",
+      "diagnostic": "PRESET REJECTED: XorDev - MilkDrop2077 - Traffic2.milk: MilkDrop closed shader reference MD31 requires an unsupported shader cache; placeholder rendering is disabled."
+    },
+    {
+      "preset": "diatribes - MilkDrop2077 - Cloud Look3 Storm [MOUSE].milk",
+      "category": "closed shader cache",
+      "diagnostic": "PRESET REJECTED: diatribes - MilkDrop2077 - Cloud Look3 Storm [MOUSE].milk: MilkDrop closed shader reference MD31 requires an unsupported shader cache; placeholder rendering is disabled."
+    },
+    {
+      "preset": "diatribes - MilkDrop2077 - Cloud Look3 [MOUSE].milk",
+      "category": "closed shader cache",
+      "diagnostic": "PRESET REJECTED: diatribes - MilkDrop2077 - Cloud Look3 [MOUSE].milk: MilkDrop closed shader reference MD31 requires an unsupported shader cache; placeholder rendering is disabled."
+    },
+    {
+      "preset": "martin - frosty caves 2 MilkDrop2077 cube rmx.milk2",
+      "category": "sprites",
+      "diagnostic": "PRESET REJECTED: martin - frosty caves 2 MilkDrop2077 cube rmx.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype."
+    },
+    {
+      "preset": "martin - the early universe - Milkdrop2077 rmx9.milk2",
+      "category": "missing texture",
+      "diagnostic": "PRESET REJECTED: martin - the early universe - Milkdrop2077 rmx9.milk2: Preset 1: [TextureManager] Failed to find requested texture \"pic\""
+    }
+  ]
+}

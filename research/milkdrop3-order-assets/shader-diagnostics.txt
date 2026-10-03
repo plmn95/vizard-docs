@@ -1,0 +1,21 @@
+MilkDrop2077 - $$$ Royal - Mashup (128).milk2
+[HLSLParser] (130) : Undeclared identifier 'MilkDrop3_001'
+Preset 1: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+MilkDrop2077 - NeonAngel vs Flexi - Black Hole Textures 2 Triple Images.milk2
+[HLSLParser] (150) : Undeclared identifier 'MilkDrop3_001'
+Preset 2: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+MilkDrop2077 - NeonAngel vs Flexi - Red Textures 3 double.milk2
+[HLSLParser] (130) : Undeclared identifier 'MilkDrop3_001'
+Preset 2: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 double2.milk2
+[HLSLParser] (129) : Undeclared identifier 'MilkDrop3_001'
+Preset 1: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+MilkDrop2077.R070 double.milk2
+[HLSLParser] (130) : Undeclared identifier 'MilkDrop3_001'
+Preset 1: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+MilkDrop3 - Equalizer4d doubleV.milk2
+[HLSLParser] (117) : Syntax error: expected identifier near '('
+Preset 1: [PerPixelMesh] Error compiling warp shader code: [MilkdropShader] Error translating HLSL warp shader: HLSL parsing failed.
+YoheiNishitsuji - Martin - MilkDrop2077 - Fractal Pumpkin3.milk2
+[HLSLParser] (110) : Syntax error: expected identifier near '('
+Preset 1: [PerPixelMesh] Error compiling warp shader code: [MilkdropShader] Error translating HLSL warp shader: HLSL parsing failed.

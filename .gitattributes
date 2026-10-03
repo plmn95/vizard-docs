@@ -1,0 +1,3 @@
+# Preserve checksummed Windows compiler output and raw diagnostic logs.
+research/milkdrop3-order-assets/hlsl-scope-results.jsonl -whitespace
+research/milkdrop3-order-assets/synthetic-asset-results.txt -whitespace

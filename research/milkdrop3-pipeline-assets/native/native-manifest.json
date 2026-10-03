@@ -1,0 +1,521 @@
+[
+  {
+    "input": "01-hidden-red.milk",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milk-pipeline-inputs/01-hidden-red.milk; GL error 0\n",
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "0d43fc82072c5a38e54c3941ffd8c5c1b948334ce06b3e48ab930f2e5d25b7b9"
+  },
+  {
+    "input": "02-detector-black.milk",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milk-pipeline-inputs/02-detector-black.milk; GL error 0\n",
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "f07fac80fdc9b3968a0b6d4e2898b55fca32f2d06704cf36f22189c3d80ba41b"
+  },
+  {
+    "input": "03-detector-memory.milk",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milk-pipeline-inputs/03-detector-memory.milk; GL error 0\n",
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "80b5571c91fe69a55708df1e403ec069bc7e5bc5a92225a794a56e82b6e106ba"
+  },
+  {
+    "input": "04-comp-red.milk",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milk-pipeline-inputs/04-comp-red.milk; GL error 0\n",
+    "mean_rgb": [
+      255.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "318e3d1d75bd71a248f1d7324388f998011241828f726ed916ed8a6a51af6327"
+  },
+  {
+    "input": "05-shared-current-warp.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milk-pipeline-inputs/05-shared-current-warp.milk2; GL error 0\n",
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "24fe11a455f71e26f63dd75068963ddb22b0d763ad2591026ccd3c7fcc804e3d"
+  },
+  {
+    "input": "06-shared-feedback.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milk-pipeline-inputs/06-shared-feedback.milk2; GL error 0\n",
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "06d99ea9d9122d3c25e9b384ef19791efe277e6efab00d6b49e8ef2f5ab0e95a"
+  },
+  {
+    "input": "07-comp-feedback.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milk-pipeline-inputs/07-comp-feedback.milk2; GL error 0\n",
+    "mean_rgb": [
+      150.84154812707445,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "4444be8d828a8a16e9b5598adff70d900c4078e2fa5b99be656841b9946eaf53"
+  },
+  {
+    "input": "Hex reference mask arrow.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask arrow.milk2; GL error 0\n",
+    "mean_rgb": [
+      188.75417259364627,
+      0.0,
+      66.24582740635373
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "1a0be5fae23b1ec0f7e2297de13d44f82985f0aec8eab69235c8592433dd5fd2"
+  },
+  {
+    "input": "Hex reference mask bubbles.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: bubbles\n",
+    "input_sha256": "737ee0b00bd068956e0467d6527c9d63a4fc81ec253adde8e7a0d9058529f958"
+  },
+  {
+    "input": "Hex reference mask cercle.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask cercle.milk2; GL error 0\n",
+    "mean_rgb": [
+      150.84154812707445,
+      0.0,
+      104.15845187292555
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "bbb50a050dbd9dc3a6d355a84960fbb3e76c7d36e869717308116675202b1089"
+  },
+  {
+    "input": "Hex reference mask checkerboard.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: checkerboard\n",
+    "input_sha256": "884a5ea1f21da376675cbbb982088ba668c16560d365138a8a3cef38ed046656"
+  },
+  {
+    "input": "Hex reference mask cisor.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: cisor\n",
+    "input_sha256": "691f6edfcdbf263fa53f3de4df2c96b0a146bd11a2c6368912d4ac947cf684e9"
+  },
+  {
+    "input": "Hex reference mask clock.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: clock\n",
+    "input_sha256": "c5447db2718fce0de09b52c84d7c5d25ca570fc832c1edfae5f0242ca7ef333e"
+  },
+  {
+    "input": "Hex reference mask corner.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask corner.milk2; GL error 0\n",
+    "mean_rgb": [
+      127.08753852536748,
+      0.0,
+      127.91246147463252
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "cef8287436fc5e95f8263d1d80536e29bd04116fb7c453e49018a0af19ef4160"
+  },
+  {
+    "input": "Hex reference mask cross.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: cross\n",
+    "input_sha256": "ce4e615ac23795790c14811878bcd82f91ed3af1ce2d697d98ea2622c4dff567"
+  },
+  {
+    "input": "Hex reference mask cross2.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: cross2\n",
+    "input_sha256": "de8617fab99b47661ba0bfa1bb483106094d4238ad672d3f0c6605bcf80f852f"
+  },
+  {
+    "input": "Hex reference mask curtain.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask curtain.milk2; GL error 0\n",
+    "mean_rgb": [
+      125.77702702702703,
+      0.0,
+      129.22297297297297
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "0b010550dd0a1e00aa84352a9963755d9d03860ab2d336b1af1def7c32a0a5cb"
+  },
+  {
+    "input": "Hex reference mask donuts.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask donuts.milk2; GL error 0\n",
+    "mean_rgb": [
+      70.89546586059744,
+      0.0,
+      184.10453413940257
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "4e2e32f31640e946c70c7cd4e4be3cbb1c91178028c74526c6f24d7ba9165fde"
+  },
+  {
+    "input": "Hex reference mask horizontal.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask horizontal.milk2; GL error 0\n",
+    "mean_rgb": [
+      127.05263157894737,
+      0.0,
+      127.94736842105263
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "f7ffefc1a1e12d80a5dd02f89b4d3e8ceb9ef0aed0f7b68fa8e65fbf2adeb9eb"
+  },
+  {
+    "input": "Hex reference mask lineshorizontal.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: lineshorizontal\n",
+    "input_sha256": "36bc89e2a96b86f7b715c3296fdcb06271982713811017cff4bb3ff21a734eaa"
+  },
+  {
+    "input": "Hex reference mask linesvertical.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask linesvertical.milk2; GL error 0\n",
+    "mean_rgb": [
+      124.32369310099573,
+      0.0,
+      130.67630689900426
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "05bab93cec151dc91d1bcdb61ad14ad80536dcaba786dc751ff6ba2fea6f512c"
+  },
+  {
+    "input": "Hex reference mask nuclear.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: nuclear\n",
+    "input_sha256": "3ea8e598de977afd3274c2c44ca5923e97e774a6d6431b773dbc54ae8e42a6ab"
+  },
+  {
+    "input": "Hex reference mask patches.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask patches.milk2; GL error 0\n",
+    "mean_rgb": [
+      140.09590742057847,
+      0.0,
+      114.90409257942153
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "7e3d2f54d8a651b55db8ed9dc98c47869b5f9844e068aa77e6c4a505fe1c7800"
+  },
+  {
+    "input": "Hex reference mask plasma.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask plasma.milk2; GL error 0\n",
+    "mean_rgb": [
+      159.1490990990991,
+      0.0,
+      95.8509009009009
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "b8158c69643e76abbb320947cade41b392bdbce9171e8f69de6a9be0e1d92293"
+  },
+  {
+    "input": "Hex reference mask plasma2.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask plasma2.milk2; GL error 0\n",
+    "mean_rgb": [
+      128.6916399952584,
+      0.0,
+      126.30836000474159
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "fe345d526e9564ffa1eb5c199cc79a6bbdfc8a29ad94f0e077e51c257b296fd1"
+  },
+  {
+    "input": "Hex reference mask plasma3.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask plasma3.milk2; GL error 0\n",
+    "mean_rgb": [
+      130.19372925557136,
+      0.0,
+      124.80627074442864
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "62b48e145f034c0f9c5227c6b5ced9156b05bfbde941e24c70c7defd1975f07c"
+  },
+  {
+    "input": "Hex reference mask side.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask side.milk2; GL error 0\n",
+    "mean_rgb": [
+      127.05262861545756,
+      0.0,
+      127.94737138454244
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "ffb42ce28a142a2dbdb0c9a386dbe29974c0715e6d766ef2fb55910e36d1baae"
+  },
+  {
+    "input": "Hex reference mask snail.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask snail.milk2; GL error 0\n",
+    "mean_rgb": [
+      127.83233167377904,
+      0.0,
+      127.16766832622096
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "85648b72ef510608be801fd2e509b5a61d7de4e612300963ed47828dab7b0485"
+  },
+  {
+    "input": "Hex reference mask snail2.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask snail2.milk2; GL error 0\n",
+    "mean_rgb": [
+      127.36842105263158,
+      0.0,
+      127.63157598387862
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "4a974ad7d1d289c2ee64326e2e3361be65195bb5248f6580d55f26a77045c742"
+  },
+  {
+    "input": "Hex reference mask snail3.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask snail3.milk2; GL error 0\n",
+    "mean_rgb": [
+      127.46968053579896,
+      0.0,
+      127.53031946420104
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "f4975f6d8eaa9f655bf0dd511bdd3ce6ea78a76cc1219773e596f85d8ebed320"
+  },
+  {
+    "input": "Hex reference mask square.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask square.milk2; GL error 0\n",
+    "mean_rgb": [
+      186.44404931247036,
+      0.0,
+      68.55595068752963
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "549fc9f1f789e82ba543011668b90020d37c9d02279f4aa88034b594f24d5fa3"
+  },
+  {
+    "input": "Hex reference mask stars.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask stars.milk2; GL error 0\n",
+    "mean_rgb": [
+      204.61331792318634,
+      0.0,
+      50.386682076813656
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "daa1f91af82813f2211bbed3608e52e6db0be1e2b95614844e6004d425ccc09f"
+  },
+  {
+    "input": "Hex reference mask stars2.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: stars2\n",
+    "input_sha256": "543609a5943895c330a031d539d0e41b7772860bfd571b508cffb3e443a3c5fd"
+  },
+  {
+    "input": "Hex reference mask triangle.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask triangle.milk2; GL error 0\n",
+    "mean_rgb": [
+      253.58493954480795,
+      0.0,
+      1.415060455192034
+    ],
+    "max_rgb": [
+      255,
+      0,
+      126
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "d8c03fc563bd4f9a5182383d12c61d3c9b4cd8c19ac020be33a2dc72e8e87019"
+  },
+  {
+    "input": "Hex reference mask vertical.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask vertical.milk2; GL error 0\n",
+    "mean_rgb": [
+      127.5,
+      0.0,
+      127.5
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "502ff8b73220f368667d28721f36edd7675c21d960af726ade72c19fe46452d0"
+  },
+  {
+    "input": "Hex reference mask wave.milk2",
+    "returncode": -6,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: wave\n",
+    "input_sha256": "152bbf3f7f6ca3037a524ec5a38f3974f399777c770b9b176850d89b8a56dc6f"
+  },
+  {
+    "input": "Hex reference mask zoom.milk2",
+    "returncode": 0,
+    "diagnostic": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask zoom.milk2; GL error 0\n",
+    "mean_rgb": [
+      150.84154812707445,
+      0.0,
+      104.15845187292555
+    ],
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "green_pixels_over_20": 0,
+    "input_sha256": "0bb24a7ca02a8a3e9b9a11f6b7717e7a10674f8b575ff7a815c3202502ddd20c"
+  }
+]

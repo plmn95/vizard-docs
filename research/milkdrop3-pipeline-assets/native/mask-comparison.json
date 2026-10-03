@@ -1,0 +1,212 @@
+[
+  {
+    "pattern": "arrow",
+    "rendered": true,
+    "red_dominance_agreement": 0.38175379326695114,
+    "red_dominance_agreement_if_inverted": 0.6182462067330489,
+    "native_red_fraction": 0.7400041488857279,
+    "reference_red_fraction": 0.22378496917970603
+  },
+  {
+    "pattern": "bubbles",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: bubbles"
+  },
+  {
+    "pattern": "cercle",
+    "rendered": true,
+    "red_dominance_agreement": 0.019624229492650545,
+    "red_dominance_agreement_if_inverted": 0.9803757705073495,
+    "native_red_fraction": 0.5948316737790422,
+    "reference_red_fraction": 0.3951339497392129
+  },
+  {
+    "pattern": "checkerboard",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: checkerboard"
+  },
+  {
+    "pattern": "cisor",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: cisor"
+  },
+  {
+    "pattern": "clock",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: clock"
+  },
+  {
+    "pattern": "corner",
+    "rendered": true,
+    "red_dominance_agreement": 0.5368687766714082,
+    "red_dominance_agreement_if_inverted": 0.4631312233285918,
+    "native_red_fraction": 0.4982545045045045,
+    "reference_red_fraction": 0.25868895211000476
+  },
+  {
+    "pattern": "cross",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: cross"
+  },
+  {
+    "pattern": "cross2",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: cross2"
+  },
+  {
+    "pattern": "curtain",
+    "rendered": true,
+    "red_dominance_agreement": 0.5067567567567568,
+    "red_dominance_agreement_if_inverted": 0.4932432432432432,
+    "native_red_fraction": 0.49324324324324326,
+    "reference_red_fraction": 0.0
+  },
+  {
+    "pattern": "donuts",
+    "rendered": true,
+    "red_dominance_agreement": 0.37664473684210525,
+    "red_dominance_agreement_if_inverted": 0.6233552631578947,
+    "native_red_fraction": 0.2741109530583215,
+    "reference_red_fraction": 0.34924431009957324
+  },
+  {
+    "pattern": "horizontal",
+    "rendered": true,
+    "red_dominance_agreement": 0.9851825509720247,
+    "red_dominance_agreement_if_inverted": 0.014817449027975327,
+    "native_red_fraction": 0.4982456140350877,
+    "reference_red_fraction": 0.4834281650071124
+  },
+  {
+    "pattern": "lineshorizontal",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: lineshorizontal"
+  },
+  {
+    "pattern": "linesvertical",
+    "rendered": true,
+    "red_dominance_agreement": 0.5168918918918919,
+    "red_dominance_agreement_if_inverted": 0.4831081081081081,
+    "native_red_fraction": 0.48817567567567566,
+    "reference_red_fraction": 0.36655405405405406
+  },
+  {
+    "pattern": "nuclear",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: nuclear"
+  },
+  {
+    "pattern": "patches",
+    "rendered": true,
+    "red_dominance_agreement": 0.484960289236605,
+    "red_dominance_agreement_if_inverted": 0.515039710763395,
+    "native_red_fraction": 0.5438803935514461,
+    "reference_red_fraction": 0.5651315789473684
+  },
+  {
+    "pattern": "plasma",
+    "rendered": true,
+    "red_dominance_agreement": 0.5950005926979611,
+    "red_dominance_agreement_if_inverted": 0.40499940730203887,
+    "native_red_fraction": 0.6270181365576103,
+    "reference_red_fraction": 0.609631341868184
+  },
+  {
+    "pattern": "plasma2",
+    "rendered": true,
+    "red_dominance_agreement": 0.5315552394499763,
+    "red_dominance_agreement_if_inverted": 0.4684447605500237,
+    "native_red_fraction": 0.506205547652916,
+    "reference_red_fraction": 0.060467045993361786
+  },
+  {
+    "pattern": "plasma3",
+    "rendered": true,
+    "red_dominance_agreement": 0.5249940730203888,
+    "red_dominance_agreement_if_inverted": 0.4750059269796112,
+    "native_red_fraction": 0.510209222380275,
+    "reference_red_fraction": 0.040875414888572784
+  },
+  {
+    "pattern": "side",
+    "rendered": true,
+    "red_dominance_agreement": 0.8352032954006638,
+    "red_dominance_agreement_if_inverted": 0.16479670459933615,
+    "native_red_fraction": 0.4982456140350877,
+    "reference_red_fraction": 0.494935395922238
+  },
+  {
+    "pattern": "snail",
+    "rendered": true,
+    "red_dominance_agreement": 0.4776286154575628,
+    "red_dominance_agreement_if_inverted": 0.5223713845424371,
+    "native_red_fraction": 0.5015647226173542,
+    "reference_red_fraction": 0.49202524893314364
+  },
+  {
+    "pattern": "snail2",
+    "rendered": true,
+    "red_dominance_agreement": 0.4859352773826458,
+    "red_dominance_agreement_if_inverted": 0.5140647226173543,
+    "native_red_fraction": 0.4998251541014699,
+    "reference_red_fraction": 0.463824679943101
+  },
+  {
+    "pattern": "snail3",
+    "rendered": true,
+    "red_dominance_agreement": 0.48708511142721667,
+    "red_dominance_agreement_if_inverted": 0.5129148885727833,
+    "native_red_fraction": 0.4994724988146041,
+    "reference_red_fraction": 0.5224810336652442
+  },
+  {
+    "pattern": "square",
+    "rendered": true,
+    "red_dominance_agreement": 0.22780049786628734,
+    "red_dominance_agreement_if_inverted": 0.7721995021337127,
+    "native_red_fraction": 0.7332859174964438,
+    "reference_red_fraction": 0.4945145803698435
+  },
+  {
+    "pattern": "stars",
+    "rendered": true,
+    "red_dominance_agreement": 0.4789295874822191,
+    "red_dominance_agreement_if_inverted": 0.521070412517781,
+    "native_red_fraction": 0.8040422000948316,
+    "reference_red_fraction": 0.32381460407776197
+  },
+  {
+    "pattern": "stars2",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: stars2"
+  },
+  {
+    "pattern": "triangle",
+    "rendered": true,
+    "red_dominance_agreement": 0.5137683736367947,
+    "red_dominance_agreement_if_inverted": 0.48623162636320527,
+    "native_red_fraction": 1.0,
+    "reference_red_fraction": 0.5137683736367947
+  },
+  {
+    "pattern": "vertical",
+    "rendered": true,
+    "red_dominance_agreement": 0.01120199146514936,
+    "red_dominance_agreement_if_inverted": 0.9887980085348507,
+    "native_red_fraction": 0.5,
+    "reference_red_fraction": 0.4887980085348506
+  },
+  {
+    "pattern": "wave",
+    "rendered": false,
+    "diagnostic": "libc++abi: terminating due to uncaught exception of type std::runtime_error: Unsupported MilkDrop .milk2 blend pattern: wave"
+  },
+  {
+    "pattern": "zoom",
+    "rendered": true,
+    "red_dominance_agreement": 0.4051683262209578,
+    "red_dominance_agreement_if_inverted": 0.5948316737790422,
+    "native_red_fraction": 0.5948316737790422,
+    "reference_red_fraction": 0.0
+  }
+]

@@ -1,0 +1,168 @@
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+MILK model/serialization checks passed
+MILK shared-stage checks passed: primitive order/opacity, current blur, 500 sides, warp interaction, retained history, composite exclusion, frame count, resize, host state
+MILK3 GPU checks passed: double presets, all 20 prototype masks, Q64, shape/wave 16, FFT, mouse, saved randoms
+MILK GPU checks passed; constant preset mean 1.378 ms/frame (96x48)
+PRESET OK: 000.milk2 (14.62 ms/frame at 320x180)
+PRESET REJECTED: Mdgeorge - 3Body Glass - MilkDrop2077 Butterfly1.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: Mdgeorge - 3Body Glass - MilkDrop2077 Butterfly2.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077 - $$$ Royal - Mashup (128) 2.milk2 (11.78 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077 - $$$ Royal - Mashup (128).milk2: Preset 1: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+PRESET OK: MilkDrop2077 - $$$ Royal - Mashup (230).milk2 (308.98 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 - $$$ Royal - Mashup (398).milk2 (15.77 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 - $$$ Royal - Mashup2b.milk2 (10.83 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077 - 5 Stars.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077 - Discoball.milk2 (12.46 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 - Double stringy things.milk2 (22.82 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 - Double stringy things2b.milk2 (28.59 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 - Hexcollie - Magma spiral.milk2 (24.18 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077 - Ivermectin.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077 - Mandala.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077 - MilkDrop 3.27 Spirale3.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Black Hole Textures 2 Triple Images.milk2: Preset 2: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Red Textures 3 double.milk2: Preset 2: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+PRESET OK: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 Forest.milk2 (29.20 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 Manda3.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 Manda4.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 double2.milk2: Preset 1: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+PRESET OK: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 3.milk2 (17.08 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 5b Spirale.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 5b3.milk2 (13.09 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077 - RGB star and Spirale.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077 - amandio c - [martin edit] - trick with cubes.milk2 (495.81 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 - triangle of light.milk2 (15.74 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - Gin Tonic on Ice2.milk2 (14.76 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - Kings Cross Palace 2.milk2 (26.78 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - Kings Cross Palace.milk2 (25.09 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - badlands [Flexi's wave edit]3d.milk2 (12.16 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - blue haze 2025.milk2 (17.69 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - blue haze riding the wave2.milk2 (17.27 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - blue haze riding the wave3.milk2 (16.30 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - blue haze riding the wave4.milk2 (21.94 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077 vs martin - golden mirror.milk2: Preset 2: [TextureManager] Failed to find requested texture "worms"
+PRESET REJECTED: MilkDrop2077 vs martin - golden mirror5.milk2: Preset 1: [PerFrameContext] Could not compile per-frame code: syntax error, unexpected VAR(L23 C1)
+PRESET REJECTED: MilkDrop2077 vs martin - liquid gold+.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077 vs martin - liquid gold.milk2: Preset 1: [PerFrameContext] Could not compile per-frame code: syntax error, unexpected VAR(L23 C1)
+PRESET OK: MilkDrop2077 vs martin - on air 002.milk2 (259.68 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - on air 002b.milk2 (246.25 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077 vs martin - on air 004 ball.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077 vs martin - on air.milk2: Preset 2: [TextureManager] Failed to find requested texture "worms"
+PRESET OK: MilkDrop2077 vs martin - shine on me.milk2 (16.51 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - shine on me2.milk2 (16.79 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - storm.milk2 (17.90 ms/frame at 320x180)
+PRESET OK: MilkDrop2077 vs martin - the green hole.milk2 (14.56 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.004 LamersAss - The Vortex6 green machine.milk2 (318.42 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.006 Isosceles River2.milk2 (28.96 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.006 Isosceles River3.milk2 (13.43 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.007 clipboard03 4.milk2 (12.33 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.007 clipboard03.milk2 (16.25 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.008 The rainbow spider2.milk2 (591.65 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.012 Purple lava double3.milk2 (12.87 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.012 Purple lava double5.milk2 (178.67 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.014 Utopia slow FIRE.milk2 (379.86 ms/frame at 320x180)
+2;q4 = y2;wave_a = 0;PRESET OK: MilkDrop2077.015 Gum vs drain to heaven.milk2 (389.18 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.016 fiShbRaiN + geiss - witchcraft 2.milk2 (372.46 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.016 fiShbRaiN + geiss - witchcraft 6 glitch.milk2 (191.33 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.016 fiShbRaiN + geiss - witchcraft 7.milk2: Preset 1: [TextureManager] Failed to find requested texture "worms"
+PRESET OK: MilkDrop2077.020 Rainbow Attack NEON.milk2 (413.67 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.020 Rainbow Attack NEON3.milk2 (420.04 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.022 Simple Wave 6c + sprite.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077.022 Simple Wave 6e Mandala2.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077.022 Simple Wave 6e.milk2 (15.01 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.023 Ultra Plasma 2.milk2 (13.17 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.023 Ultra Plasma 3b.milk2: Preset 2: [TextureManager] Failed to find requested texture "worms"
+PRESET OK: MilkDrop2077.023 Ultra Plasma Ball.milk2 (16.56 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.023 Ultra Plasma.milk2 (14.48 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.025 Pattern 3d8.milk2 (9.66 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.026 My Little Forest 007 DMT edition.milk2 (474.09 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.026 My Little Forest 007 DMT edition2.milk2 (467.59 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.028 Rainbow Wave 004.milk2 (18.36 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.029 Candy Bars 002.milk2 (19.66 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.029 Candy Bars 003.milk2 (13.18 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.034 The Escargot 001c.milk2 (13.16 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.034 The Escargot 001d.milk2 (11.58 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.034 The Escargot 002.milk2 (16.95 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.034 The Escargot 003.milk2 (16.61 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.036 Triangle of Sadness 002.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077.040 Sand Rose 1e.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077.042 Wall of peas10.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077.Classic.Wave.068b spin2.milk2 (11.28 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R002 double.milk2 (223.09 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R002 double2.milk2 (10.92 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R004 4 double4.milk2 (217.57 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R004b.milk2 (12.95 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R008.milk2 (150.28 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R011.milk2 (17.50 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R038.milk2 (49.65 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R043.milk2 (287.94 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.R054 double.milk2: Preset 2: [TextureManager] Failed to find requested texture "worms"
+PRESET REJECTED: MilkDrop2077.R070 Cubes.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077.R070 double.milk2: Preset 1: [FinalComposite] Error compiling composite shader code: [MilkdropShader] Error translating HLSL composite shader: HLSL parsing failed.
+PRESET OK: MilkDrop2077.R078b.milk2 (22.81 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R084c.milk2 (167.39 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R090 double.milk2 (13.53 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R090.milk2 (15.09 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R090d.milk2 (15.65 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R094 double.milk2 (81.90 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.R115 cope - the drain to heaven 2 Mandala.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077.R115 cope - the drain to heaven 2 double2.milk2 (10.38 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R115 cope - the drain to heaven 2 horizontal.milk2 (14.51 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R115 cope - the drain to heaven 5.milk2 (308.86 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R115 cope - the drain to heaven 7b.milk2 (18.56 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R118.milk2 (17.81 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R124 2.milk2 (26.54 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R127 fiShbRaiN + geiss - witchcraft double.milk2 (27.46 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R144.milk2 (19.48 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.R148.milk2: Preset 2: [TextureManager] Failed to find requested texture "grad3"
+PRESET REJECTED: MilkDrop2077.R148s.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077.R152d.milk2 (20.31 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R178.milk2 (26.86 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R180 sunrise.milk2 (10.51 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R180 sunrise2.milk2 (21.13 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.R192 Cubes.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET REJECTED: MilkDrop2077.R197.milk2: Preset 2: [TextureManager] Failed to find requested texture "worms"
+PRESET OK: MilkDrop2077.R201b.milk2 (36.23 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R213c.milk2 (245.56 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R222.milk2 (31.53 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R239 QUINTUPLE.milk2 (363.87 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R247 half.milk2 (26.68 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R248b.milk2 (21.87 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R248c.milk2 (25.31 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R260.milk2 (33.52 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop2077.R292b face.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: MilkDrop2077.R292b.milk2 (20.39 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R293c MilkDrop Tutorial #2.milk2 (14.46 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R294.milk2 (19.65 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R300 Inferno.milk2 (49.69 ms/frame at 320x180)
+PRESET OK: MilkDrop2077.R300 Inferno2.milk2 (36.32 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer1 OG.milk (8.54 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer1.milk (4.71 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer1b.milk (6.12 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer1d.milk2 (7.88 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer2 purple.milk (7.49 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer2 red.milk (5.42 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer2c double.milk2 (10.88 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer2d double.milk2 (15.06 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer4 MidSoft Invert.milk (5.40 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer4 MidSoft.milk (4.92 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer4.milk (12.98 ms/frame at 320x180)
+PRESET REJECTED: MilkDrop3 - Equalizer4d doubleV.milk2: Preset 1: [PerPixelMesh] Error compiling warp shader code: [MilkdropShader] Error translating HLSL warp shader: HLSL parsing failed.
+PRESET OK: MilkDrop3 - Equalizer5 Round Hz.milk (11.23 ms/frame at 320x180)
+PRESET OK: MilkDrop3 - Equalizer5 Round.milk (6.49 ms/frame at 320x180)
+PRESET OK: Royal - Mashup (190) MilkDrop2077 remix.milk2 (27.51 ms/frame at 320x180)
+PRESET OK: Royal - Mashup (190) MilkDrop2077 remix2.milk2 (22.17 ms/frame at 320x180)
+PRESET REJECTED: Royal - Mashup (190) MilkDrop2077 remix3 + sprite.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: Royal - Mashup (190) MilkDrop2077 remix3.milk2 (20.75 ms/frame at 320x180)
+PRESET OK: Stahlregen & geiss + rovastar + flexi - Altar to a Shadow Eminence (Coffee and distortions) MilkDrop2077 v2.milk2 (21.93 ms/frame at 320x180)
+PRESET OK: Stahlregen & geiss + rovastar + flexi - Altar to a Shadow Eminence (Coffee and distortions) MilkDrop2077 v2b.milk2 (23.35 ms/frame at 320x180)
+PRESET OK: Stahlregen & geiss + rovastar + flexi - Altar to a Shadow Eminence (Coffee and distortions) MilkDrop2077 v3b.milk2 (15.38 ms/frame at 320x180)
+PRESET OK: XorDev - MilkDrop2077 - Traffic.milk (8.51 ms/frame at 320x180)
+PRESET OK: XorDev - MilkDrop2077 - Traffic2.milk (4.78 ms/frame at 320x180)
+PRESET REJECTED: YoheiNishitsuji - Martin - MilkDrop2077 - Fractal Pumpkin3.milk2: Preset 1: [PerPixelMesh] Error compiling warp shader code: [MilkdropShader] Error translating HLSL warp shader: HLSL parsing failed.
+PRESET OK: diatribes - MilkDrop2077 - Cloud Look3 Storm [MOUSE].milk (12.60 ms/frame at 320x180)
+PRESET OK: diatribes - MilkDrop2077 - Cloud Look3 [MOUSE].milk (162.59 ms/frame at 320x180)
+PRESET OK: lara - MilkDrop2077 - Flexi Romanesco Uncompressed [MOUSE].milk (9.03 ms/frame at 320x180)
+PRESET REJECTED: martin - frosty caves 2 MilkDrop2077 cube rmx.milk2: MilkDrop .milk2 sprite overlays are not supported by this prototype.
+PRESET OK: martin - stratospheric turbulences 2.milk2 (18.89 ms/frame at 320x180)
+PRESET REJECTED: martin - the early universe - Milkdrop2077 rmx9.milk2: Preset 1: [TextureManager] Failed to find requested texture "pic"
+MilkDrop 3 official corpus smoke: 121 loaded/rendered, 41 rejected with diagnostics

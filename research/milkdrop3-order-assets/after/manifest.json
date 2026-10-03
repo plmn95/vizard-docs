@@ -1,0 +1,362 @@
+[
+  {
+    "input": "01-shape-classic-visible.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/01-shape-classic-visible.milk; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      172.94643195827408,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "02-shape-classic-hidden.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/02-shape-classic-hidden.milk; GL error 0\n",
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "03-shape-cross-detect.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/03-shape-cross-detect.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      127,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      34.26110123281176,
+      0.0
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "04-shapes-overlap.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/04-shapes-overlap.milk2; GL error 0\n",
+    "max_rgb": [
+      127,
+      0,
+      64
+    ],
+    "mean_rgb": [
+      86.13410384068278,
+      0.0,
+      43.40616405879564
+    ],
+    "center": [
+      127,
+      0,
+      64
+    ]
+  },
+  {
+    "input": "05-shapes-halfalpha.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/05-shapes-halfalpha.milk2; GL error 0\n",
+    "max_rgb": [
+      64,
+      0,
+      48
+    ],
+    "mean_rgb": [
+      43.40616405879564,
+      0.0,
+      32.55462304409673
+    ],
+    "center": [
+      64,
+      0,
+      48
+    ]
+  },
+  {
+    "input": "06-wave-classic-visible.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/06-wave-classic-visible.milk; GL error 0\n",
+    "max_rgb": [
+      128,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      0.44912280701754387,
+      0.0,
+      0.0
+    ],
+    "center": [
+      128,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "07-wave-cross-detect.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/07-wave-cross-detect.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      120,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      0.12431247036510194,
+      0.0
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "08-blur-classic-parity.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/08-blur-classic-parity.milk; GL error 0\n",
+    "max_rgb": [
+      0,
+      0,
+      51
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      51.0
+    ],
+    "center": [
+      0,
+      0,
+      51
+    ]
+  },
+  {
+    "input": "09-blur-double-parity.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/09-blur-double-parity.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      0,
+      51
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      30.168954480796586
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "10-blur-shape-classic.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/10-blur-shape-classic.milk; GL error 0\n",
+    "max_rgb": [
+      0,
+      255,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      172.45625889046943,
+      0.0
+    ],
+    "center": [
+      0,
+      255,
+      0
+    ]
+  },
+  {
+    "input": "11-blur-shape-double.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/11-blur-shape-double.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      127,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      34.01957088667615,
+      0.0
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "12-shaderless-shapes.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/12-shaderless-shapes.milk2; GL error 0\n",
+    "max_rgb": [
+      170,
+      0,
+      85
+    ],
+    "mean_rgb": [
+      115.30038525367473,
+      0.0,
+      57.648814604077764
+    ],
+    "center": [
+      170,
+      0,
+      85
+    ]
+  },
+  {
+    "input": "13-shapes-vertical.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/13-shapes-vertical.milk2; GL error 0\n",
+    "max_rgb": [
+      127,
+      0,
+      64
+    ],
+    "mean_rgb": [
+      86.13410384068278,
+      0.0,
+      43.40616405879564
+    ],
+    "center": [
+      127,
+      0,
+      64
+    ]
+  },
+  {
+    "input": "14-shapes-horizontal.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/14-shapes-horizontal.milk2; GL error 0\n",
+    "max_rgb": [
+      127,
+      0,
+      64
+    ],
+    "mean_rgb": [
+      86.13410384068278,
+      0.0,
+      43.40616405879564
+    ],
+    "center": [
+      127,
+      0,
+      64
+    ]
+  },
+  {
+    "input": "15-blur-shape-parity.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/15-blur-shape-parity.milk; GL error 0\n",
+    "max_rgb": [
+      0,
+      0,
+      51
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      51.0
+    ],
+    "center": [
+      0,
+      0,
+      51
+    ]
+  },
+  {
+    "input": "16-blur-shape-parity-double.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/16-blur-shape-parity-double.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      0,
+      51
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      30.168954480796586
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "17-shape-100.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/17-shape-100.milk; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      127.69459163110479,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "18-shape-500.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/18-shape-500.milk; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      127.77924075391181,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ]
+  }
+]

@@ -1,0 +1,366 @@
+[
+  {
+    "input": "01-shape-classic-visible.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/01-shape-classic-visible.milk; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      172.94643195827408,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "02-shape-classic-hidden.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/02-shape-classic-hidden.milk; GL error 0\n",
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "03-shape-cross-detect.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/03-shape-cross-detect.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      66,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      10.650334874348033,
+      0.0
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "04-shapes-overlap.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/04-shapes-overlap.milk2; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "mean_rgb": [
+      104.16291192508298,
+      0.0,
+      68.7839467757231
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "05-shapes-halfalpha.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/05-shapes-halfalpha.milk2; GL error 0\n",
+    "max_rgb": [
+      127,
+      0,
+      127
+    ],
+    "mean_rgb": [
+      51.92842875770507,
+      0.0,
+      34.31670519203414
+    ],
+    "center": [
+      127,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "06-wave-classic-visible.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/06-wave-classic-visible.milk; GL error 0\n",
+    "max_rgb": [
+      128,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      0.44912280701754387,
+      0.0,
+      0.0
+    ],
+    "center": [
+      128,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "07-wave-cross-detect.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/07-wave-cross-detect.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      33,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      0.01629326695116169,
+      0.0
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "08-blur-classic-parity.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/08-blur-classic-parity.milk; GL error 0\n",
+    "max_rgb": [
+      0,
+      255,
+      51
+    ],
+    "mean_rgb": [
+      0.0,
+      252.9652027027027,
+      51.0
+    ],
+    "center": [
+      0,
+      255,
+      51
+    ]
+  },
+  {
+    "input": "09-blur-double-parity.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/09-blur-double-parity.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      68,
+      51
+    ],
+    "mean_rgb": [
+      0.0,
+      10.727575272641062,
+      30.168954480796586
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "10-blur-shape-classic.milk",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/10-blur-shape-classic.milk; GL error 0\n",
+    "max_rgb": [
+      0,
+      255,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      172.45625889046943,
+      0.0
+    ],
+    "center": [
+      0,
+      255,
+      0
+    ]
+  },
+  {
+    "input": "11-blur-shape-double.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/11-blur-shape-double.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      68,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      10.726712897107634,
+      0.0
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "12-shaderless-shapes.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/12-shaderless-shapes.milk2; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "mean_rgb": [
+      104.16291192508298,
+      0.0,
+      68.7839467757231
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "13-shapes-vertical.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/13-shapes-vertical.milk2; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "mean_rgb": [
+      86.61084044570887,
+      0.0,
+      86.33728070175438
+    ],
+    "center": [
+      125,
+      0,
+      130
+    ]
+  },
+  {
+    "input": "14-shapes-horizontal.milk2",
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/14-shapes-horizontal.milk2; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      255
+    ],
+    "mean_rgb": [
+      86.42649359886202,
+      0.0,
+      86.52171052631579
+    ],
+    "center": [
+      130,
+      0,
+      125
+    ]
+  },
+  {
+    "input": "15-blur-shape-parity.milk",
+    "frames": 180,
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/15-blur-shape-parity.milk; GL error 0\n",
+    "max_rgb": [
+      0,
+      255,
+      51
+    ],
+    "mean_rgb": [
+      0.0,
+      172.45625889046943,
+      51.0
+    ],
+    "center": [
+      0,
+      255,
+      51
+    ]
+  },
+  {
+    "input": "16-blur-shape-parity-double.milk2",
+    "frames": 180,
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/16-blur-shape-parity-double.milk2; GL error 0\n",
+    "max_rgb": [
+      0,
+      68,
+      51
+    ],
+    "mean_rgb": [
+      0.0,
+      10.726712897107634,
+      30.168954480796586
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "17-shape-100.milk",
+    "frames": 180,
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/17-shape-100.milk; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      127.69459163110479,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ]
+  },
+  {
+    "input": "18-shape-500.milk",
+    "frames": 180,
+    "returncode": 0,
+    "diagnostics": "Rendered /private/tmp/hex-milk-order-inputs/18-shape-500.milk; GL error 0\n",
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      127.69459163110479,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "projectM_revision": "dd89dfba0852c0c7e0c4e668929118d91ec3a3f0",
+  "patched_files": 34,
+  "final_source_sha256": {
+    "cmake/projectm-milk3.patch": "2f11a0bc7edf07ee10c768b8a1b65c34b003218962f2ebad1ef200823708fe48",
+    "src/renderer/milk_runtime.cpp": "8fa4f352f63aa51012019c59d598c574cddd7e6c38030dd34a7a86bb6473a43b",
+    "src/renderer/milk_format.h": "68f090d35d4003b62af3a825d557f364c0c88055cc9cb54a90506b97879300b3",
+    "tests/milk_module_test.cpp": "633dacc9d98c7822767ec0651d4f801469e4fac5a89075a1f22ebc50a04ba917"
+  },
+  "note": "Ordering before/after outputs were recorded during the primitive milestone. Progress native outputs used the subsequent shader fixes. The final corpus includes the equation-fragment fix."
+}

@@ -1,0 +1,6 @@
+{
+  "installed_reference_classic_closed_files": 77,
+  "explicitly_rejected": 77,
+  "original_extraction_closed_files": 43,
+  "reason": "MD31/MD32 shader-cache mapping and decoder are not implemented"
+}

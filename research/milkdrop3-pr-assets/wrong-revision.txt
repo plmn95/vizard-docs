@@ -1,0 +1,3 @@
+CMake Error at /tmp/hex-milk-pr/cmake/ApplyProjectMPatch.cmake:8 (message):
+  projectM source must be checked out at wrong; found
+  dd89dfba0852c0c7e0c4e668929118d91ec3a3f0

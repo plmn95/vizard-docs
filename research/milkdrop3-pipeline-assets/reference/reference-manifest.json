@@ -1,0 +1,177 @@
+[
+  {
+    "input": "01-hidden-red.milk",
+    "captures": [
+      "01-hidden-red-a.png",
+      "01-hidden-red-b.png"
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "max_repeat_difference": [
+      0,
+      0,
+      0
+    ],
+    "green_dominant_pixels": 0,
+    "input_sha256": "0d43fc82072c5a38e54c3941ffd8c5c1b948334ce06b3e48ab930f2e5d25b7b9"
+  },
+  {
+    "input": "02-detector-black.milk",
+    "captures": [
+      "02-detector-black-a.png",
+      "02-detector-black-b.png"
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "max_repeat_difference": [
+      0,
+      0,
+      0
+    ],
+    "green_dominant_pixels": 0,
+    "input_sha256": "f07fac80fdc9b3968a0b6d4e2898b55fca32f2d06704cf36f22189c3d80ba41b"
+  },
+  {
+    "input": "03-detector-memory.milk",
+    "captures": [
+      "03-detector-memory-a.png",
+      "03-detector-memory-b.png"
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "green_pixels_over_20": 0,
+    "max_repeat_difference": [
+      0,
+      0,
+      0
+    ],
+    "green_dominant_pixels": 0,
+    "input_sha256": "80b5571c91fe69a55708df1e403ec069bc7e5bc5a92225a794a56e82b6e106ba"
+  },
+  {
+    "input": "04-comp-red.milk",
+    "captures": [
+      "04-comp-red-a.png",
+      "04-comp-red-b.png"
+    ],
+    "mean_rgb": [
+      234.00001778093883,
+      51.0,
+      35.0
+    ],
+    "max_rgb": [
+      235,
+      51,
+      35
+    ],
+    "green_pixels_over_20": 337440,
+    "max_repeat_difference": [
+      0,
+      0,
+      0
+    ],
+    "green_dominant_pixels": 0,
+    "input_sha256": "318e3d1d75bd71a248f1d7324388f998011241828f726ed916ed8a6a51af6327"
+  },
+  {
+    "input": "05-shared-current-warp.milk2",
+    "captures": [
+      "05-shared-current-warp-a.png",
+      "05-shared-current-warp-b.png"
+    ],
+    "mean_rgb": [
+      5.62450213371266,
+      15.992297889995259,
+      2.7303520625889046
+    ],
+    "max_rgb": [
+      35,
+      85,
+      19
+    ],
+    "green_pixels_over_20": 95995,
+    "max_repeat_difference": [
+      0,
+      0,
+      0
+    ],
+    "green_dominant_pixels": 86972,
+    "input_sha256": "24fe11a455f71e26f63dd75068963ddb22b0d763ad2591026ccd3c7fcc804e3d"
+  },
+  {
+    "input": "06-shared-feedback.milk2",
+    "captures": [
+      "06-shared-feedback-a.png",
+      "06-shared-feedback-b.png"
+    ],
+    "mean_rgb": [
+      15.479543029871977,
+      38.133896396396395,
+      8.898879800853486
+    ],
+    "max_rgb": [
+      84,
+      185,
+      54
+    ],
+    "green_pixels_over_20": 125279,
+    "max_repeat_difference": [
+      61,
+      131,
+      39
+    ],
+    "green_dominant_pixels": 117680,
+    "input_sha256": "06d99ea9d9122d3c25e9b384ef19791efe277e6efab00d6b49e8ef2f5ab0e95a"
+  },
+  {
+    "input": "07-comp-feedback.milk2",
+    "captures": [
+      "07-comp-feedback-a.png",
+      "07-comp-feedback-b.png"
+    ],
+    "mean_rgb": [
+      96.2825213371266,
+      19.3404131104789,
+      12.934029753437649
+    ],
+    "max_rgb": [
+      234,
+      51,
+      35
+    ],
+    "green_pixels_over_20": 134541,
+    "max_repeat_difference": [
+      0,
+      0,
+      0
+    ],
+    "green_dominant_pixels": 0,
+    "input_sha256": "4444be8d828a8a16e9b5598adff70d900c4078e2fa5b99be656841b9946eaf53"
+  }
+]

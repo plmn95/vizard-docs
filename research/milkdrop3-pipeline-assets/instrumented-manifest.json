@@ -1,0 +1,36 @@
+[
+  {
+    "input": "08-feedback-frame-count.milk2",
+    "input_sha256": "f35e5a65c48e325bb4497a9fe6e93820e026699a055581d3e793025026c895e0",
+    "reference_capture": "08-feedback-frame-count-fixed-a.png",
+    "capture_sha256": "d85f42f5835204a576b98934a7622116972172aa2fb6a12be828a2525d330c55",
+    "center_rgb": [
+      0,
+      0,
+      245
+    ],
+    "max_rgb": [
+      80,
+      177,
+      245
+    ],
+    "green_dominant_pixels": 55632
+  },
+  {
+    "input": "09-zero-feedback-frame-count.milk2",
+    "input_sha256": "9184db0d7dd47ea592adebba8bf6691448fdd8638eb9965720d72a79d07d0b2c",
+    "reference_capture": "09-zero-feedback-frame-count-a.png",
+    "capture_sha256": "a038f488f424186e37d4fd0f5b47c1b18c39bb151cfc9f64daf4299924e97173",
+    "center_rgb": [
+      0,
+      0,
+      245
+    ],
+    "max_rgb": [
+      35,
+      85,
+      245
+    ],
+    "green_dominant_pixels": 780
+  }
+]

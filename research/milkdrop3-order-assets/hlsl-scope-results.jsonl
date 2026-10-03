@@ -1,0 +1,4 @@
+{"case": "plain", "hresult": 0, "bytecode_bytes": 160, "diagnostic": ""}
+{"case": "uniform_shadow", "hresult": 0, "bytecode_bytes": 160, "diagnostic": ""}
+{"case": "macro_shadow", "hresult": 0, "bytecode_bytes": 156, "diagnostic": ""}
+{"case": "local_ratio", "hresult": 0, "bytecode_bytes": 160, "diagnostic": ""}

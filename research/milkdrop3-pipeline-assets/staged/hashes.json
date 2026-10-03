@@ -1,0 +1,23 @@
+{
+  "05-shared-current-warp.png": "3309fe10967ce9f2994b94c71c2b2b7eb61c376b69482ae5529bab90ce15ad41",
+  "06-shared-feedback.png": "fad91c361cfe5421b69ca871a6bccecd5cca5595a2f372d9a8ee3aa4ed15d930",
+  "04-comp-red.png": "aeda5cb18cdbd960aefb834d9b038b606fd664ac8e3d96c714dba47f268c001f",
+  "09-zero-feedback-frame-count.png": "dce7fcefa1a65b7b9fd43083a6a1c8e4ed74c3ce4aa6e046d6060d562c43ea22",
+  "mask-orientation.json": "bb3538b62c2ba47d1cac8cfc101345d3ca434d355f774822073d4d3191ade6ed",
+  "mask-cercle.png": "b3ae3a0a06a9b3ac1ac2eaa487b8360e81fefd3808da1e0ff50f51e35ad4122b",
+  "01-hidden-red.png": "aff0b5dab31d96a8873d88424055eb9350187b4ca3471ce3008bd3b8b880f03a",
+  "mask-horizontal.png": "e792c8bc29eb6ff7b459fc157d29bd52b3d24ef8637e1c9ceb0a6e8dc5c863fb",
+  "03-detector-memory.png": "aff0b5dab31d96a8873d88424055eb9350187b4ca3471ce3008bd3b8b880f03a",
+  "08-feedback-frame-count.png": "260b7e0b6318426b45a38123de88761b38293e8e227589f0168cd34a8269e3fd",
+  "manifest.json": "52c867cdce32dc34f340488349613f1dd4aa7f5c626d9bd9c36b509533e135b2",
+  "classic-gradient-feedback.milk": "f1b629a5b8647efe4180dd4da399392999627ccf371a9553dcacaa0f95e16066",
+  "02-detector-black.png": "aff0b5dab31d96a8873d88424055eb9350187b4ca3471ce3008bd3b8b880f03a",
+  "mask-vertical.png": "e4825bea4d2f293348b405fa32c40a5ca4e2b2c6ba82314d67ab83833c0d2956",
+  "classic-gradient-after.png": "33c8a04221bab0697ee5bebab5b0975d392ebdf1dc843f0b3f9478b35388a60e",
+  "classic-gradient-before.png": "33c8a04221bab0697ee5bebab5b0975d392ebdf1dc843f0b3f9478b35388a60e",
+  "07-comp-feedback.png": "2bded85de7d4308a536939115dff10ca60607871e6d906d755abc45fd9680d4a",
+  "classic_before_ppm_sha256": "daac7f4813cd1392e9f0415579a66a815b8bbf8d52e88ac8b2da0ae60a19220b",
+  "classic_after_ppm_sha256": "daac7f4813cd1392e9f0415579a66a815b8bbf8d52e88ac8b2da0ae60a19220b",
+  "runtime_source_sha256": "5c6d044dc84f874c079d883abfd919a7d6ff5d7e5a3bbba74b2487426382f0e2",
+  "projectm_patch_sha256": "ed4b2374dd50db9e271a70c2420dde4c2ffa068e126c8a59f8c0f3ceac020356"
+}

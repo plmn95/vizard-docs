@@ -1,0 +1,4 @@
+MILK model/serialization checks passed
+MILK shared-stage checks passed: primitive order/opacity, current blur, 500 sides, warp interaction, retained history, composite exclusion, frame count, resize, host state
+MILK3 GPU checks passed: double presets, all 20 prototype masks, Q64, shape/wave 16, FFT, mouse, saved randoms
+MILK GPU checks passed; constant preset mean 1.327 ms/frame (96x48)

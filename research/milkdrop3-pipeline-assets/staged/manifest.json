@@ -1,0 +1,164 @@
+[
+  {
+    "input": "01-hidden-red.milk",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/01-hidden-red.milk; GL error 0\n",
+    "source_sha256": "0d43fc82072c5a38e54c3941ffd8c5c1b948334ce06b3e48ab930f2e5d25b7b9",
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "green_dominant": 0
+  },
+  {
+    "input": "02-detector-black.milk",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/02-detector-black.milk; GL error 0\n",
+    "source_sha256": "f07fac80fdc9b3968a0b6d4e2898b55fca32f2d06704cf36f22189c3d80ba41b",
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "green_dominant": 0
+  },
+  {
+    "input": "03-detector-memory.milk",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/03-detector-memory.milk; GL error 0\n",
+    "source_sha256": "80b5571c91fe69a55708df1e403ec069bc7e5bc5a92225a794a56e82b6e106ba",
+    "max_rgb": [
+      0,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "green_dominant": 0
+  },
+  {
+    "input": "04-comp-red.milk",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/04-comp-red.milk; GL error 0\n",
+    "source_sha256": "318e3d1d75bd71a248f1d7324388f998011241828f726ed916ed8a6a51af6327",
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      255.0,
+      0.0,
+      0.0
+    ],
+    "green_dominant": 0
+  },
+  {
+    "input": "05-shared-current-warp.milk2",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/05-shared-current-warp.milk2; GL error 0\n",
+    "source_sha256": "24fe11a455f71e26f63dd75068963ddb22b0d763ad2591026ccd3c7fcc804e3d",
+    "max_rgb": [
+      0,
+      66,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      10.651324679943102,
+      0.0
+    ],
+    "green_dominant": 69461
+  },
+  {
+    "input": "06-shared-feedback.milk2",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/06-shared-feedback.milk2; GL error 0\n",
+    "source_sha256": "06d99ea9d9122d3c25e9b384ef19791efe277e6efab00d6b49e8ef2f5ab0e95a",
+    "max_rgb": [
+      0,
+      169,
+      0
+    ],
+    "mean_rgb": [
+      0.0,
+      28.402258179231865,
+      0.0
+    ],
+    "green_dominant": 98455
+  },
+  {
+    "input": "07-comp-feedback.milk2",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/07-comp-feedback.milk2; GL error 0\n",
+    "source_sha256": "4444be8d828a8a16e9b5598adff70d900c4078e2fa5b99be656841b9946eaf53",
+    "max_rgb": [
+      255,
+      0,
+      0
+    ],
+    "mean_rgb": [
+      104.15845187292555,
+      0.0,
+      0.0
+    ],
+    "green_dominant": 0
+  },
+  {
+    "input": "08-feedback-frame-count.milk2",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/08-feedback-frame-count.milk2; GL error 0\n",
+    "source_sha256": "f35e5a65c48e325bb4497a9fe6e93820e026699a055581d3e793025026c895e0",
+    "max_rgb": [
+      0,
+      149,
+      255
+    ],
+    "mean_rgb": [
+      0.0,
+      25.03346965386439,
+      104.15845187292555
+    ],
+    "green_dominant": 46182
+  },
+  {
+    "input": "09-zero-feedback-frame-count.milk2",
+    "frames": 600,
+    "returncode": 0,
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-pipeline-assets/inputs/09-zero-feedback-frame-count.milk2; GL error 0\n",
+    "source_sha256": "9184db0d7dd47ea592adebba8bf6691448fdd8638eb9965720d72a79d07d0b2c",
+    "max_rgb": [
+      0,
+      66,
+      255
+    ],
+    "mean_rgb": [
+      0.0,
+      10.651324679943102,
+      104.15845187292555
+    ],
+    "green_dominant": 0
+  }
+]

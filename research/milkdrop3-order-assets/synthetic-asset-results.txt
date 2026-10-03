@@ -1,0 +1,40 @@
+MilkDrop2077 vs martin - golden mirror.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077 vs martin - golden mirror.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+MilkDrop2077 vs martin - golden mirror5.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077 vs martin - golden mirror5.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+MilkDrop2077 vs martin - liquid gold.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077 vs martin - liquid gold.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+MilkDrop2077 vs martin - on air.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077 vs martin - on air.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+MilkDrop2077.016 fiShbRaiN + geiss - witchcraft 7.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077.016 fiShbRaiN + geiss - witchcraft 7.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+MilkDrop2077.023 Ultra Plasma 3b.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077.023 Ultra Plasma 3b.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+MilkDrop2077.R054 double.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077.R054 double.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+MilkDrop2077.R148.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077.R148.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 3 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+MilkDrop2077.R197.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/MilkDrop2077.R197.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+
+martin - the early universe - Milkdrop2077 rmx9.milk2
+0 Rendered /private/tmp/hex-milk-missing-asset-diagnostic/presets/martin - the early universe - Milkdrop2077 rmx9.milk2; GL error 0
+ UNSUPPORTED (log once): POSSIBLE ISSUE: unit 2 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+

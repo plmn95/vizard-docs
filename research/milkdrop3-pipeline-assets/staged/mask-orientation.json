@@ -1,0 +1,17 @@
+[
+  {
+    "pattern": "cercle",
+    "region_agreement": 0.9803757705073495,
+    "diagnostics": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask cercle.milk2; GL error 0\n"
+  },
+  {
+    "pattern": "vertical",
+    "region_agreement": 0.9887980085348507,
+    "diagnostics": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask vertical.milk2; GL error 0\n"
+  },
+  {
+    "pattern": "horizontal",
+    "region_agreement": 0.9851825509720247,
+    "diagnostics": "Rendered /private/tmp/hex-milkdrop3-blend-fixtures-v3/Hex reference mask horizontal.milk2; GL error 0\n"
+  }
+]

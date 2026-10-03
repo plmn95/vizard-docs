@@ -1,0 +1,149 @@
+
+> vizard-docs@0.0.1 check
+> npm run check:docs && npm run build
+
+
+> vizard-docs@0.0.1 check:docs
+> node scripts/check-docs.mjs
+
+Validated 102 documentation pages.
+
+> vizard-docs@0.0.1 build
+> astro build && node scripts/check-branding.mjs
+
+06:15:06 [vite] Re-optimizing dependencies because vite config has changed
+06:15:07 [content] Syncing content
+06:15:07 [content] Synced content
+06:15:07 [types] Generated 1.02s
+06:15:07 [build] output: "static"
+06:15:07 [build] mode: "static"
+06:15:07 [build] directory: /private/tmp/hex-milk-docs-pr/dist/
+06:15:07 [build] Collecting build info...
+06:15:07 [build] ✓ Completed in 1.28s.
+06:15:07 [build] Building static entrypoints...
+06:15:09 [vite] ✓ built in 2.26s
+06:15:09 [WARN] [vite] [plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+06:15:09 [vite] ✓ built in 322ms
+06:15:10 [build] Rearranging server assets...
+
+ generating static routes
+06:15:10   ├─ /404.htmlEntry docs → 404 was not found.
+ (+21ms)
+06:15:10   ├─ /suggestion/index.html (+24ms)
+06:15:10   ├─ /concepts/index.html (+15ms)
+06:15:10   ├─ /concepts/aux-sends-and-buses/index.html (+5ms)
+06:15:10   ├─ /concepts/chain-groups/index.html (+5ms)
+06:15:10   ├─ /concepts/docking-and-layout/index.html (+5ms)
+06:15:10   ├─ /concepts/insert-fx-chains/index.html (+5ms)
+06:15:10   ├─ /concepts/midi-and-opensoundcontrol-learn/index.html (+5ms)
+06:15:10   ├─ /concepts/mixer-mode/index.html (+4ms)
+06:15:10   ├─ /concepts/modulation-matrix/index.html (+4ms)
+06:15:10   ├─ /concepts/output-and-recording/index.html (+4ms)
+06:15:10   ├─ /concepts/patches-slots-and-banks/index.html (+4ms)
+06:15:10   ├─ /concepts/reading-the-panel/index.html (+3ms)
+06:15:10   ├─ /concepts/signal-chain/index.html (+7ms)
+06:15:10   ├─ /getting-started/index.html (+5ms)
+06:15:10   ├─ /getting-started/01-first-launch/index.html (+3ms)
+06:15:10   ├─ /getting-started/02-load-a-factory-patch/index.html (+3ms)
+06:15:10   ├─ /getting-started/03-build-a-custom-chain/index.html (+3ms)
+06:15:10   ├─ /getting-started/04-record-and-output/index.html (+3ms)
+06:15:10   ├─ /index.html (+3ms)
+06:15:10   ├─ /reference/index.html (+3ms)
+06:15:10   ├─ /reference/fx/index.html (+3ms)
+06:15:10   ├─ /reference/fx/blur/index.html (+4ms)
+06:15:10   ├─ /reference/fx/blur/box-blur/index.html (+3ms)
+06:15:10   ├─ /reference/fx/blur/gaussian-blur/index.html (+3ms)
+06:15:10   ├─ /reference/fx/blur/motion-blur/index.html (+3ms)
+06:15:10   ├─ /reference/fx/blur/radial-blur/index.html (+7ms)
+06:15:10   ├─ /reference/fx/color/index.html (+4ms)
+06:15:10   ├─ /reference/fx/color/black-white/index.html (+3ms)
+06:15:10   ├─ /reference/fx/color/dither/index.html (+3ms)
+06:15:10   ├─ /reference/fx/color/hue-rotate/index.html (+3ms)
+06:15:10   ├─ /reference/fx/color/invert/index.html (+3ms)
+06:15:10   ├─ /reference/fx/color/palette-map/index.html (+3ms)
+06:15:10   ├─ /reference/fx/color/posterize/index.html (+3ms)
+06:15:10   ├─ /reference/fx/color/threshold/index.html (+3ms)
+06:15:10   ├─ /reference/fx/crt/index.html (+3ms)
+06:15:10   ├─ /reference/fx/crt/barrel/index.html (+3ms)
+06:15:10   ├─ /reference/fx/crt/convergence-error/index.html (+3ms)
+06:15:10   ├─ /reference/fx/crt/deflection-error/index.html (+3ms)
+06:15:10   ├─ /reference/fx/crt/glow/index.html (+5ms)
+06:15:10   ├─ /reference/fx/crt/persistence/index.html (+7ms)
+06:15:10   ├─ /reference/fx/crt/phosphor-mask/index.html (+4ms)
+06:15:10   ├─ /reference/fx/crt/scan-lines/index.html (+4ms)
+06:15:10   ├─ /reference/fx/crt/vignette/index.html (+3ms)
+06:15:10   ├─ /reference/fx/distort/index.html (+2ms)
+06:15:10   ├─ /reference/fx/distort/kaleidoscope/index.html (+2ms)
+06:15:10   ├─ /reference/fx/distort/transform/index.html (+2ms)
+06:15:10   ├─ /reference/fx/distort/wave-warp/index.html (+2ms)
+06:15:10   ├─ /reference/fx/filter/index.html (+4ms)
+06:15:10   ├─ /reference/fx/filter/edge-detect/index.html (+3ms)
+06:15:10   ├─ /reference/fx/filter/edge-enhance/index.html (+3ms)
+06:15:10   ├─ /reference/fx/filter/mask/index.html (+5ms)
+06:15:10   ├─ /reference/fx/filter/pixelate/index.html (+3ms)
+06:15:10   ├─ /reference/fx/grade/index.html (+3ms)
+06:15:10   ├─ /reference/fx/grade/channel-attenuverter/index.html (+6ms)
+06:15:10   ├─ /reference/fx/grade/channel-curves/index.html (+3ms)
+06:15:10   ├─ /reference/fx/grade/contrast/index.html (+3ms)
+06:15:10   ├─ /reference/fx/grade/saturation-adjust/index.html (+3ms)
+06:15:10   ├─ /reference/fx/grade/white-balance/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/channel-select/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/chroma-key/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/despill/index.html (+4ms)
+06:15:10   ├─ /reference/fx/key/dominant-channel/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/edge-key/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/luma-key/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/luma-range/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/motion-key/index.html (+3ms)
+06:15:10   ├─ /reference/fx/key/sat-isolate/index.html (+6ms)
+06:15:10   ├─ /reference/fx/retro/index.html (+3ms)
+06:15:10   ├─ /reference/fx/retro/grain/index.html (+2ms)
+06:15:10   ├─ /reference/fx/retro/rutt-etra/index.html (+3ms)
+06:15:10   ├─ /reference/fx/retro/vhs/index.html (+3ms)
+06:15:10   ├─ /reference/insert-fx-region/index.html (+3ms)
+06:15:10   ├─ /reference/modulation/index.html (+3ms)
+06:15:10   ├─ /reference/modulation/audio-reactive/index.html (+3ms)
+06:15:10   ├─ /reference/modulation/cv-gate/index.html (+3ms)
+06:15:10   ├─ /reference/modulation/envelope/index.html (+3ms)
+06:15:10   ├─ /reference/modulation/lfo/index.html (+3ms)
+06:15:10   ├─ /reference/modulation/macro/index.html (+2ms)
+06:15:10   ├─ /reference/modulation/midi/index.html (+2ms)
+06:15:10   ├─ /reference/modulation/midi-note/index.html (+2ms)
+06:15:10   ├─ /reference/modulation/opensoundcontrol/index.html (+5ms)
+06:15:10   ├─ /reference/modulation/time/index.html (+3ms)
+06:15:10   ├─ /reference/modules/index.html (+3ms)
+06:15:10   ├─ /reference/modules/feedback/index.html (+3ms)
+06:15:10   ├─ /reference/modules/insert/index.html (+3ms)
+06:15:10   ├─ /reference/modules/isf/index.html (+3ms)
+06:15:10   ├─ /reference/modules/milk/index.html (+3ms)
+06:15:10   ├─ /reference/modules/noise/index.html (+3ms)
+06:15:10   ├─ /reference/modules/osc/index.html (+3ms)
+06:15:10   ├─ /reference/modules/pointcloud/index.html (+3ms)
+06:15:10   ├─ /reference/modules/scope/index.html (+2ms)
+06:15:10   ├─ /reference/modules/shape/index.html (+2ms)
+06:15:10   ├─ /reference/modules/source/index.html (+2ms)
+06:15:10   ├─ /reference/modules/sprite/index.html (+2ms)
+06:15:10   ├─ /reference/modules/text/index.html (+7ms)
+06:15:10   ├─ /reference/shortcuts/index.html (+3ms)
+06:15:10   ├─ /reference/windows/index.html (+3ms)
+06:15:10   ├─ /reference/windows/aux-buses-monitor/index.html (+3ms)
+06:15:10   ├─ /reference/windows/mixer-controls/index.html (+4ms)
+06:15:10   ├─ /reference/windows/mod-matrix/index.html (+3ms)
+06:15:10   ├─ /reference/windows/patches-bar/index.html (+3ms)
+06:15:10   ├─ /reference/windows/settings/index.html (+3ms)
+06:15:10 ✓ Completed in 520ms.
+
+06:15:10 [build] ✓ Completed in 3.20s.
+06:15:10 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+06:15:10 [starlight:pagefind] Building search index with Pagefind...
+06:15:13 [build] Waiting for integration "@astrojs/starlight", hook "astro:build:done"...
+06:15:14 [starlight:pagefind] Found 104 HTML files.
+06:15:14 [starlight:pagefind] Finished building search index in 3.79s.
+06:15:14 [build] 104 page(s) built in 8.29s
+06:15:14 [build] Complete!
+Branding verified for /vizard-docs: home.

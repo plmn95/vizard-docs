@@ -1,0 +1,19 @@
+MilkDrop2077 - $$$ Royal - Mashup (128).milk2
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+Rendered /private/tmp/hex-milk-reference-run/Milkdrop3/presets-original/MilkDrop2077 - $$$ Royal - Mashup (128).milk2; GL error 0
+MilkDrop2077 - NeonAngel vs Flexi - Black Hole Textures 2 Triple Images.milk2
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+Rendered /private/tmp/hex-milk-reference-run/Milkdrop3/presets-original/MilkDrop2077 - NeonAngel vs Flexi - Black Hole Textures 2 Triple Images.milk2; GL error 0
+MilkDrop2077 - NeonAngel vs Flexi - Red Textures 3 double.milk2
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+Rendered /private/tmp/hex-milk-reference-run/Milkdrop3/presets-original/MilkDrop2077 - NeonAngel vs Flexi - Red Textures 3 double.milk2; GL error 0
+MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 double2.milk2
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+Rendered /private/tmp/hex-milk-reference-run/Milkdrop3/presets-original/MilkDrop2077 - NeonAngel vs Flexi - Venom Textures 2 double2.milk2; GL error 0
+MilkDrop2077.R070 double.milk2
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+Rendered /private/tmp/hex-milk-reference-run/Milkdrop3/presets-original/MilkDrop2077.R070 double.milk2; GL error 0
+MilkDrop3 - Equalizer4d doubleV.milk2
+Preset 1: [PerPixelMesh] Error compiling warp shader code: [MilkdropShader] Error translating HLSL warp shader: HLSL parsing failed.
+YoheiNishitsuji - Martin - MilkDrop2077 - Fractal Pumpkin3.milk2
+Preset 1: [PerPixelMesh] Error compiling warp shader code: [MilkdropShader] Error translating HLSL warp shader: HLSL parsing failed.

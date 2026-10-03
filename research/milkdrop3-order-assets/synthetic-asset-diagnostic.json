@@ -1,0 +1,20 @@
+{
+  "warning": "Synthetic green diagnostic textures only. Not a compatibility or visual fidelity test. No application fallback was added.",
+  "texture_names": [
+    "grad3",
+    "pic",
+    "worms"
+  ],
+  "preset_names": [
+    "MilkDrop2077 vs martin - golden mirror.milk2",
+    "MilkDrop2077 vs martin - golden mirror5.milk2",
+    "MilkDrop2077 vs martin - liquid gold.milk2",
+    "MilkDrop2077 vs martin - on air.milk2",
+    "MilkDrop2077.016 fiShbRaiN + geiss - witchcraft 7.milk2",
+    "MilkDrop2077.023 Ultra Plasma 3b.milk2",
+    "MilkDrop2077.R054 double.milk2",
+    "MilkDrop2077.R148.milk2",
+    "MilkDrop2077.R197.milk2",
+    "martin - the early universe - Milkdrop2077 rmx9.milk2"
+  ]
+}

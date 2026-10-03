@@ -1,0 +1,4 @@
+TEXTURESTATE program=11 name=sampler_blur3 unit=3 tex=0 sampler=1 size=0x0 min=2601
+TEXTURESTATE program=11 name=sampler_blur1 unit=1 tex=0 sampler=1 size=0x0 min=2601
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 0 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+Rendered /private/tmp/hex-milk-reference-run/Milkdrop3/presets-original/martin - glassworks 3.milk; GL error 0

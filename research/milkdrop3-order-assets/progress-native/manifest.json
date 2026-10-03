@@ -1,0 +1,437 @@
+[
+  {
+    "input": "01-zoom-progress-0.milk2",
+    "sha256": "c7262cdfc41e8f4a888870aeddb5fa25dd6ca0f0fd62f3a4d695fffd6cda4bc8",
+    "min_max": [
+      [
+        255,
+        255
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "mean_rgb": [
+      255.0,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/01-zoom-progress-0.milk2; GL error 0"
+  },
+  {
+    "input": "02-zoom-progress-0.1.milk2",
+    "sha256": "503e7c77194cb142910962e07427ea904f07b0fdd110bc2ecbcccbcbd1551cc2",
+    "min_max": [
+      [
+        229,
+        229
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        26,
+        26
+      ]
+    ],
+    "mean_rgb": [
+      229.0,
+      0.0,
+      26.0
+    ],
+    "center": [
+      229,
+      0,
+      26
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/02-zoom-progress-0.1.milk2; GL error 0"
+  },
+  {
+    "input": "03-zoom-progress-0.25.milk2",
+    "sha256": "601dc844f05b6012ecd6d9c7a96c1a237de157c646c4f76c61678aef0f573473",
+    "min_max": [
+      [
+        191,
+        191
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        64,
+        64
+      ]
+    ],
+    "mean_rgb": [
+      191.0,
+      0.0,
+      64.0
+    ],
+    "center": [
+      191,
+      0,
+      64
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/03-zoom-progress-0.25.milk2; GL error 0"
+  },
+  {
+    "input": "04-zoom-progress-0.5.milk2",
+    "sha256": "0bb24a7ca02a8a3e9b9a11f6b7717e7a10674f8b575ff7a815c3202502ddd20c",
+    "min_max": [
+      [
+        128,
+        128
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        128,
+        128
+      ]
+    ],
+    "mean_rgb": [
+      128.0,
+      0.0,
+      128.0
+    ],
+    "center": [
+      128,
+      0,
+      128
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/04-zoom-progress-0.5.milk2; GL error 0"
+  },
+  {
+    "input": "05-zoom-progress-0.75.milk2",
+    "sha256": "79552ce7d42e8c2a08ef0694ecb3a169921640d93ab1d129b8078ff3a138a737",
+    "min_max": [
+      [
+        64,
+        64
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        191,
+        191
+      ]
+    ],
+    "mean_rgb": [
+      64.0,
+      0.0,
+      191.0
+    ],
+    "center": [
+      64,
+      0,
+      191
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/05-zoom-progress-0.75.milk2; GL error 0"
+  },
+  {
+    "input": "06-zoom-progress-1.milk2",
+    "sha256": "bf86b06d71d56f277165df6aeda644e8e60a6bd335716afe97bee822c16b8e35",
+    "min_max": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      255.0
+    ],
+    "center": [
+      0,
+      0,
+      255
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/06-zoom-progress-1.milk2; GL error 0"
+  },
+  {
+    "input": "07-zoom-progress-1.5.milk2",
+    "sha256": "84b5566d6bde57b4d40e476d5f86edddb45d2e88ae2ee92bce5b297ca7475a07",
+    "min_max": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      255.0
+    ],
+    "center": [
+      0,
+      0,
+      255
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/07-zoom-progress-1.5.milk2; GL error 0"
+  },
+  {
+    "input": "08-zoom-progress-2.milk2",
+    "sha256": "012b5afec946b61c49e867d2a9dd1b22e0659c11bd0f8dc82c3749cc9a2ab84c",
+    "min_max": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      255.0
+    ],
+    "center": [
+      0,
+      0,
+      255
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/08-zoom-progress-2.milk2; GL error 0"
+  },
+  {
+    "input": "09-zoom-progress-3.milk2",
+    "sha256": "23af60c521a89b985db305ae05cd2cdfdbaabf5f9b45f028f94711b43157e6e9",
+    "min_max": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      255.0
+    ],
+    "center": [
+      0,
+      0,
+      255
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/09-zoom-progress-3.milk2; GL error 0"
+  },
+  {
+    "input": "10-cercle-progress-0.milk2",
+    "sha256": "0848c4cd561a029a8dca338670b1d0962a88fd3af54f6d436cd1971cac43c62f",
+    "min_max": [
+      [
+        255,
+        255
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "mean_rgb": [
+      255.0,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/10-cercle-progress-0.milk2; GL error 0"
+  },
+  {
+    "input": "11-cercle-progress-0.25.milk2",
+    "sha256": "49180b62e6b6f04242611867efb6710bd316d94aca5fc059b1519bdd360001da",
+    "min_max": [
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        255
+      ]
+    ],
+    "mean_rgb": [
+      219.1388217164533,
+      0.0,
+      35.86117828354671
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/11-cercle-progress-0.25.milk2; GL error 0"
+  },
+  {
+    "input": "12-cercle-progress-0.5.milk2",
+    "sha256": "bbb50a050dbd9dc3a6d355a84960fbb3e76c7d36e869717308116675202b1089",
+    "min_max": [
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        255
+      ]
+    ],
+    "mean_rgb": [
+      104.15845187292555,
+      0.0,
+      150.84154812707445
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/12-cercle-progress-0.5.milk2; GL error 0"
+  },
+  {
+    "input": "13-cercle-progress-0.75.milk2",
+    "sha256": "7fb17bec1f7034aedf901fec2a81d1d3b512c4450bf14852ebd1606dd3b2d0a3",
+    "min_max": [
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        255
+      ]
+    ],
+    "mean_rgb": [
+      26.658546704599335,
+      0.0,
+      228.34145329540067
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/13-cercle-progress-0.75.milk2; GL error 0"
+  },
+  {
+    "input": "14-cercle-progress-1.milk2",
+    "sha256": "c06aa35867a29021285de719eed986aec686890bd656d9b2fa8be2557d60e1c8",
+    "min_max": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        255,
+        255
+      ]
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      255.0
+    ],
+    "center": [
+      0,
+      0,
+      255
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/14-cercle-progress-1.milk2; GL error 0"
+  },
+  {
+    "input": "hex-milk-progress-negative.milk2",
+    "sha256": "dfdbc73ca4432f4852da7ae70394284c18248f001689af3772aceb26c20a2aaf",
+    "min_max": [
+      [
+        255,
+        255
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "mean_rgb": [
+      255.0,
+      0.0,
+      0.0
+    ],
+    "center": [
+      255,
+      0,
+      0
+    ],
+    "diagnostics": "Rendered /Users/plamenhadzhiev/repos/others/vizard-docs/research/milkdrop3-order-assets/progress-inputs/hex-milk-progress-negative.milk2; GL error 0"
+  }
+]

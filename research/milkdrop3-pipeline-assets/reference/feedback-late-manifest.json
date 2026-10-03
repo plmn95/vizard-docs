@@ -1,0 +1,27 @@
+{
+  "captures": [
+    "06-shared-feedback-late-a.png",
+    "06-shared-feedback-late-b.png"
+  ],
+  "max_repeat_difference": [
+    57,
+    120,
+    36
+  ],
+  "mean_absolute_rgb_difference": [
+    2.444591631104789,
+    5.526348387861546,
+    1.5305950687529635
+  ],
+  "green_dominant_pixels": 109384,
+  "mean_rgb": [
+    14.655965504978663,
+    36.10376955903272,
+    8.413042318634425
+  ],
+  "max_rgb": [
+    80,
+    177,
+    51
+  ]
+}

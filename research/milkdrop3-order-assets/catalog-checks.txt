@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /Users/plamenhadzhiev/repos/others/retrovid/build-milk
+Test project /Users/plamenhadzhiev/repos/others/retrovid/build-milk
+    Start 31: target_catalog_test
+1/1 Test #31: target_catalog_test ..............   Passed    2.22 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   2.28 sec

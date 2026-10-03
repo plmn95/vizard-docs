@@ -14,6 +14,7 @@ work in general.
 | [FEEDBACK](feedback/) | Video feedback delay line with its own loop blend and Dry/Wet output. |
 | [INSERT](insert/) | Reads an AUX bus back into the chain, or acts as a plain insert stage. |
 | [ISF](isf/) | Runs a user-loaded ISF (Interactive Shader Format) shader. |
+| [MILK](milk/) | Generates audio-reactive visuals from a loaded MilkDrop `.milk` preset. |
 | [NOISE](noise/) | Procedural noise generator: 7 families (Random, Perlin, Simplex, and more), each in 2D or 3D. |
 | [OSC](osc/) | The oscillator generator: Sine, Square, Sawtooth, Triangle, Noise, or a custom waveform. |
 | [POINTCLOUD](pointcloud/) | Renders the chain or a bus as a 3D field of points or lines, displaced by brightness. |

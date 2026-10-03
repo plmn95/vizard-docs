@@ -1,0 +1,31 @@
+{
+  "input_sha256": "213549ca543bcf2e1eb2e7e57fc153eb44fe300cf406e07d5e03b11c3bfa6371",
+  "results": [
+    {
+      "capture": "hex-milk-equation-fragment-a.png",
+      "center": [
+        58,
+        6,
+        3
+      ],
+      "mean_rgb": [
+        58.0,
+        6.0,
+        3.0
+      ]
+    },
+    {
+      "capture": "hex-milk-equation-fragment-b.png",
+      "center": [
+        58,
+        6,
+        3
+      ],
+      "mean_rgb": [
+        58.0,
+        6.0,
+        3.0
+      ]
+    }
+  ]
+}

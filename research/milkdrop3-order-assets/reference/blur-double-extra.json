@@ -1,0 +1,80 @@
+[
+  {
+    "capture": "09-blur-double-parity-extra-0.png",
+    "max_rgb": [
+      0,
+      0,
+      48
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      28.314737434803224
+    ]
+  },
+  {
+    "capture": "09-blur-double-parity-extra-1.png",
+    "max_rgb": [
+      0,
+      0,
+      48
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      28.314737434803224
+    ]
+  },
+  {
+    "capture": "09-blur-double-parity-extra-2.png",
+    "max_rgb": [
+      86,
+      86,
+      49
+    ],
+    "mean_rgb": [
+      16.29336770981508,
+      16.328932550972024,
+      29.99794926505453
+    ]
+  },
+  {
+    "capture": "09-blur-double-parity-extra-3.png",
+    "max_rgb": [
+      0,
+      0,
+      48
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      28.314737434803224
+    ]
+  },
+  {
+    "capture": "09-blur-double-parity-extra-4.png",
+    "max_rgb": [
+      86,
+      86,
+      49
+    ],
+    "mean_rgb": [
+      16.29336770981508,
+      16.328932550972024,
+      29.99794926505453
+    ]
+  },
+  {
+    "capture": "09-blur-double-parity-extra-5.png",
+    "max_rgb": [
+      0,
+      0,
+      48
+    ],
+    "mean_rgb": [
+      0.0,
+      0.0,
+      28.314737434803224
+    ]
+  }
+]

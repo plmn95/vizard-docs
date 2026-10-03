@@ -1,0 +1,31 @@
+{
+  "input_sha256": "dfdbc73ca4432f4852da7ae70394284c18248f001689af3772aceb26c20a2aaf",
+  "results": [
+    {
+      "capture": "hex-milk-progress-negative-a.png",
+      "center": [
+        234,
+        51,
+        35
+      ],
+      "mean": [
+        234.00001778093883,
+        51.0,
+        35.0
+      ]
+    },
+    {
+      "capture": "hex-milk-progress-negative-b.png",
+      "center": [
+        234,
+        51,
+        35
+      ],
+      "mean": [
+        234.00001778093883,
+        51.0,
+        35.0
+      ]
+    }
+  ]
+}

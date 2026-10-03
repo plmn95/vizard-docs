@@ -1,0 +1,54 @@
+blending_pattern=zoom
+blending_progress=0
+blending_direction=1
+random_1=0.2
+random_2=0.4
+random_3=0.6
+random_4=0.8
+random_5=0.5
+[PRESET1_BEGIN]
+NAME=Hex reference mask red
+MILKDROP_PRESET_VERSION=201
+PSVERSION=3
+PSVERSION_WARP=3
+PSVERSION_COMP=3
+[preset00]
+fDecay=1.0
+fGammaAdj=1.0
+fWaveAlpha=0.0
+fVideoEchoAlpha=0.0
+bMotionVectorsOn=0
+ob_size=0.0
+ib_size=0.0
+warp_1=`shader_body
+warp_2=`{
+warp_3=`ret = tex2D(sampler_main, uv).xyz;
+warp_4=`}
+comp_1=`shader_body
+comp_2=`{
+comp_3=`ret = float3(1,0,0);
+comp_4=`}
+[PRESET1_END]
+[PRESET2_BEGIN]
+NAME=Hex reference mask blue
+MILKDROP_PRESET_VERSION=201
+PSVERSION=3
+PSVERSION_WARP=3
+PSVERSION_COMP=3
+[preset00]
+fDecay=1.0
+fGammaAdj=1.0
+fWaveAlpha=0.0
+fVideoEchoAlpha=0.0
+bMotionVectorsOn=0
+ob_size=0.0
+ib_size=0.0
+warp_1=`shader_body
+warp_2=`{
+warp_3=`ret = tex2D(sampler_main, uv).xyz;
+warp_4=`}
+comp_1=`shader_body
+comp_2=`{
+comp_3=`ret = float3(0,0,1);
+comp_4=`}
+[PRESET2_END]
