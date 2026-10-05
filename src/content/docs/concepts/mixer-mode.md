@@ -19,8 +19,9 @@ one LFO bank, one Envelope bank, and one Time bank, all shared across both
 decks, plus a single Mixer-wide undo/redo stack. Macros are the one
 deck-scoped source, four per deck, named `A1` to `A4` and `B1` to `B4`.
 Each deck also loads a patch, which brings that patch's own modulators with
-it. Right-click any mixer control to assign it a source, MIDI Learn it, set
-its Amount, or clear it. A dot marks each control that is being modulated.
+it. Right-clicking any mixer control offers the same `Edit Modulation` window
+as a patch parameter, using the Mixer's own sources, and `MIDI Learn`. A dot
+marks each control that is being modulated.
 
 `H` hides the on-screen controls for a clean output feed while performing;
 pressing it again brings them back. `Escape` reverses whichever of the two
