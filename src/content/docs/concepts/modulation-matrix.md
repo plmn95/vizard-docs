@@ -17,10 +17,12 @@ the source picker.
 
 The source picker has one tab per source family: `LFO`, `ENV`, `TIME`,
 `MACRO`, `Audio`, `CV/Gate`, `MIDI`, `MIDI Note`, and `OpenSoundControl`.
-`Assign` adds the selected source and closes the window. Clicking a source's
-name in the list opens the same picker for that connection: changes apply as
-they are made, picking a different source swaps it while keeping its settings,
-`Remove` returns to the list, and `Done` closes the window. Sources already connected to the
+Picking a source adds it to the parameter at once, and the picker then edits
+it like any other connection: changes apply as they are made, and picking a
+different source swaps it. Clicking a source's name in the list opens the same
+picker for that connection. `Remove` deletes the source and returns to the
+list, and `Done` closes the window; so do `Esc` and a click outside it, and the
+source stays. Sources already connected to the
 parameter carry a lamp, and picking one opens it for editing instead of adding
 it twice.
 
