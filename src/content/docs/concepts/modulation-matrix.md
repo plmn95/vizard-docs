@@ -20,7 +20,7 @@ The source picker has one tab per source family: `LFO`, `ENV`, `TIME`,
 `Assign` adds the selected source and closes the window. Clicking a source's
 name in the list opens the same picker for that connection: changes apply as
 they are made, picking a different source swaps it while keeping its settings,
-and `Remove` and `Done` return to the list. Sources already connected to the
+`Remove` returns to the list, and `Done` closes the window. Sources already connected to the
 parameter carry a lamp, and picking one opens it for editing instead of adding
 it twice.
 
