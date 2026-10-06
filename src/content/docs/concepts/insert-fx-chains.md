@@ -15,6 +15,12 @@ slot; picking an effect from its type Selector fills it. A slot reorders by
 dragging its grip, disables without being removed via its `ACTIVE`/`BYPASSED`
 Rocker, and is deleted with its `X`.
 
+Right-clicking a slot offers `Copy Insert FX` and two ways to paste what was
+copied: `Paste Insert FX` replaces the slot you clicked, and `Paste Insert FX
+as new` adds a copy right after it, leaving the clicked slot as it was.
+Pasting as new is unavailable while all 8 slots are in use. Modulation is not
+copied, so a pasted slot starts without any.
+
 Each slot's own `Mix` sets how much of the effect blends back with what came
 into the slot, from fully dry to fully wet.
 
