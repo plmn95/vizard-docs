@@ -17,7 +17,7 @@ the source picker.
 
 The source picker has one tab per source family: `LFO`, `ENV`, `TIME`,
 `MACRO`, `Audio`, `CV/Gate`, `MIDI`, `MIDI Note`, and `OpenSoundControl`.
-`Assign` adds the selected source and returns to the list. Clicking a source's
+`Assign` adds the selected source and closes the window. Clicking a source's
 name in the list opens the same picker for that connection: changes apply as
 they are made, picking a different source swaps it while keeping its settings,
 and `Remove` and `Done` return to the list. Sources already connected to the
