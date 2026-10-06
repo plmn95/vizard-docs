@@ -12,7 +12,8 @@ The window lists every source modulating the parameter, one line each: the
 source's name, a live meter of how far it is moving the parameter right now,
 its `Depth`, a `BYP` switch that turns it off without removing it, and an `X`
 that removes it. `+ Add Source` and `Clear All` sit below the list. A
-parameter with no modulation opens straight on the source picker.
+parameter with no modulation shows an empty list, and `+ Add Source` opens
+the source picker.
 
 The source picker has one tab per source family: `LFO`, `ENV`, `TIME`,
 `MACRO`, `Audio`, `CV/Gate`, `MIDI`, `MIDI Note`, and `OpenSoundControl`.
