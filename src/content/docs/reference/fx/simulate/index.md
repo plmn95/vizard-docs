@@ -10,6 +10,7 @@ changes, when a patch is loaded, or when its slot is moved or removed.
 
 - [Fluid](fluid/)
 - [Ripple](ripple/)
+- [Reaction-Diffusion](reaction-diffusion/)
 
 **NOTE:** each running simulation holds GPU memory. Past a fixed limit, a
 further simulation passes its input through and its panel says so. Each
