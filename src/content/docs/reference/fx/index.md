@@ -1,13 +1,13 @@
 ---
 title: "FX"
-description: "FX: The Insert FX catalog: 44 effect types, placed into any module's Insert FX chain."
+description: "FX: The Insert FX catalog: 45 effect types, placed into any module's Insert FX chain."
 ---
 
-The Insert FX catalog: 44 effect types, placed into any module's Insert FX
+The Insert FX catalog: 45 effect types, placed into any module's Insert FX
 chain. See [Insert FX Chains](../../concepts/insert-fx-chains/) for how
 the chain itself works.
 
-The picker groups all 44 under the nine category headings below, and takes
+The picker groups all 45 under the nine category headings below, and takes
 a typed filter that matches across every category at once. Every effect is
 hostable on all 9 module types, and every one carries its own `Mix` on top
 of the parameters listed on its page.
@@ -22,4 +22,4 @@ of the parameters listed on its page.
 | [KEY](key/) | Luma Key, Chroma Key, Channel Select, Motion Key, Despill, Luma Range, Edge Key, Sat Isolate, Dominant Channel |
 | [BLUR](blur/) | Gaussian Blur, Box Blur, Motion Blur, Radial Blur |
 | [GRADE](grade/) | Channel Attenuverter, Channel Curves, Contrast, Saturation Adjust, White Balance |
-| [SIMULATE](simulate/) | Fluid |
+| [SIMULATE](simulate/) | Fluid, Ripple |
