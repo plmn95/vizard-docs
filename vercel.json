@@ -45,6 +45,10 @@
   ],
   "rewrites": [
     {
+      "source": "/vizard-docs/releases/:path*/",
+      "destination": "https://plmn95.github.io/hxc-docs/releases/:path*/index.html"
+    },
+    {
       "source": "/vizard-docs/releases/:path*",
       "destination": "https://plmn95.github.io/hxc-docs/releases/:path*"
     }
