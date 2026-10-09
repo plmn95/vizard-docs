@@ -9,7 +9,7 @@ const isVercel = process.env.VERCEL === '1';
 // https://astro.build/config
 export default defineConfig({
 	site: isVercel ? 'https://docs.hexcomposer.com' : 'https://plmn95.github.io',
-	base: process.env.VIZARD_DOCS_BASE || (isVercel ? '/' : '/vizard-docs'),
+	base: process.env.VIZARD_DOCS_BASE || (isVercel ? '/' : '/hxc-docs'),
 	integrations: [
 		sitemap({ filter: (page) => !/\/(edit|suggestion)(\/|$)/.test(new URL(page).pathname) }),
 		starlight({
@@ -28,7 +28,7 @@ export default defineConfig({
 				EditLink: './src/components/NoFooterEditLink.astro',
 			},
 			editLink: {
-				baseUrl: 'https://github.com/plmn95/vizard-docs/edit/main/',
+				baseUrl: 'https://github.com/plmn95/hxc-docs/edit/main/',
 			},
 			lastUpdated: true,
 			sidebar: [

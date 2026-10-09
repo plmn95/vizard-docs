@@ -11,7 +11,7 @@ than edit the page. Suggestions and explanations are public and reviewed before
 publication. Save the receipt link if you want to check progress.
 
 For contributors who already use GitHub, you can also open a
-[documentation correction](https://github.com/plmn95/vizard-docs/issues/new?template=documentation-correction.yml).
+[documentation correction](https://github.com/plmn95/hxc-docs/issues/new?template=documentation-correction.yml).
 Include the page URL, what is unclear or incorrect, and the wording you suggest
 when you have it.
 

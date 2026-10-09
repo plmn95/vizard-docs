@@ -50,16 +50,21 @@ or replace published release tags/assets. The `/versions/` page links to current
 and archived manuals; links from installed manuals are marked online.
 
 Run `npm run test:archives` to check preservation and failure behavior. To deploy
-current docs explicitly: `gh workflow run deploy.yml --repo plmn95/vizard-docs`.
+current docs explicitly: `gh workflow run deploy.yml --repo plmn95/hxc-docs`.
 The app repository owns publication credentials and the build/release procedure.
 
 ## Hosting and link previews
 
 Vercel serves the current manual at `docs.hexcomposer.com`. Current reading pages
-on every host use that canonical origin. The older GitHub Pages deployment keeps
-serving the account-free editor and frozen release manuals; `/edit/...` on Vercel
+on every host use that canonical origin. The GitHub Pages deployment at
+`https://plmn95.github.io/hxc-docs/` keeps serving the account-free editor and frozen release manuals; `/edit/...` on Vercel
 redirects to that editor. The canonical `/versions/` page lists the existing frozen
-manuals without copying or rebuilding them. Vercel fetches public release metadata
+manuals without copying or rebuilding them. Vercel proxies
+`/vizard-docs/releases/...` to `/hxc-docs/releases/...` on GitHub Pages, so the
+frozen files retain their embedded asset and navigation paths unchanged. The
+GitHub Pages versions chooser also links through this compatibility proxy.
+The old `plmn95.github.io/vizard-docs/` address is no longer hosted by this
+repository. Vercel fetches public release metadata
 at build time and fails the build if it cannot load it. Release/offline builds do
 not perform that request.
 

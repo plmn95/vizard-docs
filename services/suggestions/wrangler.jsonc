@@ -7,8 +7,8 @@
   "workers_dev": true,
   "vars": {
     "ENABLED": "true",
-    "GITHUB_REPO": "plmn95/vizard-docs",
-    "DOCS_URL": "https://plmn95.github.io/vizard-docs",
+    "GITHUB_REPO": "plmn95/hxc-docs",
+    "DOCS_URL": "https://plmn95.github.io/hxc-docs",
     "ALLOWED_ORIGINS": "https://plmn95.github.io"
   },
   "d1_databases": [{

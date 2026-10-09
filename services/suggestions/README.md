@@ -102,7 +102,7 @@ GitHub App credentials if you want it to create real review items.
    permissions **Contents: read/write**, **Pull requests: read/write**, and
    **Issues: read/write**. Subscribe to **Pull request** and **Issues** events.
    No user OAuth authorization or contributor login is needed.
-5. Install the App on **only `plmn95/vizard-docs`**. Generate a private key and
+5. Install the App on **only `plmn95/hxc-docs`**. Generate a private key and
    convert it to unencrypted PKCS#8 locally if GitHub downloads PKCS#1:
 
    ```sh
@@ -143,7 +143,7 @@ GitHub App credentials if you want it to create real review items.
 
    The Pages workflow passes them to Astro. For other hosts, configure the same
    build environment variables there and update `ALLOWED_ORIGINS` explicitly.
-   `ALLOWED_ORIGINS` contains origins only; `DOCS_URL` includes `/vizard-docs`.
+   `ALLOWED_ORIGINS` contains origins only; `DOCS_URL` includes `/hxc-docs`.
 
 ## Launch verification
 
@@ -194,3 +194,8 @@ provider settings.
 Release builds never embed visual editors or CAPTCHA requests. Future manuals
 link to the matching current online page with their version attached; archived
 manual files already published are never rewritten by this feature.
+
+After a repository rename, update `GITHUB_REPO` and `DOCS_URL` in
+`wrangler.jsonc` and redeploy the Worker. The installation token selects the
+repository by name, and signed webhooks must match `GITHUB_REPO` exactly.
+Confirm that the GitHub App installation still includes `plmn95/hxc-docs`.

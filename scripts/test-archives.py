@@ -31,7 +31,9 @@ class ArchiveTest(unittest.TestCase):
                     'manifestSha256': hashlib.sha256(manifest).hexdigest()}).encode()}
                 releases.append({'draft': False, 'tag_name': version, 'assets': [{'name': n} for n in assets[version]]})
             def gh(args, **kwargs):
-                if args[1] == 'api': return json.dumps([releases])
+                if args[1] == 'api':
+                    self.assertEqual(args[-1], 'repos/plmn95/hxc-docs/releases?per_page=100')
+                    return json.dumps([releases])
                 version = args[3]
                 name = args[args.index('--pattern') + 1]
                 directory = Path(args[args.index('--dir') + 1])
@@ -45,7 +47,14 @@ class ArchiveTest(unittest.TestCase):
                 self.assertEqual(Path('dist/releases/v1.0.0/index.html').read_text(), 'old style')
                 self.assertEqual(Path('dist/releases/v2.0.0/index.html').read_text(), 'new style')
                 chooser = Path('dist/versions/index.html').read_text()
-                self.assertIn('v1.0.0', chooser); self.assertIn('v2.0.0', chooser)
+                for version in assets:
+                    self.assertIn(f'https://docs.hexcomposer.com/vizard-docs/releases/{version}/', chooser)
+                    with zipfile.ZipFile(root / (version + '.zip')) as archive:
+                        for name in archive.namelist():
+                            self.assertEqual(Path('dist/releases', version, name).read_bytes(), archive.read(name))
+                config = json.loads((SCRIPT.parent.parent / 'vercel.json').read_text())
+                rewrite = next(r for r in config['rewrites'] if r['source'] == '/vizard-docs/releases/:path*')
+                self.assertEqual(rewrite['destination'], 'https://plmn95.github.io/hxc-docs/releases/:path*')
                 import shutil
                 shutil.rmtree('dist'); Path('dist').mkdir()
                 releases[0]['assets'] = []

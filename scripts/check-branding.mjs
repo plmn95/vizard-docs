@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { assetWithBase, FAVICON_PATH, LOGO_PATH } from '../src/lib/brand-assets.mjs';
 
-const base = process.env.VIZARD_DOCS_BASE || (process.env.VERCEL === '1' ? '/' : '/vizard-docs');
+const base = process.env.VIZARD_DOCS_BASE || (process.env.VERCEL === '1' ? '/' : '/hxc-docs');
 const expectedLogo = assetWithBase(base, LOGO_PATH);
 const expectedFavicon = assetWithBase(base, FAVICON_PATH);
 

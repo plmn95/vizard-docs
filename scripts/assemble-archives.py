@@ -9,7 +9,7 @@ import subprocess
 import tempfile
 import zipfile
 
-repo = 'plmn95/vizard-docs'
+repo = 'plmn95/hxc-docs'
 root = Path('dist')
 
 def gh(*args):
@@ -55,7 +55,7 @@ for release in releases:
                 if sha(z.read(name)) != expected:
                     raise RuntimeError('File checksum mismatch: ' + name)
             z.extractall(destination)
-        links.append(f'<li><a href="../releases/{version}/">Hex Composer {html.escape(version)}</a></li>')
+        links.append(f'<li><a href="https://docs.hexcomposer.com/vizard-docs/releases/{version}/">Hex Composer {html.escape(version)}</a></li>')
 chooser = root / 'versions'
 chooser.mkdir(exist_ok=True)
 (chooser / 'index.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hex Composer documentation versions</title><link rel="canonical" href="https://docs.hexcomposer.com/versions/"><meta name="description" content="Read current Hex Composer documentation or the frozen manual shipped with an earlier release."><link rel="icon" href="../favicon.ico" type="image/x-icon"><style>body{font:1rem/1.6 system-ui;max-width:44rem;margin:4rem auto;padding:0 1.5rem;background:#141517;color:#eceef2}a{color:#c0d7ff}li{margin:1rem 0}</style><main><h1>Documentation versions</h1><p>Each release keeps the manual and appearance shipped with the app.</p><ul><li><a href="https://docs.hexcomposer.com/">Current documentation</a></li>' + ''.join(links) + '</ul></main></html>')

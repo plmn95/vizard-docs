@@ -12,7 +12,7 @@ body:
     attributes:
       label: Page URL
       description: Link to the page that needs a correction.
-      placeholder: https://plmn95.github.io/vizard-docs/...
+      placeholder: https://plmn95.github.io/hxc-docs/...
     validations:
       required: true
   - type: textarea
