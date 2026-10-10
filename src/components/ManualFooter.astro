@@ -2,15 +2,23 @@
 import SectionLinks from './SectionLinks.astro';
 import Footer from '@astrojs/starlight/components/Footer.astro';
 ---
-<div class="manual-links" data-pagefind-ignore>
-  <a href="https://hexcomposer.com/">Hex Composer website</a>
-  <span aria-hidden="true"> · </span>
-  <a href="https://docs.hexcomposer.com/versions/">Documentation versions</a>
-  <span aria-hidden="true"> · </span>
-  <a href="https://discord.gg/Mfx6Jkffkj">Join the Discord</a>
-</div>
 <Footer><slot /></Footer>
+<nav class="manual-links" aria-label="Hex Composer links" data-pagefind-ignore>
+  <a href="https://hexcomposer.com/">Hex Composer website</a>
+  <a href="https://docs.hexcomposer.com/versions/">Documentation versions</a>
+  <a href="https://discord.gg/Mfx6Jkffkj">Join the Discord</a>
+</nav>
 <SectionLinks />
 <style>
-  .manual-links { margin-block: 2rem 1rem; font-size: var(--sl-text-sm); color: var(--sl-color-gray-2); }
+  .manual-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--vizard-border);
+    font-size: var(--sl-text-sm);
+  }
+  .manual-links a { color: var(--vizard-muted); text-decoration: none; }
+  .manual-links a:hover { color: var(--sl-color-text-accent); text-decoration: underline; }
 </style>
