@@ -6,14 +6,15 @@ description: "Save signal chains and modulation as .hxc patches, manage patch sl
 A `.hxc` patch stores a signal chain, its modulators, and modulation
 assignments. A session can hold multiple patches in `Patches`.
 
-`Ctrl+S` saves the active slot; `Ctrl+Shift+S` saves it to a new file. A
+`Ctrl+S` (`Cmd+S` on macOS) saves the active slot; `Ctrl+Shift+S`
+(`Cmd+Shift+S` on macOS) saves it to a new file. A
 slot loaded from a file, or opened via `File > Open...`, remembers that
 file's path, so a later plain save writes back to it. A slot that was reset,
 duplicated, newly added, or loaded from a factory patch has no path of its
 own yet, so its first save behaves as Save As instead of overwriting
 anything.
 
-`File > Save Bank` (`Ctrl+B`) writes every open slot, and which one is
+`File > Save Bank` (`Ctrl+B`, or `Cmd+B` on macOS) writes every open slot, and which one is
 active, to a single `.hxcbank` file in one step; `File > Save Bank As...`
 writes it to a new one. `File > Load Bank...` replaces the open slots with a
 bank's contents.

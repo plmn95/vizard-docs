@@ -11,7 +11,7 @@ Bezier handles.
 | Edit channel | Selector | Red, Green, Blue, Luma | Other active curves remain visible but dimmed. |
 | Solo | Rocker | | Hides the other channels' curves. |
 | Active | Rocker | |  |
-| Curve well | interactive curve graph | X and Y each 0 to 1 | Click the curve to add a point; select a point to adjust its Bezier handles. `Delete`, `Backspace`, or `Remove point` removes the selected point. The first and last points cannot be deleted. Double-click or `Alt`-click a point to flatten its handles. |
+| Curve well | interactive curve graph | X and Y each 0 to 1 | Click the curve to add a point; select a point to adjust its Bezier handles. `Delete`, `Backspace`, or `Remove point` removes the selected point. The first and last points cannot be deleted. Double-click, `Alt+click` (Windows/Linux), or `Option+click` (macOS) a point to flatten its handles. |
 
 Channels compose in a fixed order: Red, Green and Blue curves are applied
 independently first; the Luma curve is applied last, to the result of the

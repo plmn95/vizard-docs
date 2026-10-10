@@ -94,6 +94,12 @@ These apply in all three sections, no exceptions.
 
 ## 3. Terminology
 
+Spell out platform-specific shortcuts wherever they appear. In prose, use
+`Ctrl+S` (`Cmd+S` on macOS), for example; shortcut tables have separate
+Windows/Linux and macOS columns. Match the app's bindings and labels,
+including mouse gestures, Option, Delete/Backspace, and function keys.
+Do not assume a modifier substitution without checking the binding.
+
 Use these control names exactly:
 
 | Term | Meaning |

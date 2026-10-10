@@ -5,7 +5,7 @@ description: "Load a factory patch and save a copy."
 
 Open `File > Factory Patches` and choose a patch, for example "Big Brother".
 
-Press `Ctrl+S` and choose where to save your copy.
+Press `Ctrl+S` (`Cmd+S` on macOS) and choose where to save your copy.
 
 Factory patches are also available from a patch slot's right-click menu.
 

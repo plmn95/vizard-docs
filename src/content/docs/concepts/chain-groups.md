@@ -6,7 +6,8 @@ description: "Organize contiguous modules into chain groups without changing ren
 Chain groups organize modules in `Chain` without changing how they process
 signal.
 
-Ctrl+click selects multiple pills. Their right-click menu offers
+`Ctrl+click` (Windows/Linux) or `Cmd+click` (macOS) selects multiple
+pills. Their right-click menu offers
 `Group Selected`. If the selection is not contiguous, grouping moves its
 members together at the first selected module's position, preserving their
 relative order.

@@ -11,7 +11,7 @@ quality, frame rate, codec, and audio-inclusion setting
 `Settings > Recording` holds at the time. The codec is H.264 or H.265. It captures the aspect-locked
 output image itself, not the window or its docked panels. Start and stop it
 from the `REC` pill in the toolbar, which Mixer Mode also shows, or with
-`Ctrl+Alt+R`.
+`Ctrl+Alt+R` (`Cmd+Option+R` on macOS).
 
 If encoding falls behind, frames are skipped without changing the
 recording's duration or audio sync. The save message reports skipped frames.

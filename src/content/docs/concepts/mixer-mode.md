@@ -20,7 +20,8 @@ marks each control that is being modulated.
 if they are already visible, it exits Mixer Mode.
 
 A slim strip along the top keeps the `REC` and camera pill, the recording
-timer and the recording settings within reach, and `Ctrl+Alt+R` starts or
+timer and the recording settings within reach, and `Ctrl+Alt+R`
+(`Cmd+Option+R` on macOS) starts or
 stops a recording from the keyboard. While `H` hides the controls, a small
 red lamp in the corner shows that a recording is running.
 
