@@ -1,13 +1,13 @@
 ---
 title: "Mixer Controls"
-description: "Mixer Controls: Mixer Mode's own mixing surface, separate from either deck's own controls."
+description: "Controls for mixing the two decks."
 ---
 
-Mixer Mode's own mixing surface, separate from either deck's own controls.
+Controls for mixing the two decks.
 
 | Control | Notes |
 |---|---|
-| Solo | Shows a single deck with no blending at all. |
+| Solo | Shows a single deck. |
 | Crossfader | Hidden while Solo is on. |
 | Mode | Crossfade / Blend, Luma Key, Chroma Key, Strobe, or Dirty Mix. |
 | `Negative (invert B)` | Inverts Deck B, independent of Mode. |

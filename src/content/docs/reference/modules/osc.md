@@ -1,6 +1,6 @@
 ---
 title: "OSC"
-description: "OSC: The oscillator generator."
+description: "The oscillator generator."
 ---
 
 The oscillator generator. Produces a per-channel waveform, independently

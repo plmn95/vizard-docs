@@ -1,6 +1,6 @@
 ---
 title: "DISTORT"
-description: "DISTORT: Effects that move or reshape pixels geometrically, rather than recoloring them in place."
+description: "Effects that move or reshape pixels geometrically, rather than recoloring them in place."
 ---
 
 Effects that move or reshape pixels geometrically, rather than recoloring

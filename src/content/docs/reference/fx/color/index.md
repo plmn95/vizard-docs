@@ -1,6 +1,6 @@
 ---
 title: "COLOR"
-description: "COLOR: Effects that recolor the image without moving or blurring any pixel."
+description: "Effects that recolor the image without moving or blurring any pixel."
 ---
 
 Effects that recolor the image without moving or blurring any pixel.

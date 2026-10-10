@@ -1,6 +1,6 @@
 ---
 title: "Posterize"
-description: "Posterize: Reduces each color channel to a fixed number of discrete levels."
+description: "Reduces each color channel to a fixed number of discrete levels."
 ---
 
 Reduces each color channel to a fixed number of discrete levels.

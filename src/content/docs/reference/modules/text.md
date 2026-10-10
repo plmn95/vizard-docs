@@ -3,33 +3,29 @@ title: "TEXT"
 description: "Draw, position, size, and scroll text in the video chain using the TEXT module."
 ---
 
-Draws a line or block of text into the chain, placed, sized and scrolled
-by the module itself, so text beyond the edge of the screen can still move
-into view. The string is typed straight into the module panel; every
-control except Letter Spacing styles the same rendered text without
-re-rendering it, so all of them can be modulated.
+Draws text with font, layout, styling, and scrolling controls.
 
 | Parameter | Control | Notes |
 |---|---|---|
-| Text | text field | The content. Enter starts a new line. The field grows one row per line up to eight rows, then scrolls. No length limit. |
-| Font | Dropdown | The font family: one alphabetical list of the bundled retro/terminal fonts and the fonts installed on the computer, each row drawn in its own typeface, plus `Load Custom...` (a `.ttf`, `.otf` or `.ttc` file) and `Refresh List`. A font that cannot be found on this machine is drawn with the bundled default and shown as `(missing)`. |
-| Style | Dropdown | The family's styles (Regular, Bold, Italic, ...), also drawn in their own face. Dimmed when the family has only one style. Picking a style sets `B` and `I` to match it. |
-| B / I / U / S | Rocker | Bold, italic, underline, strikethrough. `B` and `I` switch Style to the family's real bold or italic when it has one and simulate it otherwise; hovering a lit `B` or `I` says when it is simulated. Underline and strikethrough run to the last letter of each line and take the stroke, emboss and warp. Not modulatable. |
+| Text | text field | Multiline text with no length limit. |
+| Font | Dropdown | Bundled and installed fonts. `Load Custom...` accepts `.ttf`, `.otf`, or `.ttc` files; `Refresh List` reloads installed fonts. A font that cannot be found on this machine is drawn with the bundled default and shown as `(missing)`. |
+| Style | Dropdown |  |
+| B / I / U / S | Rocker | Bold, italic, underline, strikethrough. `B` and `I` switch Style to the family's real bold or italic when it has one and simulate it otherwise; hovering a lit `B` or `I` says when it is simulated. Cannot be modulated. |
 | Mix | Trough | Opacity of the module's contribution to the chain. |
 | Blend | Selector | Add, Multiply, Screen, Difference, XOR, Replace, or Phoenix into the chain. |
 | Alignment | Selector, Trough | `L`, `C`, `R` snap lines to the left, centre or right of the block; the Trough (0 to 1) places them anywhere in between. |
 | Line Spacing | Trough | Distance between lines, 0.5 to 3 times the font's line height. |
-| Letter Spacing | Trough | Extra space between letters, -0.1 to 1 em. Applies on release. Not modulatable. |
-| Position | Pad | Places the text. |
-| Scale | Pad, Rocker | Text width and height around the frame centre; the only size control, and the text stays sharp at any value. `Link X/Y` (on by default) resizes without stretching; `Flip X` / `Flip Y` mirror the text. |
+| Letter Spacing | Trough | Extra space between letters, -0.1 to 1 em. Applies on release. Cannot be modulated. |
+| Position | Pad | |
+| Scale | Pad, Rocker | Text width and height around the frame centre. `Link X/Y` (on by default) resizes without stretching; `Flip X` / `Flip Y` mirror the text. |
 | Rotation | Wheel | Degrees, clockwise. |
-| Speed | Pad | Scroll speed per axis in loops per second, the same loop time whatever the text length. Positive scrolls right or up, negative left or down; both axes together scroll diagonally. 0 is still. |
+| Speed | Pad | Scroll speed per axis in loops per second, the same loop time whatever the text length. Positive scrolls right or up, negative left or down. |
 | Offset | Pad | Position within the scroll loop per axis; wraps around. |
 | Gap | Trough | Space before the scrolled text repeats, in screens (0 to 2). |
 | Fill | Trough | Fill color and alpha. |
-| Stroke | Rocker, Trough | An outline around the glyphs: width (0 to 24) and color/alpha. Dimmed while the Rocker is off. |
+| Stroke | Rocker, Trough | An outline around the glyphs: width (0 to 24) and color/alpha. |
 | Emboss | Rocker, Wheel, Trough | A directional light shading the glyph edges: angle, depth and strength. |
-| Warp | Selector, Trough | None, Arc, Bulge, Flag, Wave, or Fisheye, driven by Bend, Horizontal and Vertical. The sliders are dimmed while the preset is None. |
+| Warp | Selector, Trough | None, Arc, Bulge, Flag, Wave, or Fisheye, driven by Bend, Horizontal and Vertical. |
 
 **NOTE:** an axis repeats only while its Speed or Offset is not 0. Still
 text never shows copies of itself.
@@ -41,15 +37,11 @@ place. For a strip like a shop-window LED sign, add a Mask insert effect.
 shape. Offset keeps wrapping past 1, so a steadily rising source scrolls
 forever.
 
-**NOTE:** the text is rendered once per change of content, font or Letter
-Spacing, spread across frames when a patch loads several instances; any
-other change is visible on the same frame. While a new string is being
-rendered the previous one stays on screen, so typing never flashes to
-empty.
+**NOTE:** content, font, and Letter Spacing changes can take several frames
+to appear. The previous text remains visible during the update.
 
-**NOTE:** a font chosen with `Load Custom...` is stored by file path. With
-embedded assets enabled in Settings, the font file travels inside the saved
-patch like a SPRITE's image does.
+**NOTE:** enable embedded assets in `Settings > Patches` to include custom
+font files in saved patches.
 
 Related: [Insert FX Chains](../../../concepts/insert-fx-chains/),
 [AUX Sends and Buses](../../../concepts/aux-sends-and-buses/),

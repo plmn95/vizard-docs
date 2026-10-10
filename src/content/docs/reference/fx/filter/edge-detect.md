@@ -1,10 +1,9 @@
 ---
 title: "Edge Detect"
-description: "Edge Detect: Finds edges by local contrast (a Sobel filter) and draws only the boundaries, discarding flat regions."
+description: "Draw edges detected by local contrast."
 ---
 
-Finds edges by local contrast (a Sobel filter) and draws only the
-boundaries, discarding flat regions.
+Draws edges detected by local contrast.
 
 | Parameter | Control | Range | Notes |
 |---|---|---|---|

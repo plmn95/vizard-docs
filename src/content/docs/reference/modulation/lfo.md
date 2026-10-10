@@ -1,11 +1,9 @@
 ---
 title: "LFO"
-description: "LFO: A repeating or one-shot waveform generator."
+description: "A repeating or one-shot waveform generator."
 ---
 
-A repeating or one-shot waveform generator. A patch starts with one LFO and
-grows the bank from its own add button; nothing caps how many a patch can
-hold.
+A repeating or one-shot waveform generator.
 
 | Parameter | Control | Notes |
 |---|---|---|
@@ -14,7 +12,7 @@ hold.
 | BPM Sync | Rocker, Selector | Locks Rate to a musical division (`1/16` to `4`) instead of a raw Hz value. |
 | Scale / Offset | Trough | Output amplitude multiplier, and a DC offset applied after Scale. |
 | Fold | Trough | Wavefolder drive; 0 is an exact bypass. Reflects the signal back into range rather than letting it clip. |
-| Phase Off | Wheel | Starts the wave partway through. 1.0 is a full cycle. |
+| Phase Off | Wheel | Phase offset, in cycles. |
 | Duty | Trough | 1-99%. Square wave only. |
 | Custom Wave | shared waveform editor | Only used when Wave is set to `Custom`. |
 | Seed | value field, button | 0 to 999, typed directly or rolled with `Randomize`. All 6 noise waves. |

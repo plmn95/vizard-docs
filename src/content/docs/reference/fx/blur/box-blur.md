@@ -1,6 +1,6 @@
 ---
 title: "Box Blur"
-description: "Box Blur: Softens the image with a uniform box blur, flatter-looking than Gaussian Blur."
+description: "Softens the image with a uniform box blur, flatter-looking than Gaussian Blur."
 ---
 
 Softens the image with a uniform box blur, flatter-looking than Gaussian

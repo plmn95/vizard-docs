@@ -1,6 +1,6 @@
 ---
 title: "Motion Blur"
-description: "Motion Blur: Streaks the image in one direction, like camera or subject motion."
+description: "Streaks the image in one direction, like camera or subject motion."
 ---
 
 Streaks the image in one direction, like camera or subject motion.

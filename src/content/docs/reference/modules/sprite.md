@@ -19,7 +19,7 @@ instances.
 | Repeat Count | Trough | Tile Mode's grid size, or Scatter Mode's instance count. |
 | Depth / Scale Factor | Trough | Fractal Mode's recursion depth and per-level scale falloff. |
 | Sheet Animation | Selector, Trough | Off, Forward, Ping-Pong, or Random playback through a sprite sheet's grid (columns, rows, frame count, and fps), independent of Display Mode. |
-| Loop / Speed | Rocker, Trough | File input only. Speed runs 0 to 4.0x, forward only, same shape as SOURCE's. |
+| Loop / Speed | Rocker, Trough | File input only. Speed runs 0 to 4.0x, forward only. |
 
 **NOTE:** with nothing loaded, the module adds nothing and the chain passes
 through unchanged in every `Blend` mode.

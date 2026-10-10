@@ -1,44 +1,52 @@
 # Hex Composer Wiki: Style Guide
 
-This document sets the writing rules for the Hex Composer wiki. It exists because the
-wiki has three sections doing three different jobs: a walkthrough, a model of
-how the app works, and a lookup reference. One writing voice cannot serve
-all three without going vague in at least one of them. Each rule below is
-stated once. Follow it. If a page you're writing doesn't fit a rule here,
-that's a question for whoever owns the wiki's structure, not a reason to
-improvise a fourth voice.
+This guide covers the walkthrough, concepts, and reference pages.
+
+## Editing standard
+
+Explain what the reader needs beyond what a control or action already says.
+A factual sentence is not automatically a useful sentence.
+
+- Cut expected outcomes: loading a patch runs it, choosing a value applies
+  it, clicking a slot selects it. Document exceptions to those expectations.
+- Keep concrete actions, unfamiliar terms, operating limits, and behavior
+  that could surprise the reader, such as a first save requiring a path or
+  closing a picker preserving an assignment.
+- Cut reassurance, design justifications, implementation details, and
+  narration about how the documentation should be read.
+- Do not explain a familiar action with its own name (`Reset` resets,
+  `Remove` removes), or repeat a range in an obvious example (180 degrees
+  is a half turn).
+- Keep limits that affect use. Avoid incidental totals such as the number
+  of module types or catalog entries in explanatory prose.
+- Delete redundant wording rather than replacing it with shorter filler.
+
+Apply this standard to descriptions, tables, callouts, and shared site text
+as well as paragraphs. The section guidance below does not require padding
+or a fixed template where there is nothing useful to add.
 
 ---
 
 ## 1. Section Voice
 
-The wiki has three sections. Each has exactly one voice. Voice does not mix
-within a page. A page's section decides its voice, not the writer's
-preference.
+The section determines what a reader is there to do.
 
 ### `reference/**`: TD-style (modules, fx, modulation, windows)
 
-Terse, descriptive, third person. No narrative, no "you," no instructions.
-Assumes the reader already knows what Hex Composer is and is here to look up one
-fact. Structure: a one-to-two-sentence Summary, a parameter table, cross-links
-to related pages, and `NOTE:` callouts for gotchas that don't belong in the
-table.
+Write concise descriptions and parameter tables for lookup. Include
+instructions when a gesture or interaction needs explaining, and callouts
+for limitations that do not fit in the table. Do not add an introduction,
+table, or related link solely to fill a template.
 
 > **Example (FX page: Barrel):**
-> Barrel bows the image outward from its center, simulating the
-> curvature of a CRT tube. `Amount` sets curvature strength, 0 to 0.6.
-> `Edge Clamp` is a Rocker; holds the image edge in place so the stretched
-> corners don't clip to black. **NOTE:** at `Amount` above ~0.8 with a tight
-> `Vignette` insert stacked after it, the result reads as a fisheye lens, not
-> a CRT. Check at a low `Amount` first if CRT curvature is the actual intent.
+> Barrel bows the image outward from its center, simulating CRT curvature.
+> `Amount`: 0 to 0.6.
 
 ### `concepts/**`: Hex Composer's product register
 
-Plain declarative sentences. States how a piece of the app's model works, once,
-and stops. No tutorial framing, no numbered steps, no "click X then Y." An
-occasional orienting "you" is allowed to place the reader inside the model
-("the chain you build"), but the sentence must still be describing a fact
-about the app, never issuing an instruction.
+Explain the feature's purpose and behavior. Include a short instruction
+when it helps the reader find or use the feature; put extended walkthroughs
+in Getting Started.
 
 Open with the situation the feature exists to solve, not with its cardinality
 or internal accounting: how many module types can use it, how many slots or
@@ -55,14 +63,11 @@ explaining, and belongs after the purpose, not before it.
 
 ### `getting-started/**`: sustained second-person imperative
 
-The only section where instructions are the point. Short imperative sentences,
-one concrete action each, in the order a first-time user performs them. This
-voice is banned everywhere else in the wiki. A Reference or Concepts page
-written this way is a page written in the wrong section.
+Give concrete actions in the order a first-time user performs them.
+Explain an outcome only when it is unexpected or needed for the next step.
 
 > **Example (Getting Started page: load a factory patch):**
-> Open `File > Factory Patches`. Pick one. The Output window updates
-> immediately: that's the whole patch, already running.
+> Open `File > Factory Patches` and choose a patch.
 
 ---
 
@@ -156,10 +161,8 @@ with no memory of why each rule exists. Apply it literally.
       only.
 - [ ] **No line ends in `-` or `/`.** Grep the page for both; either one
       renders as a stray space glued to the punctuation on the next line.
-- [ ] **Section voice matches the page's directory.** `reference/**`: no "you,"
-      no imperative, no narrative. `concepts/**`: declarative, no numbered
-      steps, no "click X then Y." `getting-started/**`: imperative,
-      instructions only.
+- [ ] **The page serves its section's purpose:** lookup, explanation, or
+      walkthrough. Instructions are included where they help.
 - [ ] **Every control is named by the vocabulary in this guide**, not a generic word.
       Grep the page for `slider`, `toggle`, `dropdown`, `switch`, `button`
       (unless "button" is genuinely correct and none of the nine parts apply).
@@ -177,12 +180,8 @@ with no memory of why each rule exists. Apply it literally.
       is spelled out every time. If both meanings appear on the page, the
       first use of each is disambiguated inline.
 - [ ] **No screenshots or embedded images.**
-- [ ] **Reference pages only:** has a Summary (1-2 sentences), a parameter
-      table where the module/effect/source has parameters, a cross-links
-      section, and any gotcha is a `NOTE:` callout, not narrative prose
-      pretending to be one.
-- [ ] **Concepts pages only:** no numbered step sequences, no "click X then
-      Y" imperative chains anywhere in the body.
+- [ ] **No template padding.** Tables, summaries, and callouts contain
+      useful information rather than repeating control labels or paragraphs.
 - [ ] **Concepts pages only:** opens with the situation the feature solves,
       not a count of types/slots/buses/options. If the first sentence would
       read identically at a different count, move it after the purpose

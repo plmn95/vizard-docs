@@ -1,6 +1,6 @@
 ---
 title: "Radial Blur"
-description: "Radial Blur: Streaks the image outward from a center point, like a zoom or spin blur."
+description: "Streaks the image outward from a center point, like a zoom or spin blur."
 ---
 
 Streaks the image outward from a center point, like a zoom or spin blur.

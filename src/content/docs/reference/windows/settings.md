@@ -3,8 +3,6 @@ title: "Settings"
 description: "Configure Hex Composer using the eight categories in the Settings window."
 ---
 
-8 categories, listed down the left side of the `Settings` window.
-
 | Category | Covers |
 |---|---|
 | Output | Graphics Card, Display Fit, Dual Monitor Output, NDI/Spout/Syphon output. |
@@ -16,7 +14,7 @@ description: "Configure Hex Composer using the eight categories in the Settings 
 | Appearance | UI Scale: `Auto`, or one of four fixed stops, `100%`, `125%`, `150%`, `200%`. |
 | Interaction | Fine Mouse Control: how much Shift-drag slows a Trough or Knob down, across six stops from `20% (Coarser)` to `1% (Finest)`. |
 
-**NOTE:** the version string is pinned to the bottom of the category list, visible under every category. It's a read-only field but selectable and copyable, for pasting into a bug report.
+**NOTE:** the version number at the bottom of the category list can be copied.
 
 ## Graphics
 
@@ -28,11 +26,8 @@ card Hex Composer renders on, and reports which one is in use.
 | Graphics Card | `High performance (dedicated graphics)` or `Power saving (built-in graphics)`. Present only on machines with two graphics cards. Takes effect on the next launch; a `Restart Hex Composer to apply` line appears once the selection differs from the card in use. |
 | Rendering on | Read-only. Names the graphics card the current session is actually running on. Shown on every machine, including those with a single card. |
 
-Laptops with both an integrated and a discrete graphics card default to the
-discrete one. Hex Composer's render chain is many fullscreen passes deep, so the
-integrated card can saturate on a small patch and cost frame rate across the
-whole desktop, not just inside Hex Composer. `Power saving` moves rendering back to
-the integrated card and extends battery life.
+Laptops with two graphics cards default to the discrete card.
+`Power saving` selects the integrated card to reduce battery use.
 
 **NOTE:** when a launch fails to reach a window on the discrete card, the next
 launch comes up on the integrated one and says so beneath the control.

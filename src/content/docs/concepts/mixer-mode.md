@@ -1,18 +1,11 @@
 ---
 title: "Mixer Mode"
-description: "Mixer Mode: F3 toggles Mixer Mode: a live two-deck view built for performance, separate from the single-chain editing view the rest of the app defaults to."
+description: "Mix two patches and control Mixer Mode modulation and recording."
 ---
 
-`F3` toggles Mixer Mode: a live two-deck view built for performance, separate
-from the single-chain editing view the rest of the app defaults to. Each
-deck loads its own patch independently.
+`F3` toggles Mixer Mode, where two decks each hold a patch.
 
-Mixing between the two decks is one of five modes: `Crossfade / Blend`,
-`Luma Key`, `Chroma Key`, `Strobe`, and `Dirty Mix`. `Crossfade / Blend`
-itself has five sub-modes (Crossfade, Add, Screen, Multiply, Difference).
-`Dirty Mix` splits its own behavior across two Selectors, a sum mode (Add
-or Difference) and an overflow mode (Clip or Wrap), rather than one flat
-list of variants.
+Mix modes are described in [Mixer Controls](../../reference/windows/mixer-controls/).
 
 Mixer Mode carries its own modulation, separate from the editing view's:
 one LFO bank, one Envelope bank, and one Time bank, all shared across both
@@ -23,10 +16,8 @@ it. Right-clicking any mixer control offers the same `Edit Modulation` window
 as a patch parameter, using the Mixer's own sources, and `MIDI Learn`. A dot
 marks each control that is being modulated.
 
-`H` hides the on-screen controls for a clean output feed while performing;
-pressing it again brings them back. `Escape` reverses whichever of the two
-is currently true: it un-hides the controls first if `H` hid them, and only
-exits Mixer Mode once the controls are already visible.
+`H` hides or shows the controls. `Escape` first restores hidden controls;
+if they are already visible, it exits Mixer Mode.
 
 A slim strip along the top keeps the `REC` and camera pill, the recording
 timer and the recording settings within reach, and `Ctrl+Alt+R` starts or

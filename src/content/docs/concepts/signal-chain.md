@@ -8,12 +8,9 @@ in `Chain`, each one blending its own output into the running composite
 before the next module runs. The last module in that order is what `Output`
 shows.
 
-Every module carries one of three states, read from a single selector rather
-than separate toggles: `LIVE`, `BYP`, or `MUTE`. `LIVE` means the module is
-genuinely passing signal to the next stage. `BYP` holds the module's position
-in the chain without contributing its output. `MUTE` blanks the chain at
-that module: modules below it receive an empty picture until another module
-draws, and its Sends carry an empty picture.
+Module states are `LIVE`, `BYP`, and `MUTE`. `BYP` skips a module's
+contribution. `MUTE` clears the chain at that module: subsequent modules
+receive an empty image, and its Sends are empty.
 
 How a module's output combines with what came before it is set by its own
 `Blend` Selector, with the same seven modes everywhere: Add, Multiply,
@@ -42,7 +39,5 @@ as a Glow halo or Invert turning black to white, makes that area visible. A
 generator's own Insert FX run on that module's picture before it enters the
 chain, so they see its see-through areas.
 
-Every module also carries its own Insert FX chain and its own Sends,
-independent of its position in the chain. See
-[Insert FX Chains](../insert-fx-chains/) and
+Related: [Insert FX Chains](../insert-fx-chains/),
 [AUX Sends and Buses](../aux-sends-and-buses/).

@@ -3,10 +3,8 @@ title: "Patches, Slots, and Banks"
 description: "Save signal chains and modulation as .hxc patches, manage patch slots, and organize sessions into banks."
 ---
 
-A patch is one `.hxc` file: one signal chain, its modulators, and every mod
-assignment on it. `Patches` holds any number of patches as slots in one
-session, starting from one and growing every time its `[+]` button is
-clicked. Nothing caps how many a session can hold.
+A `.hxc` patch stores a signal chain, its modulators, and modulation
+assignments. A session can hold multiple patches in `Patches`.
 
 `Ctrl+S` saves the active slot; `Ctrl+Shift+S` saves it to a new file. A
 slot loaded from a file, or opened via `File > Open...`, remembers that
@@ -24,9 +22,7 @@ bank's contents.
 accepts `.vizbank` banks. Saving one of them keeps its file name and
 extension.
 
-`File > Recent Patches` lists the user's own recently opened files. Factory
-patches are excluded from it: opening one is meant to start something new,
-not become an entry a later session mistakes for the user's own work.
+Factory patches are excluded from `File > Recent Patches`.
 
 A slot can also be set as the startup default, from its right-click menu's
 `Set as Startup Default` or from `File > Set Active Patch as Startup

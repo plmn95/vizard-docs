@@ -1,11 +1,9 @@
 ---
 title: "SHAPE"
-description: "SHAPE: Procedural 2D shapes: a primitive drawn as a signed-distance field, with symmetry, an independent fill and outline, and per-primitive contextual parameters."
+description: "Draw 2D shapes with symmetry, fill, and outline controls."
 ---
 
-Procedural 2D shapes: a primitive drawn as a signed-distance field, with
-symmetry, an independent fill and outline, and per-primitive contextual
-parameters.
+Draws 2D shapes with symmetry, fill, and outline controls.
 
 | Parameter | Control | Notes |
 |---|---|---|

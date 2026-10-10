@@ -1,6 +1,6 @@
 ---
 title: "Mask"
-description: "Mask: Cuts the image down to a soft-edged circle."
+description: "Cuts the image down to a soft-edged circle."
 ---
 
 Cuts the image down to a soft-edged circle.

@@ -1,6 +1,6 @@
 ---
 title: "Vignette"
-description: "Vignette: Darkens the image toward its corners."
+description: "Darkens the image toward its corners."
 ---
 
 Darkens the image toward its corners.

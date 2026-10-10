@@ -1,12 +1,10 @@
 ---
 title: "Modulation"
-description: "Modulation: The source families available from Add Modulation Source, MIDI Learn, and OpenSoundControl Learn, one tab each."
+description: "Modulation sources available from Edit Modulation."
 ---
 
-The source families available from `Edit Modulation`, `MIDI Learn`,
-and `OpenSoundControl Learn`, one tab each. See
-[Modulation Matrix](../../concepts/modulation-matrix/) for how a source
-gets assigned to a parameter in the first place.
+Sources available from `Edit Modulation`. See
+[Modulation Matrix](../../concepts/modulation-matrix/) for assignment controls.
 
 | Source | What it is |
 |---|---|

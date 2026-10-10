@@ -1,15 +1,11 @@
 ---
 title: "Keyboard Shortcuts"
-description: "Keyboard Shortcuts: Every bound key and mouse gesture in Hex Composer, grouped by the scope it's live in."
+description: "Keyboard shortcuts and mouse gestures in Hex Composer."
 ---
 
-Every bound key and mouse gesture in Hex Composer, grouped by the scope it's live
-in. This table matches the app's own `Help > Keyboard Shortcuts` window
-exactly.
+The in-app shortcut list is available from `Help > Keyboard Shortcuts`.
 
 ## Global
-
-Live anywhere, in any mode.
 
 | Keys | Action |
 |---|---|
@@ -31,8 +27,6 @@ Live anywhere, in any mode.
 | `Ctrl+Alt+R` | Start or stop recording |
 
 ## Mixer Mode
-
-Live only while `F3` Mixer Mode is active.
 
 | Keys | Action |
 |---|---|
@@ -62,10 +56,8 @@ patch slot.
 | `Delete` | Delete active patch |
 | `Ctrl+D` | Duplicate active patch |
 
-**NOTE:** `F2`, `Delete`, and `Ctrl+D` are bound twice, once per window. The
-same keys rename, delete, or duplicate a module in `Chain` and a patch slot
-in `Patches`; which one fires depends on which window the mouse is over,
-not which one has focus.
+**NOTE:** these shortcuts act on the window under the mouse, regardless of
+keyboard focus.
 
 ## Insert FX Slot (while hovered)
 
@@ -87,10 +79,8 @@ Live while the mouse is over a parameter section header, for example OSC's
 | `Ctrl+V` | Paste values. Only works if the target section has the same title. |
 | Right-click | Copy/Paste menu, same actions as the keys above |
 
-**NOTE:** `Ctrl+C` and `Ctrl+V` are bound four times across this page: Chain,
-Insert FX Slot, Section Header, and Any Parameter below. Which one fires
-depends on where the mouse is hovering, the same rule that governs the
-`F2`, `Delete`, and `Ctrl+D` note above.
+**NOTE:** copy and paste act on the module, slot, section, or parameter
+under the mouse.
 
 ## Any Parameter
 

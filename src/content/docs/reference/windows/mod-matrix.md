@@ -1,6 +1,6 @@
 ---
 title: "Mod Matrix"
-description: "Mod Matrix: Every active modulation assignment in the current patch, in one table: SOURCE, AMOUNT, TARGET, LIVE, BYP, and a delete column."
+description: "Inspect and edit modulation assignments in the current patch."
 ---
 
 Every active modulation assignment in the current patch, in one table: `SOURCE`, `DEPTH`, `TARGET`, `LIVE`, `BYP`, and a delete column.

@@ -1,6 +1,6 @@
 ---
 title: "Rutt-Etra"
-description: "Rutt-Etra: Displaces the image along scanlines, after a video synthesizer's classic raster-displacement effect."
+description: "Displaces the image along scanlines, after a video synthesizer's classic raster-displacement effect."
 ---
 
 Displaces the image along scanlines, after a video synthesizer's classic
@@ -10,7 +10,7 @@ raster-displacement effect.
 |---|---|---|---|
 | Density | Trough | 8 to 256 | Scanline count. |
 | Displacement | Trough | 0 to 1 | |
-| Angle | Wheel | -180 to 180 | Tilts the raster scan lines; 180 flips them end to end. |
+| Angle | Wheel | -180 to 180 | Tilts the raster scan lines. |
 | Line Width | Trough | 0.5 to 8px | |
 | Brightness | Trough | 0 to 4 | |
 

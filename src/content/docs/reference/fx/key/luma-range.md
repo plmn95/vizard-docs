@@ -1,6 +1,6 @@
 ---
 title: "Luma Range"
-description: "Luma Range: Pulls an alpha matte from a brightness band: everything between Min and Max keys in, everything outside it keys out."
+description: "Pulls an alpha matte from a brightness band: everything between Min and Max keys in, everything outside it keys out."
 ---
 
 Pulls an alpha matte from a brightness band: everything between Min and Max
@@ -12,8 +12,6 @@ keys in, everything outside it keys out.
 | Max | Trough | 0 to 1 | |
 | Softness | Trough | 0 to 0.5 | Feathers both edges of the band. |
 
-Outputs an alpha-only matte, not a recolored image. Same panel shape as
-[Sat Isolate](../sat-isolate/), which bands saturation instead of
-brightness.
+Outputs an alpha-only matte.
 
 Related: [Insert FX Chains](../../../../concepts/insert-fx-chains/).

@@ -1,14 +1,10 @@
 ---
 title: "Macro"
-description: "Macro: A named, freely assignable value with no source of its own: set it by hand, or bind it to a MIDI CC, and every parameter it modulates follows."
+description: "Control multiple parameters from a named macro with an optional MIDI CC binding."
 ---
 
-A named, freely assignable value with no source of its own: set it by hand,
-or bind it to a MIDI CC, and every parameter it modulates follows.
-
-In the main editing view, a patch starts with one macro and grows the bank
-from its own add button; nothing caps how many a patch can hold. Each
-macro carries its own name and its own MIDI CC binding.
+A named control for modulating multiple parameters, with an optional MIDI
+CC binding.
 
 A macro's own value is itself a modulation target: assign an LFO, another
 macro, or any other source to it like any other parameter, including

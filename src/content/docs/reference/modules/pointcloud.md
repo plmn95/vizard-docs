@@ -1,6 +1,6 @@
 ---
 title: "POINTCLOUD"
-description: "POINTCLOUD: Renders the chain, or an AUX bus, as a 3D field of points or lines, displaced by brightness."
+description: "Renders the chain, or an AUX bus, as a 3D field of points or lines, displaced by brightness."
 ---
 
 Renders the chain, or an AUX bus, as a 3D field of points or lines, displaced
@@ -18,7 +18,7 @@ bulges with the audio input, and stays flat with no audio.
 | Mix | Trough | 0-1. |
 | Blend | Selector | Add, Multiply, Screen, Difference, XOR, Replace, or Phoenix. |
 | Shape | Selector | Grouped list. Surfaces: Flat, Sphere. Volumes: Sphere Volume, Box Volume, Torus. Organic: Flow, Galaxy Spiral, Noise Blob. Math: Strange Attractor. Audio: Spectrum. Greyed out and fixed to Flat while the style is Voxels. |
-| Thickness / Shell / Fill / Arms / Twist / Turbulence / Tube Size / Detail / Speed / Height / Smoothing | Trough | 0-1. One or two sliders that appear for the shapes that use them, and every one can be modulated. Sphere Volume: Thickness (0 is a hollow shell, 1 a solid ball). Box Volume: Shell (0 is a solid block, 1 only the outside faces). Torus: Fill (0 is a thin skin, 1 a filled tube) and Tube Size. Galaxy Spiral: Arms (2 to 6) and Twist. Noise Blob: Turbulence and Thickness. Strange Attractor: Detail (higher costs more on slow graphics cards) and Speed. Spectrum: Height and Smoothing. |
+| Thickness / Shell / Fill / Arms / Twist / Turbulence / Tube Size / Detail / Speed / Height / Smoothing | Trough | 0-1. Sphere Volume: Thickness (0 is a hollow shell, 1 a solid ball). Box Volume: Shell (0 is a solid block, 1 only the outside faces). Torus: Fill (0 is a thin skin, 1 a filled tube) and Tube Size. Galaxy Spiral: Arms (2 to 6) and Twist. Noise Blob: Turbulence and Thickness. Strange Attractor: Detail (higher costs more on slow graphics cards) and Speed. Spectrum: Height and Smoothing. |
 | Curve | Selector | Strange Attractor only: Lorenz, Aizawa, or Thomas. |
 | Density | Trough | 0-1. Point and line grid resolution. In Voxels, how many cubes fit across the longest side, from 8 to 256. |
 | Depth Amount | Trough | 0-1. How strongly depth pushes points off their shape. In Voxels, how tall the cube columns can get. In the volume shapes, Noise Blob and Strange Attractor, brightness pushes points out from the centre or in toward it; in Galaxy Spiral, toward or away from the camera. |
@@ -32,7 +32,7 @@ bulges with the audio input, and stays flat with no audio.
 | Trail | Trough | 0-1. Trail/Comet only: how much of the previous frame's points persist. |
 | Cutoff | Trough | 0-1. Voxels only: hides dark or distant areas so only the subject stays. |
 | Shading | Trough | 0-1. Voxels only: how differently each cube face is lit. 0 is flat colour. |
-| Edges | Trough | 0-1. Voxels only: thin lines between cubes. 0 gives a seamless solid. |
+| Edges | Trough | 0-1. Voxels only: thin lines between cubes. 0 gives a solid surface. |
 
 Related: [Insert FX Chains](../../../concepts/insert-fx-chains/),
 [AUX Sends and Buses](../../../concepts/aux-sends-and-buses/).

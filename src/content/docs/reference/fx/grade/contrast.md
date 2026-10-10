@@ -1,6 +1,6 @@
 ---
 title: "Contrast"
-description: "Contrast: Increases or decreases contrast around mid-gray."
+description: "Increases or decreases contrast around mid-gray."
 ---
 
 Increases or decreases contrast around mid-gray.

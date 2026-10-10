@@ -1,16 +1,11 @@
 ---
 title: "FX"
-description: "FX: The Insert FX catalog: 43 effect types, placed into any module's Insert FX chain."
+description: "Effects available in each module’s Insert FX chain."
 ---
 
-The Insert FX catalog: 43 effect types, placed into any module's Insert FX
-chain. See [Insert FX Chains](../../concepts/insert-fx-chains/) for how
-the chain itself works.
-
-The picker groups all 43 under the eight category headings below, and takes
-a typed filter that matches across every category at once. Every effect is
-hostable on all 9 module types, and every one carries its own `Mix` on top
-of the parameters listed on its page.
+Effects available in each module's [Insert FX chain](../../concepts/insert-fx-chains/).
+The picker's search field filters across categories. Each slot has a `Mix`
+control in addition to the effect's parameters.
 
 | Category | Members |
 |---|---|

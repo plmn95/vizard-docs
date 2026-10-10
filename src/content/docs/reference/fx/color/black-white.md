@@ -1,6 +1,6 @@
 ---
 title: "Black & White"
-description: "Black & White: Desaturates the image."
+description: "Desaturates the image."
 ---
 
 Desaturates the image. No parameters.

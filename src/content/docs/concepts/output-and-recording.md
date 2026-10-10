@@ -1,12 +1,10 @@
 ---
 title: "Output and Recording"
-description: "Output and Recording: Output is the app's own composite: the last module in the chain, or the mixed result of both decks in Mixer Mode."
+description: "Record video and send output through NDI, Spout, Syphon, or a second window."
 ---
 
-`Output` is the app's own composite: the last module in the chain, or the
-mixed result of both decks in Mixer Mode. Everything downstream, recording,
-NDI, Spout, Syphon, and the physical output window, reads from that same
-image.
+`Output` shows the last module's result, or the mix of both decks in Mixer
+Mode. Recordings, NDI, Spout, Syphon, and `Dual Monitor Output` use this image.
 
 Recording writes an MP4 straight to disk with no save dialog, at whatever
 quality, frame rate, codec, and audio-inclusion setting
@@ -15,21 +13,9 @@ output image itself, not the window or its docked panels. Start and stop it
 from the `REC` pill in the toolbar, which Mixer Mode also shows, or with
 `Ctrl+Alt+R`.
 
-The timer next to `REC` counts the length of the recording, and the saved
-file has that same length. Each frame is stamped with the moment it was
-captured, so the file plays back at real speed and stays in sync with the
-sound.
-
-Encoding runs on the graphics card's own video encoder when the computer has
-one for the chosen codec, and on the processor otherwise. An encoder running
-on the processor can fall behind at high resolutions or frame rates, H.265
-in particular. When it does, the previous frame stays on screen a little
-longer instead of the video speeding up: the recording keeps its length and
-its sync, and motion looks less smooth. The message after saving then reads
-"Saved recording (some frames skipped) to ...", and `Settings > Recording`
-shows a note under `Codec` suggesting a faster choice, such as H.264 or a
-lower frame rate. If no encoder for the chosen codec can start on the
-computer, the recording doesn't start and a message says so.
+If encoding falls behind, frames are skipped without changing the
+recording's duration or audio sync. The save message reports skipped frames.
+Choosing H.264 or a lower frame rate can reduce the load. If the selected codec is unavailable, recording cannot start.
 
 Stopping a recording doesn't hold up the app. The file finishes writing in
 the background, and a message then names the saved file. When finishing

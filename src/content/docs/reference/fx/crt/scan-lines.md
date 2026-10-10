@@ -1,6 +1,6 @@
 ---
 title: "Scan Lines"
-description: "Scan Lines: Draws horizontal scanlines over the image, at a chosen density and sharpness."
+description: "Draws horizontal scanlines over the image, at a chosen density and sharpness."
 ---
 
 Draws horizontal scanlines over the image, at a chosen density and
@@ -10,6 +10,6 @@ sharpness.
 |---|---|---|---|
 | Density | Trough | 60 to 800 | |
 | Sharpness | Trough | 0 to 1 | |
-| Video Standard | Selector | NTSC, PAL | UI-only; not modulation-assignable. |
+| Video Standard | Selector | NTSC, PAL | Cannot be modulated. |
 
 Related: [Insert FX Chains](../../../../concepts/insert-fx-chains/).

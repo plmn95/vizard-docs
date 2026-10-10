@@ -1,10 +1,9 @@
 ---
 title: "Envelope"
-description: "Envelope: An ADSR envelope."
+description: "An ADSR envelope."
 ---
 
-An ADSR envelope. A patch starts with one and grows the bank from its own
-add button; nothing caps how many a patch can hold.
+An ADSR envelope.
 
 | Parameter | Control | Notes |
 |---|---|---|

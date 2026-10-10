@@ -1,10 +1,7 @@
 ---
 title: "Concepts"
-description: "Concepts: How the app's model works."
+description: "How the app's model works."
 ---
-
-How the app's model works. Each page stands on its own; there's no reading
-order.
 
 - [AUX Sends and Buses](aux-sends-and-buses/): the inline per-module Send
   feature, and how `INSERT` or `FEEDBACK` reads a bus back.

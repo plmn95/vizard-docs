@@ -3,33 +3,24 @@ title: "Record and Output"
 description: "Record your first video, find the saved file, and send Hex Composer output to other applications."
 ---
 
-Click `REC` in the main toolbar. It starts recording immediately, no save
-dialog: the file is named `hexcomposer_YYYYMMDD_HHMMSS.mp4` from the current time
-and written to the Movies folder on macOS, the Videos folder on Windows, and the
-home folder on Linux. The word stays `REC` while recording, its lamp lights
-red, and a timer next to it counts the length of the recording. Click it
-again to end the recording. `Ctrl+Alt+R` does the same from the keyboard.
+Click `REC` in the main toolbar to record, then click it again to stop.
+`Ctrl+Alt+R` is the keyboard shortcut.
 
-The file finishes saving in the background, then a message shows where it
-was saved. If saving takes a moment, the timer shows `Saving...` until it's
-done.
+Recordings are saved as `hexcomposer_YYYYMMDD_HHMMSS.mp4` in the Movies
+folder on macOS, the Videos folder on Windows, or the home folder on Linux.
+A message shows the saved path when the file is complete. While the file
+is being finalized, the timer shows `Saving...`.
 
-The camera button next to `REC` saves the current output image as a PNG in
-the same folder (`PrintScreen` or `Ctrl+Alt+S` does the same). The
-`REC` and camera pill is also available in Mixer Mode, in a slim strip along
-the top.
+Click the camera button beside `REC` to save a PNG in the same folder.
+`PrintScreen` or `Ctrl+Alt+S` is the keyboard shortcut.
 
-What gets recorded is the actual output image, aspect-locked, with no docked
-panels or letterbox bars in it, not a screen capture of the window.
+Recordings and snapshots contain the output image, without the app's panels
+or letterbox bars.
 
-Quality, frame rate, codec (H.264 or H.265), and whether to include audio
-are set once in `Settings > Recording` and apply to every recording started
-afterward.
+Set quality, frame rate, codec, audio, and the save folder in
+`Settings > Recording`.
 
-Hex Composer can also send its output live to another program instead of, or
-alongside, recording to a file: NDI, Spout (Windows), and Syphon (macOS) are
-each enabled separately in `Settings > Output`.
+To send output to another application, enable NDI, Spout (Windows), or
+Syphon (macOS) in `Settings > Output`.
 
-This is the end of Getting Started. From here, [Concepts](../../concepts/)
-explains how the pieces work, and [Reference](../../reference/) is where
-to look up any specific module, effect, or modulation source.
+Related: [Output and Recording](../../concepts/output-and-recording/).

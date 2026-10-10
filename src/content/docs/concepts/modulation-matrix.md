@@ -3,55 +3,31 @@ title: "Modulation Matrix"
 description: "Assign modulation sources, adjust their amount, and inspect active parameter assignments in the Modulation Matrix."
 ---
 
-A parameter's modulation is managed from the parameter itself: right-clicking
-it and choosing `Edit Modulation` opens a window headed "Modulate:
-`<parameter>`." The menu item shows how many sources are connected, for
-example `Edit Modulation (2)`.
+Right-click a parameter and choose `Edit Modulation` to manage its sources.
+The number in the menu item, such as `Edit Modulation (2)`, is the number
+of connected sources.
 
-The window lists every source modulating the parameter, one line each: the
-source's name, a live meter of how far it is moving the parameter right now,
-its `Depth`, a `BYP` switch that turns it off without removing it, and an `X`
-that removes it. `+ Add Source` and `Clear All` sit below the list. A
-parameter with no modulation shows an empty list, and `+ Add Source` opens
-the source picker.
+`+ Add Source` opens the source picker. Sources can also be dragged onto a
+parameter from `Modulation`, or assigned through `MIDI Learn` and
+`OpenSoundControl Learn`. Multiple sources can modulate the same parameter.
 
-The source picker has one tab per source family: `LFO`, `ENV`, `TIME`,
-`MACRO`, `Audio`, `CV/Gate`, `MIDI`, `MIDI Note`, and `OpenSoundControl`.
-Picking a source adds it to the parameter at once, and the picker then edits
-it like any other connection: changes apply as they are made, and picking a
-different source swaps it. Clicking a source's name in the list opens the same
-picker for that connection. `Remove` deletes the source and returns to the
-list, and `Done` closes the window; so do `Esc` and a click outside it, and the
-source stays. Sources already connected to the
-parameter carry a lamp, and picking one opens it for editing instead of adding
-it twice.
+`Esc` or clicking outside the source picker preserves the assignment.
+Sources already connected have a lamp; selecting one edits the existing
+assignment.
 
-Sources stack: adding a source, by the picker, by Learn, or by dragging it
-onto the parameter, keeps the parameter's existing modulation.
+Each assignment has a live meter and a signed `Depth` in the parameter's
+units, with the percentage of its range shown alongside. Negative Depth
+inverts the modulation. `Offset` adds a constant shift.
 
-The same right-click menu also offers `MIDI Learn` and `OpenSoundControl
-Learn`, which arm the parameter and complete the assignment from the next
-incoming MIDI CC or OpenSoundControl message instead of picking a source by
-hand.
+Assignments from `L Level` and `R Level` also have rectify, attack, release,
+and gate-threshold controls, applied before Depth.
 
-Every assignment carries a signed `Depth` in the parameter's own units, with
-the matching share of its range shown beside it, so the same source can push
-a parameter up or pull it down. `Offset` adds a constant shift on top of the
-source's swing. Assignments driven by the `L Level` or `R Level` audio sources
-carry a shaping stage as well, rectify, attack, release, and a gate
-threshold, applied to the raw value before depth. No other source type offers
-shaping.
+A source can modulate another assignment's Depth.
 
-Modulation can also target another assignment's own depth, not only a module
-parameter. This is meta-modulation, its own target type rather than a
-special case bolted onto ordinary parameter targets.
+Removing sources and using `Clear All` can be undone.
 
-`Clear All`, at the bottom of the list, removes every assignment on that
-parameter at once. Removing and clearing can be undone.
+The [Mod Matrix](../../reference/windows/mod-matrix/) window lists the
+patch's assignments together.
 
-Every active assignment also shows up in the
-[Mod Matrix](../../reference/windows/mod-matrix/) window, which lists and
-edits them from one place instead of hunting through each module's own
-parameters.
-
-Related: [MIDI and OpenSoundControl Learn](../midi-and-opensoundcontrol-learn/).
+Related: [Modulation Sources](../../reference/modulation/),
+[MIDI and OpenSoundControl Learn](../midi-and-opensoundcontrol-learn/).

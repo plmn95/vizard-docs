@@ -3,22 +3,16 @@ title: "Chain Groups"
 description: "Organize contiguous modules into chain groups without changing render order or signal processing."
 ---
 
-A chain group clusters a contiguous run of `Chain` pills for organization.
-It has no effect on rendering: the chain still runs module by module in the
-same order. Grouping only changes how that run looks and behaves in the UI.
+Chain groups organize modules in `Chain` without changing how they process
+signal.
 
-`Group Selected`, from the right-click menu on a selection of two or more
-pills (Ctrl+click extends the selection), turns that selection into a group.
-A non-contiguous selection is normalized on grouping: members move together
-in chain order, anchored at the earliest-positioned module's original
-position, keeping their relative order to each other.
+Ctrl+click selects multiple pills. Their right-click menu offers
+`Group Selected`. If the selection is not contiguous, grouping moves its
+members together at the first selected module's position, preserving their
+relative order.
 
-A group carries its own name, set from its right-click menu's `Rename`, and
-its own color, picked from a swatch grid. Collapsing a group (`Collapse` in
-the same menu) folds every member but the first into one compact pill;
-clicking that pill selects the first member and expands the group again.
-
-`Ungroup` disbands a group: its members become loose pills at their current
-chain position, unchanged.
+The group's right-click menu contains `Rename`, a color swatch grid,
+`Collapse`, and `Ungroup`. A collapsed group shows its first member;
+clicking it selects that member and expands the group.
 
 Related: [Signal Chain](../signal-chain/).

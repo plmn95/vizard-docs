@@ -3,29 +3,20 @@ title: "MIDI and OpenSoundControl Learn"
 description: "Assign incoming MIDI and OpenSoundControl messages to parameters with Learn mode."
 ---
 
-Learn mode assigns a modulation source to a parameter from the next incoming
-message, instead of picking a source by hand. It arms three ways:
-right-clicking a parameter and choosing `MIDI Learn` or `OpenSoundControl
-Learn` arms it for that parameter directly; pressing `M` (MIDI) or `O`
-(OpenSoundControl) arms Learn mode globally, and the next left-clicked
-parameter becomes the target; or, with the `Edit Modulation` source picker
-open on a parameter, `Learn` inside its `MIDI` or `OpenSoundControl` tab
-fills that tab's own CC number or address field from the next message.
+Learn assigns an incoming MIDI CC or OpenSoundControl address to a
+parameter. It can be armed from:
 
-While `MIDI Learn` is armed, a pulsing `MIDI LEARN` label appears in the main
-toolbar. `OpenSoundControl Learn` arms the same way but has no toolbar
-indicator of its own.
+- A parameter's right-click menu: `MIDI Learn` or `OpenSoundControl Learn`.
+- `M` for MIDI or `O` for OpenSoundControl, followed by a click on the target
+  parameter.
+- `Learn` in the source picker's `MIDI` or `OpenSoundControl` tab, which fills
+  the CC number and channel, or address, from the next message.
 
-Left-clicking a parameter while Learn is armed re-targets it: the target is
-always whichever parameter was clicked most recently, not fixed at the
-moment Learn was armed. The next incoming MIDI CC or OpenSoundControl
-message adds that source to the target's modulation, next to any sources it
-already has, and disarms Learn. A source that already modulates the target
-is not added twice.
+Clicking another parameter while Learn is armed changes the target. The
+next message adds an assignment and disarms Learn. Existing assignments are
+preserved; duplicate sources are not added.
 
-Both protocols reach the same modulation matrix once learned: a learned CC or
-OpenSoundControl address becomes an ordinary assignment, editable from the
-[Mod Matrix](../../reference/windows/mod-matrix/) window like any source
-picked in the `Edit Modulation` window.
+A pulsing `MIDI LEARN` label appears in the toolbar while MIDI Learn is
+armed. OpenSoundControl Learn has no toolbar indicator.
 
 Related: [Modulation Matrix](../modulation-matrix/).

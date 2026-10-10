@@ -75,5 +75,4 @@ modules in between. At 0 the chain runs as if FEEDBACK were off. Below 0.50
 effect above 0.50. This routing has a single recursion, so the repeat-once,
 held-afterimage and delay-line recipes need `Self`.
 
-FEEDBACK carries its own Sends. See
-[AUX Sends and Buses](../../../concepts/aux-sends-and-buses/).
+Related: [AUX Sends and Buses](../../../concepts/aux-sends-and-buses/).

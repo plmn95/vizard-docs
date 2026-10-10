@@ -1,6 +1,6 @@
 ---
 title: "Glow"
-description: "Glow: Blooms bright regions outward, like light scattering inside a CRT tube's glass."
+description: "Blooms bright regions outward, like light scattering inside a CRT tube's glass."
 ---
 
 Blooms bright regions outward, like light scattering inside a CRT tube's

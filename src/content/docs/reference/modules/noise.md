@@ -1,11 +1,9 @@
 ---
 title: "NOISE"
-description: "NOISE: Procedural noise."
+description: "Procedural noise."
 ---
 
-Procedural noise. A noise family and a dimension combine into the actual
-generator; most other parameters apply across all of them, a few only to
-specific families.
+Generates procedural noise in 2D or 3D.
 
 | Parameter | Control | Notes |
 |---|---|---|

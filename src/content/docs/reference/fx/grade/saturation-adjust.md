@@ -3,10 +3,7 @@ title: "Saturation Adjust"
 description: "Increase or decrease image saturation continuously with the Saturation Adjust effect."
 ---
 
-Continuously pushes saturation up or down. Not the same as
-[Hue Rotate](../../color/hue-rotate/) (rotates hue, leaves saturation
-untouched) or [Sat Isolate](../../key/sat-isolate/) (keys an alpha matte
-from a saturation *range*, doesn't recolor anything).
+Increases or decreases saturation.
 
 | Parameter | Control | Range | Notes |
 |---|---|---|---|

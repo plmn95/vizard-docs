@@ -3,39 +3,22 @@ title: "Insert FX Chains"
 description: "Build a local effects stack for each module with up to eight ordered Insert FX slots."
 ---
 
-Insert FX gives a module its own local effects stack, layered onto that
-module's output without adding separate modules to the chain: every module
-carries one, with up to 8 ordered slots shown in `Module`'s `INSERT FX`
-section. Each slot holds one effect from the same 43-effect catalog wherever
-it appears, and runs independent of the module's own position in the signal
-chain.
+Each module has an `INSERT FX` section with up to 8 effect slots. Effects
+run in slot order on that module's output.
 
-An empty slot's effect type is `NONE`. Clicking `+ Add` appends a new empty
-slot; picking an effect from its type Selector fills it. A slot reorders by
-dragging its grip, disables without being removed via its `ACTIVE`/`BYPASSED`
-Rocker, and is deleted with its `X`.
+Slots reorder by dragging their grips. The `ACTIVE`/`BYPASSED` Rocker
+bypasses a slot without removing it.
 
-Right-clicking a slot offers `Copy Insert FX` and two ways to paste what was
-copied: `Paste Insert FX` replaces the slot you clicked, and `Paste Insert FX
-as new` adds a copy right after it, leaving the clicked slot as it was.
-Pasting as new is unavailable while all 8 slots are in use. Modulation is not
-copied, so a pasted slot starts without any.
+A slot's right-click menu offers `Copy Insert FX`, `Paste Insert FX`, and
+`Paste Insert FX as new`. Pasting replaces the selected slot; pasting as new
+inserts a copy after it. Modulation is not copied.
 
-Each slot's own `Mix` sets how much of the effect blends back with what came
-into the slot, from fully dry to fully wet.
+`Mix` blends the effect's result with its input.
 
-Some effects work as a pair across slots. Dither set to Spread Only adds its
-pattern without reducing any colors, and a Palette Map placed later in the
-same chain then snaps each pixel to the nearest palette color, which dithers
-in the palette's own colors. The two slots stay independent: reordering,
-bypassing or deleting either one only changes what the other receives.
+[Region](../../reference/insert-fx-region/) limits an effect to a circle.
+Regions on multiple slots can merge when their circles approach each other.
 
-A slot can also scope its effect to a circle instead of the whole frame, and
-melt into another slot's circle when the two come close, regardless of what
-effect either slot runs. See [Region](../../reference/insert-fx-region/).
+On [FEEDBACK](../../reference/modules/feedback/), `Pre` effects process the
+loop on each lap; `Post` effects process its output once.
 
-FEEDBACK's Insert FX chain adds one more choice per slot, not something the
-other 8 module types need to decide: whether the effect applies before or
-after the feedback loop itself. See [Feedback](../../reference/modules/feedback/).
-
-Related: [Signal Chain](../signal-chain/).
+Related: [FX](../../reference/fx/), [Signal Chain](../signal-chain/).

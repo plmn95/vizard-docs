@@ -1,6 +1,6 @@
 ---
 title: "CRT"
-description: "CRT: Effects that simulate the physical traits of a CRT tube: scanlines, phosphor glow and decay, deflection instability, and lens curvature."
+description: "Effects that simulate the physical traits of a CRT tube: scanlines, phosphor glow and decay, deflection instability, and lens curvature."
 ---
 
 Effects that simulate the physical traits of a CRT tube: scanlines, phosphor
