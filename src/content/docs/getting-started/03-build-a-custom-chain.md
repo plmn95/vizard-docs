@@ -1,14 +1,36 @@
 ---
 title: "Build a Custom Chain"
-description: "Build your first custom signal chain from the default OSC module and explore how modules combine."
+description: "Build a six-segment kaleidoscope from the default OSC module and its Insert FX chain."
 ---
 
-Right-click the current slot in `Patches` and choose `Reset to Default`.
+Save any changes you want to keep, then choose
+`File > Reset Active Patch to Default`.
 This leaves one `OSC` module in the chain.
 
-Select `OSC` in `Chain`. In `Module`, open `INSERT FX`, click `+ Add`,
-and choose an effect from the type Selector.
+## Shape the pattern
 
-Click the `+` at the end of `Chain` and choose a second module.
+Select `OSC` in `Chain`. Under `Waveform` in `Module`, choose the
+sine-wave icon.
 
-Next: [Record and Output](../04-record-and-output/).
+Expand `FREQUENCY` and move the `Freq X / Freq Y` Pad to change the spacing
+and direction of the colored bands.
+
+For this recipe, enter `3` in `Freq X` and `2` in `Freq Y`, pressing
+`Enter` after each value. Leave the channels' other controls at their
+default values.
+
+## Add the kaleidoscope
+
+Expand `INSERT FX`, click `+ Add`, and choose `Kaleidoscope` from the
+effect type Selector.
+
+Click the numeric field for `Segments`, enter `6`, and press `Enter`.
+Drag `Rotation` to turn the mirrored pattern, then enter `0` in its
+numeric field before adding modulation.
+
+The effect runs inside `OSC`'s Insert FX chain. Keep that one module for
+this recipe; a second generator would add another image to the chain.
+
+Related: [Insert FX Chains](../../concepts/insert-fx-chains/).
+
+Next: [Animate Your Pattern](../05-animate-your-pattern/).
